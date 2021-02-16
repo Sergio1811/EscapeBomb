@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimerAlarm : MonoBehaviour
 {
-    IEnumerator Timer(float l_Timer)
+    public IEnumerator Timer(float l_Timer)
     {
         yield return new WaitForSeconds(l_Timer);
         //do things

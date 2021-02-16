@@ -26,10 +26,8 @@ public class PuzzlePapelera : MonoBehaviour
         if (piecesToComplete==completedPieces)
         {
             //do things
-            toInactive.SetActive(false);
+           
         }
     }
-
-    
 
 }

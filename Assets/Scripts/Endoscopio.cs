@@ -5,15 +5,12 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
+public class Endoscopio : MonoBehaviour, IDragHandler, IEndDragHandler
 {
 
     Canvas myCanvas;
     Vector3 startPos;
-    public float timeToMeasure;
-    float currentTimeMeasuring;
-    public Slider sliderTemp;
-    bool measured;
+
     private void Start()
     {
         myCanvas = GetComponentInParent<Canvas>();
@@ -26,6 +23,11 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
         RectTransformUtility.ScreenPointToLocalPointInRectangle(myCanvas.transform as RectTransform, Input.mousePosition, myCanvas.worldCamera, out pos);
         transform.position = myCanvas.transform.TransformPoint(pos);
 
+        
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
         RectTransform invPanel = transform as RectTransform;
 
         if (!RectTransformUtility.RectangleContainsScreenPoint(invPanel, Input.mousePosition))
@@ -36,39 +38,20 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
             if (Physics.Raycast(ray, out hit))
             {
                 print(hit.collider.gameObject.name);
-                if (hit.collider.CompareTag("Boca"))
-                {
-                    if (!sliderTemp.gameObject.activeSelf)
-                        sliderTemp.gameObject.SetActive(true);
-
-                    if (!measured)
-                    {
-                        currentTimeMeasuring += Time.deltaTime;
-                        sliderTemp.value = currentTimeMeasuring / timeToMeasure;
-
-                        if (currentTimeMeasuring >= timeToMeasure)//If finalized call function
-                        {
-                            Debug.Log("true");
-                            Destroy(this.gameObject);
-                            //cambiar item en inventario
-                            StartCoroutine(Timer(300));
-                        }
-                    }
+                if (hit.collider.CompareTag("Cajon"))
+                {                    
+                      Debug.Log("true");
+                      Destroy(this.gameObject);
+                      //cambiar item en inventario
+                    
                 }
             }
 
         }
-    }
-
-    public void OnEndDrag(PointerEventData eventData)
-    {
-        if(!measured)
-        {
-            transform.localPosition = startPos;
-            currentTimeMeasuring = 0;
-            sliderTemp.value = 0;
-
-        }
+        else
+        transform.localPosition = startPos;
+           
+        
     }
 
     public IEnumerator Timer(float l_Timer)
