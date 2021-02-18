@@ -15,7 +15,7 @@ public class Wheels : MonoBehaviour
     void Start()
     {
         rotationValue = 360 / posNumber;
-        this.transform.eulerAngles = new Vector3(0, 0, currentPos * rotationValue);
+        this.transform.eulerAngles = new Vector3(this.transform.eulerAngles.x, this.transform.eulerAngles.y, currentPos * rotationValue);
     }
 
     // Update is called once per frame
@@ -48,7 +48,7 @@ public class Wheels : MonoBehaviour
                             m_Bomb.correctComponets[ID] = false;
                         }
 
-                        this.transform.eulerAngles = new Vector3(0, 0, currentPos * rotationValue);
+                        this.transform.eulerAngles = new Vector3(this.transform.eulerAngles.x, this.transform.eulerAngles.y, currentPos * rotationValue);
 
                     }
                 }

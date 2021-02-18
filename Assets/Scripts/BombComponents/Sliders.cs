@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Sliders : MonoBehaviour
 {
-    public int currentPos;
     public int correctPos;
+    public int currentPos;
     public int howManyPos;
 
-    public Bomb m_Bomb;
+    Vector3 startPos;
     public int ID;
+    public Bomb m_Bomb;
     void Start()
     {
-        this.transform.position = new Vector3(currentPos * 0.5f, 0, 0);
-
+        startPos = this.transform.localPosition;
+        this.transform.localPosition = new Vector3(startPos.x - ((currentPos - 1) * 0.06f), startPos.y, startPos.z);
+        print(startPos.x - ((currentPos - 1) * 0.06f));
     }
 
     // Update is called once per frame
@@ -53,8 +55,8 @@ public class Sliders : MonoBehaviour
                         {
                             m_Bomb.correctComponets[ID] = false;
                         }
-                        this.transform.position = new Vector3(currentPos * 0.5f, 0, 0);
-
+                        this.transform.localPosition = new Vector3(startPos.x - ((currentPos-1) * 0.06f), startPos.y, startPos.z);
+                        print(startPos.x - ((currentPos - 1) * 0.06f));
                     }
                 }
             }
