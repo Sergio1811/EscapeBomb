@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class MenuController : MonoBehaviour
     public GameObject notificationRight;
     public Transform positionConv;
     public Transform positionNot;
+    public GameObject MapNotAvailable;
+    public Button mapButton;
+    public GameObject map;
+    public GameObject MapAvailable;
 
     private void Awake()
     {
@@ -40,5 +45,25 @@ public class MenuController : MonoBehaviour
         GameObject conv = Instantiate(notificationRight, positionNot);
         conv.GetComponentInChildren<TextMeshProUGUI>().text = l_notificationToDisplay;
         Destroy(conv,5);
+    }
+
+    public void CanMapOpen()
+    {
+        if (DataHolder.instance.currentObjectsINeed>=DataHolder.instance.howManyObjectsINeed)
+        {
+            if (scenes[0].activeSelf == true)
+                MapAvailable.SetActive(true);
+
+            mapButton.onClick.RemoveAllListeners();
+
+            mapButton.onClick.AddListener(
+                delegate {
+                    map.SetActive(true);                  
+            });
+        }
+        else
+        {
+            MapNotAvailable.SetActive(true);
+        }
     }
 }

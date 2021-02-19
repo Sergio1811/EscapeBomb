@@ -51,6 +51,7 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
                             Debug.Log("true");
                             Destroy(this.gameObject);
                             //cambiar item en inventario
+                            DataHolder.instance.currentObjectsINeed++;
                             StartCoroutine(Timer(300));
                         }
                     }

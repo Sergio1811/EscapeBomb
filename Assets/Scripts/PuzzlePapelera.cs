@@ -23,10 +23,14 @@ public class PuzzlePapelera : MonoBehaviour
     }
     void Update()
     {
-        if (piecesToComplete==completedPieces)
+        
+    }
+    public void IsPuzzleCompleted()
+    {
+        if (piecesToComplete == completedPieces)
         {
-            //do things
-           
+            DataHolder.instance.currentObjectsINeed++;
+
         }
     }
 

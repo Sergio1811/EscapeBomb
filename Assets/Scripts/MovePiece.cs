@@ -74,6 +74,7 @@ public class MovePiece : MonoBehaviour
             {
                 this.transform.position = colision.gameObject.transform.position;
                 PuzzlePapelera.instance.completedPieces++;
+                PuzzlePapelera.instance.IsPuzzleCompleted();
                 m_PieceLocked = true;
                 m_PieceClicked = false;
                 colision = null;
