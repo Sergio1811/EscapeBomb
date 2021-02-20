@@ -66,4 +66,15 @@ public class MenuController : MonoBehaviour
             MapNotAvailable.SetActive(true);
         }
     }
+
+    public IEnumerator PrinterNotificationOn()
+    {
+        //Mensaje ha iniciado la impresión
+        //Video ha iniciado la impresión
+        yield return new WaitForSeconds(180);
+        //Mensaje ha acabado la impresión
+        //Video ha acabado la impresión
+    }
+
+
 }

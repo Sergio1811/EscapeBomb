@@ -18,6 +18,8 @@ public class HoverTitulo : MonoBehaviour
     {
         if (title != null)
             title.SetActive(true);
+
+        this.transform.SetAsLastSibling();
     }
 
 

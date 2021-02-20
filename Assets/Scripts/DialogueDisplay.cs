@@ -16,6 +16,8 @@ public class DialogueDisplay : MonoBehaviour
     void Start()
     {
         currentDialogueScriptable = firstDialogue;
+        DisplayConversation();
+
     }
 
     public void DisplayConversation()
