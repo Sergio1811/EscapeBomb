@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: QePastelitos1
+  m_EditorClassIdentifier: 
+  charName: Pastelero
+  question: "Hola, bienvenido a qu\xE9 pastelitos, \xBFpuedo servirle?"
+  dialogueOptions:
+  - optionLine: "Buenas, quer\xEDa unos pastelitos."
+    nextDialogue: {fileID: 11400000, guid: b96834ef860470e46ad6a1b7ca936dab, type: 2}
+  - optionLine: "No, adi\xF3s."
+    nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
+  - optionLine: "Estamos ayudando a la polic\xEDa en un caso."
+    nextDialogue: {fileID: 11400000, guid: d223d24335c34054a9db88c1a51fa7f2, type: 2}

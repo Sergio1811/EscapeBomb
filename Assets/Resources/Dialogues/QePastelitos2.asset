@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: QePastelitos2
+  m_EditorClassIdentifier: 
+  charName: Pastelero
+  question: "\xBFA la polic\xEDa? \xBFQu\xE9 ha ocurrido?"
+  dialogueOptions:
+  - optionLine: "Lo siento, esa informaci\xF3n es secreto de sumario."
+    nextDialogue: {fileID: 11400000, guid: e89e75b03e7f5a941b38843ce34a7b0d, type: 2}
+  - optionLine: Nada.
+    nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
+  - optionLine: Un homicidio.
+    nextDialogue: {fileID: 11400000, guid: e89e75b03e7f5a941b38843ce34a7b0d, type: 2}

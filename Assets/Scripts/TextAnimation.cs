@@ -35,6 +35,7 @@ public class TextAnimation : MonoBehaviour
             yield return new WaitForSeconds(pause);
         }
 
+        if(currentDialogue!=0)
         buttonNext.onClick.RemoveAllListeners();
 
         pause = initialPause;

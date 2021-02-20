@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: QePastelitos4
+  m_EditorClassIdentifier: 
+  charName: Pastelero
+  question: "Por aqu\xED pasa mucha gente cada d\xEDa. Quiz\xE1 si me ense\xF1a una
+    foto del sospechoso y un posible nombre recuerde algo m\xE1s."
+  dialogueOptions:
+  - optionLine: "Est\xE1 bien, se la traer\xE9."
+    nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
+  - optionLine: "\xA1Aqu\xED est\xE1! es este (ense\xF1ar foto inventario con nombre)"
+    nextDialogue: {fileID: 11400000, guid: 4cc74b8920db79641a1e3738e1f68663, type: 2}
+  - optionLine: Que mala memoria...
+    nextDialogue: {fileID: 11400000, guid: 4eddbfb18c423dc4ba36574c3b473dff, type: 2}
