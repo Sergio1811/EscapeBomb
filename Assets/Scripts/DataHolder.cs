@@ -21,6 +21,14 @@ public class DataHolder : MonoBehaviour
     public GameObject videojuegos;
     public GameObject peluqueria;
 
+    public GameObject albaran;
+
+    public bool hacker = false;
+    public GameObject videoFinalHacker;
+    public GameObject videoFinalComisario;
+    public GameObject bombPanel;
+    public GameObject textBomb;
+
     [HideInInspector]
     public bool kitUsed;
 
@@ -32,5 +40,22 @@ public class DataHolder : MonoBehaviour
         }
         else Destroy(this);
     }
-   
+
+    public void HackerChose()
+    {
+        hacker = true;
+    }
+
+    public void chargeFinal()
+    {
+        if (hacker)
+            videoFinalHacker.SetActive(true);
+
+        else
+            videoFinalComisario.SetActive(true);
+
+         bombPanel.SetActive(false);
+
+    }
+
 }

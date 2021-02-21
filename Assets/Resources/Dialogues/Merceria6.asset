@@ -16,7 +16,7 @@ MonoBehaviour:
   question: "\u201C...un homicidio? Madre m\xEDa. Lo recuerdo como un hombre muy
     normal.  No puedo decirles mucho, lo siento. \xA1Ah, s\xED! se le cay\xF3 un
     papel. Quiz\xE1 sigue en la papelera.\u201D"
-  specialAction: 
+  specialAction: ActivaPapel
   dialogueOptions:
   - optionLine: Gracias
     nextDialogue: {fileID: 11400000, guid: 2c574f3cdc6946d44aa865e89d6b13ec, type: 2}

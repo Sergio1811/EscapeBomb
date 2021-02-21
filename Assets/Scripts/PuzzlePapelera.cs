@@ -31,6 +31,7 @@ public class PuzzlePapelera : MonoBehaviour
         {
             DataHolder.instance.currentObjectsINeed++;
             MenuController.instance.getInventory().addItemToList("Servilleta");
+            MenuController.instance.InstantiateNotification("Nuevo objeto: Servilleta");
         }
     }
 

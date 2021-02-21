@@ -30,8 +30,9 @@ public class Bomb : MonoBehaviour
         correctComponets[ID] = true;
         if (CompruebaTodoBool())
         {
-            print("bool true");
-            //Do things
+
+            DataHolder.instance.textBomb.SetActive(true);
+            
         }
     }
 }

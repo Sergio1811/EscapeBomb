@@ -66,9 +66,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "NOTIFICACI\xD3N"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9efe022a15f06c648aa1c2400ffb02f2, type: 2}
-  m_sharedMaterial: {fileID: 5513993178676479133, guid: 9efe022a15f06c648aa1c2400ffb02f2,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -101,7 +100,7 @@ MonoBehaviour:
   m_fontSizeMax: 43.25
   m_fontStyle: 0
   m_textAlignment: 513
-  m_characterSpacing: -8.66
+  m_characterSpacing: -3.48
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -315,9 +314,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Aqu\xED ir\xE1 el aviso."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9efe022a15f06c648aa1c2400ffb02f2, type: 2}
-  m_sharedMaterial: {fileID: 5513993178676479133, guid: 9efe022a15f06c648aa1c2400ffb02f2,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -350,7 +348,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_textAlignment: 257
-  m_characterSpacing: -10.91
+  m_characterSpacing: -3.48
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

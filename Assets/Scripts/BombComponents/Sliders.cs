@@ -14,8 +14,7 @@ public class Sliders : MonoBehaviour
     void Start()
     {
         startPos = this.transform.localPosition;
-        this.transform.localPosition = new Vector3(startPos.x - ((currentPos - 1) * 0.06f), startPos.y, startPos.z);
-        print(startPos.x - ((currentPos - 1) * 0.06f));
+        this.transform.localPosition = new Vector3(startPos.x - ((currentPos - 1) * 0.065f), startPos.y, startPos.z);
     }
 
     // Update is called once per frame
@@ -55,8 +54,7 @@ public class Sliders : MonoBehaviour
                         {
                             m_Bomb.correctComponets[ID] = false;
                         }
-                        this.transform.localPosition = new Vector3(startPos.x - ((currentPos-1) * 0.06f), startPos.y, startPos.z);
-                        print(startPos.x - ((currentPos - 1) * 0.06f));
+                        this.transform.localPosition = new Vector3(startPos.x - ((currentPos-1) * 0.065f), startPos.y, startPos.z);
                     }
                 }
             }

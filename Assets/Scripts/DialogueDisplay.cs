@@ -75,9 +75,21 @@ public class DialogueDisplay : MonoBehaviour
         election.GetComponentInChildren<Button>().onClick.AddListener(
             delegate
             {
-                currentDialogueScriptable = nextDialogue;
+                if (nextDialogue != null)
+                {
+                    currentDialogueScriptable = nextDialogue;
 
-                DisplayConversation();
+                    DisplayConversation();
+                }
+                else
+                {
+                    foreach (var item in currentElections)
+                    {
+                        Destroy(item);
+
+                    }
+                    currentElections.Clear();
+                }
             });
 
         currentElections.Add(election);
@@ -97,7 +109,10 @@ public class DialogueDisplay : MonoBehaviour
                 break;
             case "UnlockPeluqueria":
                 MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Tienda de videojuegos");
-                DataHolder.instance.videojuegos.SetActive(true);
+                DataHolder.instance.peluqueria.SetActive(true);
+                break;
+            case "ActivaPapel":
+                DataHolder.instance.albaran.SetActive(true);
                 break;
             default:
                 break;

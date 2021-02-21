@@ -952,7 +952,7 @@ MonoBehaviour:
     italicTypeface: {fileID: 0}
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
-  - regularTypeface: {fileID: 11400000, guid: 917085f0e6fc7ce469688675d9b61229, type: 2}
+  - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
   - regularTypeface: {fileID: 0}
     italicTypeface: {fileID: 0}
