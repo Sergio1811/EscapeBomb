@@ -16,7 +16,7 @@ MonoBehaviour:
   question: "Pues la verdad es que yo no, pero mi compa\xF1ero me ha dicho que esta
     ma\xF1ana un se\xF1or pas\xF3 por aqu\xED buscando libros de inform\xE1tica muy
     espec\xEDficos, y que luego pregunt\xF3 por una tienda de videojuegos."
-  specialAction: 
+  specialAction: UnlockVideojuegos
   dialogueOptions:
   - optionLine: "Perfecto, muchas gracias. Voy para all\xE1."
     nextDialogue: {fileID: 0}

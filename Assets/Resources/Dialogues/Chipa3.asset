@@ -17,7 +17,7 @@ MonoBehaviour:
     de aqu\xED al lado. Ayer apareci\xF3 un hombre  por aqu\xED bastante extra\xF1o.
     No le vi bien la cara, llevaba un gorro negro. Siento no poder ayudarles m\xE1s.
     Seguro que mi compa\xF1era recuerda algo m\xE1s de informaci\xF3n. "
-  specialAction: 
+  specialAction: UnlockPeluqueria
   dialogueOptions:
   - optionLine: "Perfecto, seguiremos investigando por ah\xED."
     nextDialogue: {fileID: 11400000, guid: 77b9156edce8b874db28d9ed961e0f07, type: 2}

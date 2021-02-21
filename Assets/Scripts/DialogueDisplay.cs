@@ -40,6 +40,7 @@ public class DialogueDisplay : MonoBehaviour
                delegate
                {
                    currentDialogueScriptable = firstDialogue;
+                   SpecialOcasionsDialogue();
                    Destroy(dialogue);
                });
         }
@@ -48,10 +49,14 @@ public class DialogueDisplay : MonoBehaviour
             botonTemp.onClick.AddListener(
                 delegate
             {
-                Destroy(dialogue);
+                SpecialOcasionsDialogue();
                 DisplayElections();
+                Destroy(dialogue);
+
             });
         }
+
+     
     }
 
     public void DisplayElections()
@@ -76,5 +81,26 @@ public class DialogueDisplay : MonoBehaviour
             });
 
         currentElections.Add(election);
+    }
+
+    public void SpecialOcasionsDialogue()
+    {
+        switch (currentDialogueScriptable.specialAction)
+        {
+            case "UnlockRecepcion":
+                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Recepción");
+                DataHolder.instance.recepcion.SetActive(true);
+                break;
+            case "UnlockVideojuegos":
+                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Tienda de videojuegos");
+                DataHolder.instance.videojuegos.SetActive(true);
+                break;
+            case "UnlockPeluqueria":
+                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Tienda de videojuegos");
+                DataHolder.instance.videojuegos.SetActive(true);
+                break;
+            default:
+                break;
+        }
     }
 }

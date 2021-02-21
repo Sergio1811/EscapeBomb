@@ -17,7 +17,7 @@ MonoBehaviour:
     que est\xE1 en la recepci\xF3n del hotel de enfrente es vidente y tarotista en
     sus ratos libres. Quiz\xE1 haya visto algo m\xE1s. Tiene muy buen ojo para estas
     cosas. "
-  specialAction: 
+  specialAction: UnlockRecepcion
   dialogueOptions:
   - optionLine: "\xBFEst\xE1 seguro de eso?"
     nextDialogue: {fileID: 11400000, guid: c825fc0312653524894f04a1995f7279, type: 2}
