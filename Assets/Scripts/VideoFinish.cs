@@ -8,10 +8,10 @@ public class VideoFinish : MonoBehaviour
      double time;
      double currentTime;
     public VideoPlayer vp;
+    public GameObject[] cosasAActivar;
     // Use this for initialization
     void Start()
     {
-
         time = vp.clip.length;
     }
 
@@ -23,6 +23,10 @@ public class VideoFinish : MonoBehaviour
         if (currentTime >= time)
         {
             this.gameObject.SetActive(false);
+            foreach (var item in cosasAActivar)
+            {
+                item.SetActive(true);
+            }
         }
     }
     

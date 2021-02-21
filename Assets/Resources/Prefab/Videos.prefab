@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7436139035936767485}
   - component: {fileID: 7436139035936767486}
   m_Layer: 5
-  m_Name: VideoSecuestro
+  m_Name: VideoP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,12 +83,12 @@ GameObject:
   - component: {fileID: 7436139037224297274}
   - component: {fileID: 7895540129264721004}
   m_Layer: 5
-  m_Name: Journey
+  m_Name: Videos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7436139037224297273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -155,3 +155,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vp: {fileID: 7436139035936767486}
+  cosasAActivar: []
