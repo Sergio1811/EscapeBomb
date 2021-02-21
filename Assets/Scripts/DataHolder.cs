@@ -21,6 +21,9 @@ public class DataHolder : MonoBehaviour
     public GameObject videojuegos;
     public GameObject peluqueria;
 
+    [HideInInspector]
+    public bool kitUsed;
+
     private void Awake()
     {
         if (instance == null)
@@ -29,7 +32,5 @@ public class DataHolder : MonoBehaviour
         }
         else Destroy(this);
     }
-
-   
    
 }

@@ -17,7 +17,9 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
     private void Start()
     {
         myCanvas = GetComponentInParent<Canvas>();
-        startPos = this.transform.localPosition;
+        startPos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        this.transform.localPosition = startPos;
+        print(startPos + " /  " + this.transform.localPosition);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -30,12 +32,10 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
 
         if (!RectTransformUtility.RectangleContainsScreenPoint(invPanel, Input.mousePosition))
         {
-            print("holaa?");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                print(hit.collider.gameObject.name);
                 if (hit.collider.CompareTag("Boca"))
                 {
                     if (!sliderTemp.gameObject.activeSelf)
@@ -48,8 +48,9 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
 
                         if (currentTimeMeasuring >= timeToMeasure)//If finalized call function
                         {
-                            Debug.Log("true");
                             Destroy(this.gameObject);
+                            DataHolder.instance.kitUsed = true;
+                            MenuController.instance.InstantiateNotification("Enviando datos a analizar...");
                             //cambiar item en inventario
                             DataHolder.instance.currentObjectsINeed++;
                             StartCoroutine(Timer(300));
