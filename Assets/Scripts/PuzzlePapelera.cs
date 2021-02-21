@@ -30,7 +30,7 @@ public class PuzzlePapelera : MonoBehaviour
         if (piecesToComplete == completedPieces)
         {
             DataHolder.instance.currentObjectsINeed++;
-
+            MenuController.instance.getInventory().addItemToList("Servilleta");
         }
     }
 

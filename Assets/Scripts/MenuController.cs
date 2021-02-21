@@ -18,6 +18,8 @@ public class MenuController : MonoBehaviour
     public GameObject map;
     public GameObject MapAvailable;
 
+    public InventorySystem inventory;
+
     private void Awake()
     {
         if (instance == null)
@@ -76,5 +78,8 @@ public class MenuController : MonoBehaviour
         //Video ha acabado la impresión
     }
 
-
+    public InventorySystem getInventory()
+    {
+        return inventory;
+    }
 }
