@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
-  m_Name: Merceria1
+  m_Name: Peluqueria2
   m_EditorClassIdentifier: 
-  charName: Costurera
-  question: Buenos dias
+  charName: Peluquero
+  question: "Vino un hombre bastante peculiar. No olvidar\xE9 esos penetrantes ojos
+    marrones. Sab\xEDa que hab\xEDa algo en su mirada\u2026 no recuerdo nada m\xE1s."
   specialAction: 
   dialogueOptions:
-  - optionLine: "Buenos d\xEDas. Investigamos un crimen. \xBFPodr\xEDa ayudarnos?"
-    nextDialogue: {fileID: 11400000, guid: f1c0542fbfa4f9c4b9a724828ecbe835, type: 2}
+  - optionLine: "Est\xE1 bien, gracias."
+    nextDialogue: {fileID: 11400000, guid: 5802b82cc8ae22c4d8613cf056ddfd3b, type: 2}
     specialAction: 
-  - optionLine: Toc toc...
-    nextDialogue: {fileID: 11400000, guid: 3c528f19f0359f74eb376347c7c40105, type: 2}
+  - optionLine: Ok.
+    nextDialogue: {fileID: 11400000, guid: 5802b82cc8ae22c4d8613cf056ddfd3b, type: 2}
     specialAction: 

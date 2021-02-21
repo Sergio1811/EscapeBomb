@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Chipa1
+  m_EditorClassIdentifier: 
+  charName: Chipero
+  question: "Buenas tardes. Cu\xE9ntame, \xBFqu\xE9 te puedo servir?"
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "\xA1Una de muerto al punto para llevar!"
+    nextDialogue: {fileID: 11400000, guid: a5ff34b59f4208b4fbb3d84e729ab028, type: 2}
+    specialAction: 
+  - optionLine: Una empanada de carne picante por favor.
+    nextDialogue: {fileID: 11400000, guid: a5ff34b59f4208b4fbb3d84e729ab028, type: 2}
+    specialAction: 
+  - optionLine: "Investigamos un crimen, \xBFvio ayer a alguien sospechoso entrar
+      al local?"
+    nextDialogue: {fileID: 11400000, guid: f7f45e4ed9089c1439276afebcd080b9, type: 2}
+    specialAction: 

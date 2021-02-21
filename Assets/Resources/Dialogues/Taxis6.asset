@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Taxis6
+  m_EditorClassIdentifier: 
+  charName: Taxista
+  question: "Mire la ley lo \xFAnico que me obliga es a darle la matr\xEDcula del
+    taxi en cuesti\xF3n. A ver, d\xEDgame, en qu\xE9 lugar estaba y a qu\xE9 hora."
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "\xBFComo dice? Mire, la ley constitucional de 1890 me permite realizar
+      una exploraci\xF3n profunda en cuanto a preguntas relativas al trabajo. \xA1Libertade
+      de expresi\xF3n! \xA1Africa libre! \xA1Abajo el apartheid!"
+    nextDialogue: {fileID: 11400000, guid: 46afbb511b9b1be4c9d8c06e33e917e5, type: 2}
+    specialAction: 
+  - optionLine: Ehm... no lo tengo claro... era un edificio verde, con luces. Y la
+      hora... es que no tengo reloj
+    nextDialogue: {fileID: 11400000, guid: 46afbb511b9b1be4c9d8c06e33e917e5, type: 2}
+    specialAction: 
+  - optionLine: "Muchas gracias, seg\xFAn tengo entendido el taxi sali\xF3 de Que
+      Pastelitos sobre las 13.14"
+    nextDialogue: {fileID: 11400000, guid: c2fde0bf95e7013499c09ee96a3074f7, type: 2}
+    specialAction: 

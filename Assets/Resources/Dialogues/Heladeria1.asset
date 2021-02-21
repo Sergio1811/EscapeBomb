@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Heladeria1
+  m_EditorClassIdentifier: 
+  charName: Heladero
+  question: "Buenas tardes \xBFqu\xE9 te pongo?"
+  specialAction: 
+  dialogueOptions:
+  - optionLine: Estamos investigando un homicidio.
+    nextDialogue: {fileID: 11400000, guid: 2f733b146353f3a489fbfecb6e20e8d3, type: 2}
+    specialAction: 
+  - optionLine: "\xA1Un helado de menta!"
+    nextDialogue: {fileID: 11400000, guid: 1804ea0f4544aa14a940e2588a86c25f, type: 2}
+    specialAction: 
+  - optionLine: Nada gracias. Estoy inspeccionando.
+    nextDialogue: {fileID: 11400000, guid: b7a0462ab0d483041bbe5c4e5cf39bc6, type: 2}
+    specialAction: 

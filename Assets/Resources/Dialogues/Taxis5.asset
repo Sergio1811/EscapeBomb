@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Taxis5
+  m_EditorClassIdentifier: 
+  charName: Taxista
+  question: "\xA1Hombre! Tenemos aqu\xED al periodista graciosete. \xBFVas a hacer
+    algo m\xE1s que perder mi tiempo?"
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "Lamento el malentendido, ayer cog\xED uno de sus taxis y me gustar\xEDa
+      darle una propina al conductor"
+    nextDialogue: {fileID: 11400000, guid: e2de1da5e29ae3d449e3579bc1e27148, type: 2}
+    specialAction: 
+  - optionLine: "Me temo que ayer perd\xED un objeto en uno de sus taxis y necesito
+      contactar con el conductor"
+    nextDialogue: {fileID: 11400000, guid: e2de1da5e29ae3d449e3579bc1e27148, type: 2}
+    specialAction: 
+  - optionLine: "La ley me permite investigar sus taxis, necesito una informaci\xF3n.
+      \xA1Demela ya!"
+    nextDialogue: {fileID: 11400000, guid: e2de1da5e29ae3d449e3579bc1e27148, type: 2}
+    specialAction: 

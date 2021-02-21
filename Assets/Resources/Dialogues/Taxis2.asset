@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Taxis2
+  m_EditorClassIdentifier: 
+  charName: Taxista
+  question: "Perfecto, \xBFpodr\xEDa ense\xF1arme su licencia de taxista?"
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "\xA1Ups! no la llevo encima, lo siento. \xA1\xA1Pero oiga!! \xBFQu\xE9
+      veo all\xED? \xBFNo es un pirata haciendo un servicio sin licencia?"
+    nextDialogue: {fileID: 11400000, guid: d75f21965ad43504c8837f3df61babb0, type: 2}
+    specialAction: 
+  - optionLine: "\xA1Vaya! lo lamento, la he olvidado. Voy a casa y se la traigo.
+      Si quiere mientras espera puede ir all\xED a la esquina que regalan donuts."
+    nextDialogue: {fileID: 11400000, guid: d75f21965ad43504c8837f3df61babb0, type: 2}
+    specialAction: 
+  - optionLine: "No, no tengo. \xBFLe vale el carnet de blockbuster?"
+    nextDialogue: {fileID: 11400000, guid: a31395bde87c67e43898830885a18339, type: 2}
+    specialAction: 

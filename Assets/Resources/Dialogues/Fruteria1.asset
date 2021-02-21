@@ -12,5 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Fruteria1
   m_EditorClassIdentifier: 
-  question: 
-  dialogueOptions: []
+  charName: Frutero
+  question: Hola, buenas tardes.
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "Buenas tardes, estamos ayudando a la polic\xEDa en un caso."
+    nextDialogue: {fileID: 11400000, guid: b92cfac2d210973429b803e681ffda55, type: 2}
+    specialAction: 
+  - optionLine: "Hola, ponme un kilo de pl\xE1tanos."
+    nextDialogue: {fileID: 11400000, guid: 4c09220359f5f5948858cc6576a0b457, type: 2}
+    specialAction: 
+  - optionLine: "Hola y adi\xF3s."
+    nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
+    specialAction: 

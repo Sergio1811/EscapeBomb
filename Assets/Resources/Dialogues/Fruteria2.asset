@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
-  m_Name: Merceria1
+  m_Name: Fruteria2
   m_EditorClassIdentifier: 
-  charName: Costurera
-  question: Buenos dias
+  charName: Frutero
+  question: "\xBFY qu\xE9 necesitan de m\xED?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Buenos d\xEDas. Investigamos un crimen. \xBFPodr\xEDa ayudarnos?"
-    nextDialogue: {fileID: 11400000, guid: f1c0542fbfa4f9c4b9a724828ecbe835, type: 2}
+  - optionLine: "Ayer, nuestro sospechoso vino a comprar una pi\xF1a. \xBFRecuerda
+      al individuo?"
+    nextDialogue: {fileID: 11400000, guid: 00774d1f262d3e34c9242c89e008b327, type: 2}
     specialAction: 
-  - optionLine: Toc toc...
-    nextDialogue: {fileID: 11400000, guid: 3c528f19f0359f74eb376347c7c40105, type: 2}
+  - optionLine: Nada, gracias.
+    nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 

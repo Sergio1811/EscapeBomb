@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Taxis1
+  m_EditorClassIdentifier: 
+  charName: Taxista
+  question: "Soy Mike. A ver, \xBFqu\xE9 es lo que quer\xE9is? Que no tengo aqu\xED
+    todo el d\xEDa. Un momento \xBFeh? por favor."
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "Me gustar\xEDa arreglar mi taxi."
+    nextDialogue: {fileID: 11400000, guid: 05c951314b7d87843913cb654f4db39d, type: 2}
+    specialAction: 
+  - optionLine: Soy el nuevo taxista.
+    nextDialogue: {fileID: 11400000, guid: 05c951314b7d87843913cb654f4db39d, type: 2}
+    specialAction: 
+  - optionLine: "Estamos investigando un homicidio. \xBFQuerr\xEDa ayudarnos?"
+    nextDialogue: {fileID: 11400000, guid: a31395bde87c67e43898830885a18339, type: 2}
+    specialAction: 

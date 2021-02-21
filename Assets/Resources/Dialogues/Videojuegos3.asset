@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: Videojuegos3
+  m_EditorClassIdentifier: 
+  charName: Videojuegista
+  question: "Mmmm\u2026 la verdad es que ayer entr\xF3 en la tienda un hombre algo
+    nervioso. Recuerdo perfectamente que llevaba una mochila. En mi cabeza pens\xE9
+    que tendr\xEDa ah\xED dentro algo poco legal por su forma de actuar."
+  specialAction: 
+  dialogueOptions:
+  - optionLine: Perfecto, gracias.
+    nextDialogue: {fileID: 11400000, guid: a2c22cdfac3213f40b3f5b99c68f2a97, type: 2}
+    specialAction: 
+  - optionLine: "Ok, adi\xF3s."
+    nextDialogue: {fileID: 11400000, guid: a2c22cdfac3213f40b3f5b99c68f2a97, type: 2}
+    specialAction: 

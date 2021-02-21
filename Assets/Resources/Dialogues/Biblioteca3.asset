@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
-  m_Name: Merceria1
+  m_Name: Biblioteca3
   m_EditorClassIdentifier: 
-  charName: Costurera
-  question: Buenos dias
+  charName: Bibliotecario
+  question: "Pues la verdad es que yo no, pero mi compa\xF1ero me ha dicho que esta
+    ma\xF1ana un se\xF1or pas\xF3 por aqu\xED buscando libros de inform\xE1tica muy
+    espec\xEDficos, y que luego pregunt\xF3 por una tienda de videojuegos."
   specialAction: 
   dialogueOptions:
-  - optionLine: "Buenos d\xEDas. Investigamos un crimen. \xBFPodr\xEDa ayudarnos?"
-    nextDialogue: {fileID: 11400000, guid: f1c0542fbfa4f9c4b9a724828ecbe835, type: 2}
-    specialAction: 
-  - optionLine: Toc toc...
-    nextDialogue: {fileID: 11400000, guid: 3c528f19f0359f74eb376347c7c40105, type: 2}
+  - optionLine: "Perfecto, muchas gracias. Voy para all\xE1."
+    nextDialogue: {fileID: 0}
     specialAction: 
