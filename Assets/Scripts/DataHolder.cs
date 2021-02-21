@@ -12,6 +12,14 @@ public class DataHolder : MonoBehaviour
     public GameObject merceria;
     public GameObject zulo;
     public GameObject salaServidor;
+    public GameObject heladeria;
+    public GameObject farmacia;
+    public GameObject fruteria;
+    public GameObject chipa;
+    public GameObject libreria;
+    public GameObject recepcion;
+    public GameObject videojuegos;
+    public GameObject peluqueria;
 
     private void Awake()
     {
