@@ -5,6 +5,7 @@ using UnityEngine;
 public class DataHolder : MonoBehaviour
 {
     public static DataHolder instance;
+    public GameObject ui;
     public int howManyObjectsINeed;
     public int currentObjectsINeed = 1;
 
@@ -28,6 +29,7 @@ public class DataHolder : MonoBehaviour
     public GameObject videoFinalComisario;
     public GameObject bombPanel;
     public GameObject textBomb;
+    public GameObject taxistaSeVa;
 
     [HideInInspector]
     public bool kitUsed;

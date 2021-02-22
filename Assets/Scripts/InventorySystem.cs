@@ -50,6 +50,7 @@ public class InventorySystem : MonoBehaviour
                         item.transform.localPosition = itemListPositions[i].localPosition;
                         item.GetComponent<Image>().enabled = true;
                         item.GetComponent<Button>().enabled = true;
+                        item.GetComponent<Button>().onClick.AddListener(delegate { zoomItem(item.name); });
                         itemListAvailable[i] = false;
                         return;
                     }

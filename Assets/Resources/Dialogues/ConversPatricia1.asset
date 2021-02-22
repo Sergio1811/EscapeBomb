@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
+  m_Name: ConversPatricia1
+  m_EditorClassIdentifier: 
+  charName: "M\xF3vil"
+  question: Da tono...
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "Buenos d\xEDas Patricia, soy Israel, el compa\xF1ero de Mike, te
+      llamo porque un cliente parece ser que no recuerda donde fue ayer y estaba
+      buscando su port\xE1til, tu recogiste a alguien en Que Pastelitos?"
+    nextDialogue: {fileID: 11400000, guid: d2ca8d41d99b9df40a0e74eb7a1bb473, type: 2}
+    specialAction: 

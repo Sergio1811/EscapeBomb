@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Taxista
   question: "\xBFC\xF3mo? Voy para all\xED ahora mismo. \xA1Chicos, acompa\xF1adme!"
-  specialAction: 
+  specialAction: TaxistaLibre
   dialogueOptions: []

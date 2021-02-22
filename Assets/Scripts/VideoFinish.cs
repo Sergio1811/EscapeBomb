@@ -5,29 +5,44 @@ using UnityEngine.Video;
 
 public class VideoFinish : MonoBehaviour
 {
-     double time;
-     double currentTime;
+
     public VideoPlayer vp;
     public GameObject[] cosasAActivar;
+    public string myFileName;
     // Use this for initialization
+
+    bool firstFrame = false;
     void Start()
     {
-        time = vp.clip.length;
+        DataHolder.instance.ui.SetActive(false);
+        vp.url = System.IO.Path.Combine(Application.streamingAssetsPath, myFileName);
+        vp.Play();
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        currentTime = vp.time;
-        if (currentTime >= time)
+
+        if (vp.isPrepared)
         {
-            this.gameObject.SetActive(false);
-            foreach (var item in cosasAActivar)
+            firstFrame = true;
+        }
+
+        if (firstFrame)
+        {
+            if (!vp.isPlaying)
             {
-                item.SetActive(true);
+                this.gameObject.SetActive(false);
+                foreach (var item in cosasAActivar)
+                {
+                    DataHolder.instance.ui.SetActive(true);
+                    item.SetActive(true);
+                }
             }
         }
+
     }
-    
+
 }

@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
-  m_Name: Taxis8
+  m_Name: ConversPatricia2
   m_EditorClassIdentifier: 
-  charName: Taxista
-  question: "Si, justamente envi\xE9 to ese servicio. La conductora se llama Patricia
-    y su matr\xEDcula es la 9ECM2. Entender\xE1 que no puedo dar su n\xFAmero de
-    tel\xE9fono por razones obvias."
-  specialAction: Matricula
-  dialogueOptions: []
+  charName: Patricia
+  question: "S\xED, es cierto, ayer mismo le atend\xED."
+  specialAction: 
+  dialogueOptions:
+  - optionLine: "-\xBFY donde terminaste la carrera, recuerdas algo de \xE9l?"
+    nextDialogue: {fileID: 11400000, guid: daee8a3f1d65b2c46a86bab24cb69324, type: 2}
+    specialAction: 

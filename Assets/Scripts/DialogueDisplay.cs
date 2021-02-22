@@ -114,6 +114,12 @@ public class DialogueDisplay : MonoBehaviour
             case "ActivaPapel":
                 DataHolder.instance.albaran.SetActive(true);
                 break;
+            case "TaxistaLibre":
+                DataHolder.instance.taxistaSeVa.SetActive(true);
+                break;
+            case "Matricula":
+                MenuController.instance.getInventory().addItemToList("Matricula");
+                break;
             default:
                 break;
         }

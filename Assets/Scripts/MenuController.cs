@@ -71,9 +71,11 @@ public class MenuController : MonoBehaviour
 
     public IEnumerator PrinterNotificationOn()
     {
-        //Mensaje ha iniciado la impresión
+        MenuController.instance.InstantiateNotification("Impresión iniciada");
         //Video ha iniciado la impresión
-        yield return new WaitForSeconds(180);
+        yield return new WaitForSeconds(10);
+        inventory.addItemToList("Llave1");
+        MenuController.instance.InstantiateNotification("Impresión acabada");
         //Mensaje ha acabado la impresión
         //Video ha acabado la impresión
     }
@@ -81,5 +83,10 @@ public class MenuController : MonoBehaviour
     public InventorySystem getInventory()
     {
         return inventory;
+    }
+
+    public void printerButton()
+    {
+        StartCoroutine(PrinterNotificationOn());
     }
 }
