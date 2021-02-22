@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DataHolder : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class DataHolder : MonoBehaviour
     public GameObject bombPanel;
     public GameObject textBomb;
     public GameObject taxistaSeVa;
+
+    public Button buttonLlave1;
+    public Button buttonLlave2;
+    public Button buttonLlave3;
+    public Button buttonLlave4;
+    public Button buttonLlave5;
 
     [HideInInspector]
     public bool kitUsed;

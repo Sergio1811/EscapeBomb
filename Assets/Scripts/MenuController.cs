@@ -69,13 +69,57 @@ public class MenuController : MonoBehaviour
         }
     }
 
-    public IEnumerator PrinterNotificationOn()
+    public IEnumerator PrinterNotificationOn(string llaveName)
     {
         MenuController.instance.InstantiateNotification("Impresión iniciada");
+        switch (llaveName)
+        {
+            case "Llave1":
+                DataHolder.instance.buttonLlave1.interactable = false;
+                DataHolder.instance.buttonLlave1.GetComponentInChildren<TextMeshProUGUI>().text = "Imprimiendo...";
+
+                break;
+            case "Llave2":
+                DataHolder.instance.buttonLlave2.interactable = false;
+                DataHolder.instance.buttonLlave2.GetComponentInChildren<TextMeshProUGUI>().text = "Imprimiendo...";
+                break; 
+            case "Llave3":
+                DataHolder.instance.buttonLlave3.interactable = false;
+                DataHolder.instance.buttonLlave3.GetComponentInChildren<TextMeshProUGUI>().text = "Imprimiendo...";
+                break; 
+            case "Llave4":
+                DataHolder.instance.buttonLlave4.interactable = false;
+                DataHolder.instance.buttonLlave4.GetComponentInChildren<TextMeshProUGUI>().text = "Imprimiendo...";
+                break; 
+            case "Llave5":
+                DataHolder.instance.buttonLlave5.interactable = false;
+                DataHolder.instance.buttonLlave5.GetComponentInChildren<TextMeshProUGUI>().text = "Imprimiendo...";
+                break;
+        }
         //Video ha iniciado la impresión
         yield return new WaitForSeconds(10);
-        inventory.addItemToList("Llave1");
         MenuController.instance.InstantiateNotification("Impresión acabada");
+        switch (llaveName)
+        {
+            case "Llave1":
+                DataHolder.instance.buttonLlave1.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
+
+                break;
+            case "Llave2":
+                DataHolder.instance.buttonLlave2.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
+                break;
+            case "Llave3":
+                DataHolder.instance.buttonLlave3.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
+                break;
+            case "Llave4":
+                DataHolder.instance.buttonLlave4.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
+                break;
+            case "Llave5":
+                DataHolder.instance.buttonLlave5.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
+                break;
+        }
+        PickKey(llaveName);
+
         //Mensaje ha acabado la impresión
         //Video ha acabado la impresión
     }
@@ -85,8 +129,75 @@ public class MenuController : MonoBehaviour
         return inventory;
     }
 
-    public void printerButton()
+    public void printerButton(string llaveName)
     {
-        StartCoroutine(PrinterNotificationOn());
+        StartCoroutine(PrinterNotificationOn(llaveName));
+    }
+
+    public void PickKey(string llaveName)
+    {
+        switch (llaveName)
+        {
+            case "Llave1":
+                DataHolder.instance.buttonLlave1.interactable = true;
+                DataHolder.instance.buttonLlave1.onClick.RemoveAllListeners();
+                DataHolder.instance.buttonLlave1.onClick.AddListener(
+                    delegate
+                    {
+                        inventory.addItemToList(llaveName);
+                        DataHolder.instance.buttonLlave1.interactable = false;
+                        DataHolder.instance.buttonLlave1.GetComponentInChildren<TextMeshProUGUI>().text = "Sin material";
+
+                    });
+                break;
+            case "Llave2":
+                DataHolder.instance.buttonLlave2.interactable = true;
+                DataHolder.instance.buttonLlave2.onClick.RemoveAllListeners();
+                DataHolder.instance.buttonLlave2.onClick.AddListener(
+                    delegate
+                    {
+                        inventory.addItemToList(llaveName);
+                        DataHolder.instance.buttonLlave2.interactable = false;
+                        DataHolder.instance.buttonLlave2.GetComponentInChildren<TextMeshProUGUI>().text = "Sin material";
+                    });
+                break;
+            case "Llave3":
+                DataHolder.instance.buttonLlave3.interactable = true;
+                DataHolder.instance.buttonLlave3.onClick.RemoveAllListeners();
+                DataHolder.instance.buttonLlave3.onClick.AddListener(
+                    delegate
+                    {
+                        inventory.addItemToList(llaveName);
+                        DataHolder.instance.buttonLlave3.interactable = false;
+                        DataHolder.instance.buttonLlave3.GetComponentInChildren<TextMeshProUGUI>().text = "Sin material";
+                    });
+                break;
+            case "Llave4":
+                DataHolder.instance.buttonLlave4.interactable = true;
+                DataHolder.instance.buttonLlave4.onClick.RemoveAllListeners();
+                DataHolder.instance.buttonLlave4.onClick.AddListener(
+                    delegate
+                    {
+                        inventory.addItemToList(llaveName);
+                        DataHolder.instance.buttonLlave4.interactable = false;
+                        DataHolder.instance.buttonLlave4.GetComponentInChildren<TextMeshProUGUI>().text = "Sin material";
+                    });
+                break;
+            case "Llave5":
+                DataHolder.instance.buttonLlave5.interactable = true;
+                DataHolder.instance.buttonLlave5.onClick.RemoveAllListeners();
+                DataHolder.instance.buttonLlave5.onClick.AddListener(
+                    delegate
+                    {
+                        inventory.addItemToList(llaveName);
+                        DataHolder.instance.buttonLlave5.interactable = false;
+                        DataHolder.instance.buttonLlave5.GetComponentInChildren<TextMeshProUGUI>().text = "Sin material";
+                    });
+                break;
+            default:
+                break;
+        }
+        
+
     }
 }
