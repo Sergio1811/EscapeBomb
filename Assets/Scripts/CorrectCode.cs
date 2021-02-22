@@ -14,7 +14,8 @@ public class CorrectCode : MonoBehaviour
         codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
         if (codeToMatch==codeFilled)
         {
-            //dothings
+            MenuController.instance.getInventory().addItemToList("DocPoli");
+            MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
             print("funiono");
         }
     }
