@@ -50,6 +50,7 @@ public class DataHolder : MonoBehaviour
         else Destroy(this);
     }
 
+
     public void HackerChose()
     {
         hacker = true;

@@ -72,6 +72,7 @@ public class MenuController : MonoBehaviour
     public IEnumerator PrinterNotificationOn(string llaveName)
     {
         MenuController.instance.InstantiateNotification("Impresión iniciada");
+
         switch (llaveName)
         {
             case "Llave1":
@@ -103,7 +104,6 @@ public class MenuController : MonoBehaviour
         {
             case "Llave1":
                 DataHolder.instance.buttonLlave1.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
-
                 break;
             case "Llave2":
                 DataHolder.instance.buttonLlave2.GetComponentInChildren<TextMeshProUGUI>().text = "Recoger";
@@ -119,7 +119,7 @@ public class MenuController : MonoBehaviour
                 break;
         }
         PickKey(llaveName);
-
+        yield return null;
         //Mensaje ha acabado la impresión
         //Video ha acabado la impresión
     }
@@ -140,7 +140,9 @@ public class MenuController : MonoBehaviour
         {
             case "Llave1":
                 DataHolder.instance.buttonLlave1.interactable = true;
+                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave1.onClick, 0);
                 DataHolder.instance.buttonLlave1.onClick.RemoveAllListeners();
+                print("listener destroyed");
                 DataHolder.instance.buttonLlave1.onClick.AddListener(
                     delegate
                     {
@@ -152,6 +154,7 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave2":
                 DataHolder.instance.buttonLlave2.interactable = true;
+                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave2.onClick, 0);
                 DataHolder.instance.buttonLlave2.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave2.onClick.AddListener(
                     delegate
@@ -163,6 +166,7 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave3":
                 DataHolder.instance.buttonLlave3.interactable = true;
+                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave3.onClick, 0);
                 DataHolder.instance.buttonLlave3.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave3.onClick.AddListener(
                     delegate
@@ -174,6 +178,7 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave4":
                 DataHolder.instance.buttonLlave4.interactable = true;
+                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave4.onClick, 0);
                 DataHolder.instance.buttonLlave4.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave4.onClick.AddListener(
                     delegate
@@ -185,6 +190,7 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave5":
                 DataHolder.instance.buttonLlave5.interactable = true;
+                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave5.onClick, 0);
                 DataHolder.instance.buttonLlave5.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave5.onClick.AddListener(
                     delegate
