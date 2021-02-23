@@ -19,6 +19,7 @@ public class MenuController : MonoBehaviour
     public GameObject MapAvailable;
 
     public InventorySystem inventory;
+    public MouseCursor mouseCursor;
 
     private void Awake()
     {
@@ -127,6 +128,11 @@ public class MenuController : MonoBehaviour
     public InventorySystem getInventory()
     {
         return inventory;
+    }
+
+    public MouseCursor GetMouseCursor()
+    {
+        return mouseCursor;
     }
 
     public void printerButton(string llaveName)

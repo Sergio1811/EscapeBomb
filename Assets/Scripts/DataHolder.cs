@@ -38,6 +38,13 @@ public class DataHolder : MonoBehaviour
     public Button buttonLlave4;
     public Button buttonLlave5;
 
+    public enum UsingObject
+    {
+        NONE, ENDOSCOPIO
+    }
+    public UsingObject usingObject = UsingObject.NONE;
+    public Sprite endoscopioSprite;
+
     [HideInInspector]
     public bool kitUsed;
 
@@ -68,4 +75,33 @@ public class DataHolder : MonoBehaviour
 
     }
 
+    public Sprite GetSprite(string sprite)
+    {
+        Sprite chosenSprite;
+
+        switch(sprite)
+        {
+            case "endoscopio":
+                chosenSprite = endoscopioSprite;
+                usingObject = UsingObject.ENDOSCOPIO;
+                break;
+            default:
+                chosenSprite = endoscopioSprite;
+                usingObject = UsingObject.NONE;
+                break;
+        }
+
+        return chosenSprite;
+    }
+
+    public UsingObject GetUsingObject()
+    {
+        return usingObject;
+    }
+
+    public void ResetCursor()
+    {
+        usingObject = UsingObject.NONE;
+        MenuController.instance.GetMouseCursor().DestroyCursor();
+    }
 }

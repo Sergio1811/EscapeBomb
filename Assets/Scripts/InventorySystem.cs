@@ -34,6 +34,10 @@ public class InventorySystem : MonoBehaviour
                     this.transform.parent.gameObject.SetActive(false);
                 }
                 break;
+            default:
+                MenuController.instance.GetMouseCursor().SetCustomCursor(item);
+                this.transform.parent.gameObject.SetActive(false);
+                break;
         }
     }
 
