@@ -34,13 +34,14 @@ public class DialogueDisplay : MonoBehaviour
         dialogue.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = currentDialogueScriptable.charName;
 
         Button botonTemp=dialogue.transform.GetChild(1).GetComponent<Button>();
+        SpecialOcasionsDialogue();
         if (currentDialogueScriptable.dialogueOptions.Length == 0)
         {
             botonTemp.onClick.AddListener(
                delegate
                {
                    currentDialogueScriptable = firstDialogue;
-                   SpecialOcasionsDialogue();
+                   
                    Destroy(dialogue);
                });
         }
@@ -49,7 +50,6 @@ public class DialogueDisplay : MonoBehaviour
             botonTemp.onClick.AddListener(
                 delegate
             {
-                SpecialOcasionsDialogue();
                 DisplayElections();
                 Destroy(dialogue);
 
@@ -97,6 +97,7 @@ public class DialogueDisplay : MonoBehaviour
 
     public void SpecialOcasionsDialogue()
     {
+        print("entro" + currentDialogueScriptable.name);
         switch (currentDialogueScriptable.specialAction)
         {
             case "UnlockRecepcion":
