@@ -26,6 +26,7 @@ public class DataHolder : MonoBehaviour
     public GameObject albaran;
 
     public bool hacker = false;
+    public bool isPrinting = false;
     public GameObject videoFinalHacker;
     public GameObject videoFinalComisario;
     public GameObject bombPanel;

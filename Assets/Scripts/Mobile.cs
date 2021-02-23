@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mobile : MonoBehaviour
 {
@@ -37,14 +38,27 @@ public class Mobile : MonoBehaviour
 
     public void ReceiveNotification(int id)
     {
+        GameObject newItem = Instantiate(messagePrefab, messagesContentRect.gameObject.transform);
+
         switch (id)
         {
             case 1:
-                GameObject newItem = Instantiate(messagePrefab, messagesContentRect.gameObject.transform);
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "";
                 break;
+            case 2:
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "AloAlo";
+                Button button = newItem.GetComponent<Button>();
+                button.enabled = true;
+                button.onClick.AddListener(
+                    delegate
+                    {
+                        MenuController.instance.InstantiateNotification("Elige qué responder...");
+                        //iniciar opciones de respuesta al hacker
+                    });
+                break;
+
         }
 
-        messagesContentRect.sizeDelta += new Vector2(0.0f, 170.0f);
+        messagesContentRect.sizeDelta += new Vector2(0.0f, newItem.GetComponent<RectTransform>().sizeDelta.y);
     }
 }

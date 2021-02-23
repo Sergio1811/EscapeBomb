@@ -72,14 +72,14 @@ public class MenuController : MonoBehaviour
 
     public IEnumerator PrinterNotificationOn(string llaveName)
     {
-        MenuController.instance.InstantiateNotification("Impresión iniciada");
+        DataHolder.instance.isPrinting = true;
+        InstantiateNotification("Impresión iniciada");
 
         switch (llaveName)
         {
             case "Llave1":
                 DataHolder.instance.buttonLlave1.interactable = false;
                 DataHolder.instance.buttonLlave1.GetComponentInChildren<TextMeshProUGUI>().text = "Imprimiendo...";
-
                 break;
             case "Llave2":
                 DataHolder.instance.buttonLlave2.interactable = false;
@@ -100,7 +100,7 @@ public class MenuController : MonoBehaviour
         }
         //Video ha iniciado la impresión
         yield return new WaitForSeconds(10);
-        MenuController.instance.InstantiateNotification("Impresión acabada");
+        InstantiateNotification("Impresión acabada");
         switch (llaveName)
         {
             case "Llave1":
@@ -121,6 +121,7 @@ public class MenuController : MonoBehaviour
         }
         PickKey(llaveName);
         yield return null;
+        DataHolder.instance.isPrinting = false;
         //Mensaje ha acabado la impresión
         //Video ha acabado la impresión
     }
@@ -137,7 +138,14 @@ public class MenuController : MonoBehaviour
 
     public void printerButton(string llaveName)
     {
-        StartCoroutine(PrinterNotificationOn(llaveName));
+        if (!DataHolder.instance.isPrinting)
+        {
+            StartCoroutine(PrinterNotificationOn(llaveName));
+        }
+        else
+        {
+            InstantiateNotification("Impresión en curso. Por favor espera a que termine....");
+        }
     }
 
     public void PickKey(string llaveName)

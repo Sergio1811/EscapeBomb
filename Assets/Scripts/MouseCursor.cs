@@ -7,13 +7,11 @@ public class MouseCursor : MonoBehaviour
 {
     private Image currentRend;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentRend = GetComponent<Image>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -21,10 +19,8 @@ public class MouseCursor : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && DataHolder.instance.GetUsingObject() != DataHolder.UsingObject.NONE)
         {
-            // Cast a ray straight down.
             RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
 
-            // If it hits something...
             if (hit.collider != null)
             {
                 if (hit.collider.CompareTag("Cajon"))
@@ -42,13 +38,11 @@ public class MouseCursor : MonoBehaviour
                     {
                         MenuController.instance.InstantiateConversation("Se han conseguido unos documentos.");
                         MenuController.instance.getInventory().addItemToList("DocTaxi");
-
                     }
                 }
-
-
-                DataHolder.instance.ResetCursor();
             }
+
+            DataHolder.instance.ResetCursor();
         }
     }
 

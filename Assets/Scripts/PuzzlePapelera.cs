@@ -21,10 +21,7 @@ public class PuzzlePapelera : MonoBehaviour
             Destroy(this);
         }
     }
-    void Update()
-    {
-        
-    }
+
     public void IsPuzzleCompleted()
     {
         if (piecesToComplete == completedPieces)

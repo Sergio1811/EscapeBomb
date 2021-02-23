@@ -36,7 +36,7 @@ public class TextAnimation : MonoBehaviour
         }
 
         if(currentDialogue!=0)
-        buttonNext.onClick.RemoveAllListeners();
+            buttonNext.onClick.RemoveAllListeners();
 
         pause = initialPause;
         currentDialogue++;
