@@ -31,6 +31,9 @@ public class DataHolder : MonoBehaviour
     public GameObject bombPanel;
     public GameObject textBomb;
     public GameObject taxistaSeVa;
+    public Sprite taxistaSeFue;
+    public Image taxistaImage;
+    public GameObject taxistaButton;
 
     public Button buttonLlave1;
     public Button buttonLlave2;
@@ -40,11 +43,16 @@ public class DataHolder : MonoBehaviour
 
     public enum UsingObject
     {
-        NONE, ENDOSCOPIO
+        NONE, ENDOSCOPIO, LLAVEMALA, LLAVEBUENA
     }
     public UsingObject usingObject = UsingObject.NONE;
     public Sprite endoscopioSprite;
-
+    public Sprite llaveSprite1;
+    public Sprite llaveSprite2;
+    public Sprite llaveSprite3;
+    public Sprite llaveSprite4;
+    public Sprite llaveBuenaSprite;
+    
     [HideInInspector]
     public bool kitUsed;
 
@@ -85,6 +93,26 @@ public class DataHolder : MonoBehaviour
                 chosenSprite = endoscopioSprite;
                 usingObject = UsingObject.ENDOSCOPIO;
                 break;
+            case "llave1":
+                chosenSprite = llaveBuenaSprite;
+                usingObject = UsingObject.LLAVEBUENA;
+                break;
+            case "llave2":
+                chosenSprite = llaveSprite1;
+                usingObject = UsingObject.LLAVEMALA;
+                break;
+            case "llave3":
+                chosenSprite = llaveSprite2;
+                usingObject = UsingObject.LLAVEMALA;
+                break;
+            case "llave4":
+                chosenSprite = llaveSprite3;
+                usingObject = UsingObject.LLAVEMALA;
+                break;
+            case "llave5":
+                chosenSprite = llaveSprite4;
+                usingObject = UsingObject.LLAVEMALA;
+                break;
             default:
                 chosenSprite = endoscopioSprite;
                 usingObject = UsingObject.NONE;
@@ -104,4 +132,10 @@ public class DataHolder : MonoBehaviour
         usingObject = UsingObject.NONE;
         MenuController.instance.GetMouseCursor().DestroyCursor();
     }
+
+    public void CargarTaxis()
+    {
+        
+    }
+
 }

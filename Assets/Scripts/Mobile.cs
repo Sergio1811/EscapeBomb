@@ -12,18 +12,6 @@ public class Mobile : MonoBehaviour
     public RectTransform messagesContentRect;
     public GameObject messagePrefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ReceiveCall()
     {
         parentPanel.SetActive(true);
@@ -40,6 +28,8 @@ public class Mobile : MonoBehaviour
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
 
+        MenuController.instance.InstantiateNotification("Nueva ubicación: Zulo");
+        DataHolder.instance.zulo.SetActive(true);
         DataHolder.instance.ui.SetActive(true);
         callPanel.SetActive(false);
         parentPanel.SetActive(false);

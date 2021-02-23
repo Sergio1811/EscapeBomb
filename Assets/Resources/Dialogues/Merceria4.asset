@@ -16,7 +16,7 @@ MonoBehaviour:
   question: "Bien. \xBFQu\xE9 puedo hacer por vosotros?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Tenemos un ticket que ubica a nuestro sospechoso aqu\xED a las XXX.
+  - optionLine: "Tenemos un ticket que ubica a nuestro sospechoso aqu\xED a las 12:20.
       Sabemos que compr\xF3 una bufanda. \xBFLo recuerda?"
     nextDialogue: {fileID: 11400000, guid: e4c7e7f37a27cea429ab2cac20ec0f65, type: 2}
     specialAction: 

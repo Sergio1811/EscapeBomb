@@ -27,7 +27,26 @@ public class MouseCursor : MonoBehaviour
             // If it hits something...
             if (hit.collider != null)
             {
-                print(hit.collider.gameObject.name);
+                if (hit.collider.CompareTag("Cajon"))
+                {
+                    if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.ENDOSCOPIO)
+                    {
+                        MenuController.instance.InstantiateConversation("Vale, me apunto en mi libreta el perfil de la cerradura.");
+                        MenuController.instance.getInventory().addItemToList("LlaveLibreta");
+                    }
+                    else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEMALA)
+                    {
+                        MenuController.instance.InstantiateConversation("Vaya parece que no es la correcta.");
+                    }
+                    else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEBUENA)
+                    {
+                        MenuController.instance.InstantiateConversation("Se han conseguido unos documentos.");
+                        MenuController.instance.getInventory().addItemToList("DocTaxi");
+
+                    }
+                }
+
+
                 DataHolder.instance.ResetCursor();
             }
         }

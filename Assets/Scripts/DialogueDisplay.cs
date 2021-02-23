@@ -116,6 +116,8 @@ public class DialogueDisplay : MonoBehaviour
                 break;
             case "TaxistaLibre":
                 DataHolder.instance.taxistaSeVa.SetActive(true);
+                DataHolder.instance.taxistaImage.sprite = DataHolder.instance.taxistaSeFue;
+                DataHolder.instance.taxistaButton.SetActive(true);
                 break;
             case "Matricula":
                 MenuController.instance.getInventory().addItemToList("Matricula");
