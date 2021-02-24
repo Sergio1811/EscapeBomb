@@ -42,6 +42,8 @@ public class DataHolder : MonoBehaviour
     public GameObject EscenaTaxiFueraInicial;
     public GameObject EscenaTaxiInterior;
     public GameObject EscenaTaxiFueraFinal;
+
+    public GameObject videoSalida;
     public enum SituacionTaxis 
     {
         INICIAL, DENTRO, LLAVECORRECTA, FIN

@@ -23,10 +23,16 @@ public class MenuController : MonoBehaviour
 
     public Mobile mobile;
     public GameObject mobilePanel;
+    public GameObject messages;
 
     public InventorySystem inventory;
     public MouseCursor mouseCursor;
 
+    public GameObject Correcto1;
+    public GameObject Correcto2;
+    public GameObject No;
+
+    public GameObject[] buttons;
     private void Awake()
     {
         if (instance == null)
@@ -240,5 +246,32 @@ public class MenuController : MonoBehaviour
     public void ActivarSatelite()
     {
 
+    }
+
+    public void ActivarCorrecto()
+    {
+        if (No.activeSelf)
+        {
+            Correcto2.SetActive(true);
+        }
+        else Correcto1.SetActive(true);
+
+        DataHolder.instance.guarida.SetActive(true);
+        InstantiateNotification("Nueva Ubicación: Guarida del Hacker");
+        StartCoroutine(Timer(3));
+        DataHolder.instance.videoSalida.SetActive(true);
+    }
+
+    public void DeactivateButton()
+    {
+        foreach (var item in buttons)
+        {
+            item.SetActive(false);
+        }
+    }
+
+    public IEnumerator Timer(int time)
+    {
+        yield return new WaitForSeconds(time);
     }
 }

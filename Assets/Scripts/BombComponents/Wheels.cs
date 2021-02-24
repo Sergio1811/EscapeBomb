@@ -14,6 +14,10 @@ public class Wheels : MonoBehaviour
 
     void Start()
     {
+        if (currentPos == correctPos)
+        {
+            m_Bomb.BombDeactivated(ID);
+        }
         rotationValue = 360 / posNumber;
         this.transform.eulerAngles = new Vector3(this.transform.eulerAngles.x, this.transform.eulerAngles.y, currentPos * rotationValue-75);
     }

@@ -48,14 +48,14 @@ public class Mobile : MonoBehaviour
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "";
                 break;
             case 2:
-                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "AloAlo";
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "@#95JF@¬6,F";
                 Button button = newItem.GetComponent<Button>();
                 button.enabled = true;
                 button.onClick.AddListener(
                     delegate
                     {
                         MenuController.instance.InstantiateNotification("Elige qué responder...");
-                        //iniciar opciones de respuesta al hacker
+                        MenuController.instance.messages.SetActive(true);
                     });
                 break;
 

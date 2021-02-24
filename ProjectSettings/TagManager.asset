@@ -9,6 +9,10 @@ TagManager:
   - Docs
   - Matricula
   - Servidor
+  - 0
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX

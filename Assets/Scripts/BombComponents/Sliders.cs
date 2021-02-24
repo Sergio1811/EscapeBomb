@@ -13,6 +13,10 @@ public class Sliders : MonoBehaviour
     public Bomb m_Bomb;
     void Start()
     {
+        if (currentPos == correctPos)
+        {
+            m_Bomb.BombDeactivated(ID);
+        }
         startPos = this.transform.localPosition;
         this.transform.localPosition = new Vector3(startPos.x - ((currentPos - 1) * 0.065f), startPos.y, startPos.z);
     }
