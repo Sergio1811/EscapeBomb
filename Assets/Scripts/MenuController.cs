@@ -32,6 +32,8 @@ public class MenuController : MonoBehaviour
     public GameObject Correcto2;
     public GameObject No;
 
+    public GameObject sospechosos;
+    public GameObject hacker;
     public GameObject[] buttons;
     private void Awake()
     {
@@ -273,5 +275,10 @@ public class MenuController : MonoBehaviour
     public IEnumerator Timer(int time)
     {
         yield return new WaitForSeconds(time);
+    }
+
+    public void ActivateSospechosos()
+    {
+        sospechosos.SetActive(true);
     }
 }

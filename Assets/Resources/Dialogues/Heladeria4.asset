@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Heladeria4
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Heladero
   question: "Pues ahora que lo pienso... ayer vino a comprar un se\xF1or muy extra\xF1o."
   specialAction: 

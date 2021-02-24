@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: QePastelitos7
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Pastelero
   question: "Nos vemos, adi\xF3s."
+  specialAction: 
   dialogueOptions: []

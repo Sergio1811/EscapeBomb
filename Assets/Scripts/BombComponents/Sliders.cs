@@ -11,6 +11,8 @@ public class Sliders : MonoBehaviour
     Vector3 startPos;
     public int ID;
     public Bomb m_Bomb;
+    public bool right;
+
     void Start()
     {
         if (currentPos == correctPos)
@@ -24,7 +26,7 @@ public class Sliders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             RectTransform invPanel = transform as RectTransform;
 
@@ -36,20 +38,21 @@ public class Sliders : MonoBehaviour
                 {
                     if (hit.collider.gameObject == this.gameObject)
                     {
-                        if (Input.GetAxis("Mouse X") < 0)
+                        if (currentPos==howManyPos && right)
                         {
-                            //Code for action on mouse moving left
-                            print("Mouse moved left");
-                            if(currentPos>1)
-                            currentPos--;
+                            right = !right;
                         }
-                        if (Input.GetAxis("Mouse X") > 0)
+                        else if (currentPos==1 && !right)
                         {
-                            //Code for action on mouse moving right
-                            print("Mouse moved right");
-                            if(currentPos<howManyPos)
+                            right = true;
+                        }
+
+                        if (right)
                             currentPos++;
-                        }
+
+                        else
+                            currentPos--;
+
                         if (currentPos == correctPos)
                         {
                             m_Bomb.BombDeactivated(ID);
@@ -58,7 +61,7 @@ public class Sliders : MonoBehaviour
                         {
                             m_Bomb.correctComponets[ID] = false;
                         }
-                        this.transform.localPosition = new Vector3(startPos.x - ((currentPos-1) * 0.065f), startPos.y, startPos.z);
+                        this.transform.localPosition = new Vector3(startPos.x - ((currentPos - 1) * 0.065f), startPos.y, startPos.z);
                     }
                 }
             }

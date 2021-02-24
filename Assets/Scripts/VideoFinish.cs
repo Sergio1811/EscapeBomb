@@ -15,9 +15,9 @@ public class VideoFinish : MonoBehaviour
     void Start()
     {
         DataHolder.instance.ui.SetActive(false);
-        vp.url = System.IO.Path.Combine(Application.streamingAssetsPath, myFileName);
+        vp.url = Application.streamingAssetsPath + "/" + myFileName;
+        vp.Prepare();
         vp.Play();
-
     }
 
 

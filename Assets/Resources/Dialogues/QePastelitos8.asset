@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: QePastelitos8
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Pastelero
   question: Ah, si! Ha venido varias veces. Ayer me hizo pedirle un taxi a las 13:14
     (lo recuerdo porque fue muy preciso con la hora de llegada).
+  specialAction: 
   dialogueOptions: []

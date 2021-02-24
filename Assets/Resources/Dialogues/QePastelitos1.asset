@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: QePastelitos1
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Pastelero
   question: "Hola, bienvenido a qu\xE9 pastelitos, \xBFpuedo servirle?"
+  specialAction: 
   dialogueOptions:
   - optionLine: "Buenas, quer\xEDa unos pastelitos."
     nextDialogue: {fileID: 11400000, guid: b96834ef860470e46ad6a1b7ca936dab, type: 2}
+    specialAction: 
   - optionLine: "No, adi\xF3s."
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
+    specialAction: 
   - optionLine: "Estamos ayudando a la polic\xEDa en un caso."
     nextDialogue: {fileID: 11400000, guid: d223d24335c34054a9db88c1a51fa7f2, type: 2}
+    specialAction: 

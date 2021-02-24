@@ -30,6 +30,7 @@ public class DataHolder : MonoBehaviour
     public GameObject videoFinalHacker;
     public GameObject videoFinalComisario;
     public GameObject bombPanel;
+    public GameObject bombServers;
     public GameObject textBomb;
     public GameObject serverConv;
 
@@ -78,6 +79,8 @@ public class DataHolder : MonoBehaviour
     [HideInInspector]
     public bool kitUsed;
 
+    public int bombsDesactivated;
+
     private void Awake()
     {
         if (instance == null)
@@ -102,6 +105,7 @@ public class DataHolder : MonoBehaviour
             videoFinalComisario.SetActive(true);
 
          bombPanel.SetActive(false);
+        bombServers.SetActive(false);
 
     }
 
@@ -189,6 +193,20 @@ public class DataHolder : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+
+    public void ActivateBombServer()
+    {
+        bombServers.SetActive(true);
+    }
+
+    public void BombsInteraction()
+    {
+        bombsDesactivated++;
+        if (bombsDesactivated >= 2)
+        {
+            chargeFinal();
         }
     }
 

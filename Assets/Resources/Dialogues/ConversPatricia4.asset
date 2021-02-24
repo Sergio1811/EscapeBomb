@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: ConversPatricia4
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Patricia
   question: "Estaba cerca de la zona de Tetu\xE1n\u2026 creo que era C/Nuestra Se\xF1ora
     del Carmen, 7."

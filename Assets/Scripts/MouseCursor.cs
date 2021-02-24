@@ -63,6 +63,7 @@ public class MouseCursor : MonoBehaviour
                     if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.PC)
                     {
                         DataHolder.instance.serverConv.SetActive(true);
+                        DataHolder.instance.ActivateBombServer();
                     }
                 }
             }

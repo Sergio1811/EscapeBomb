@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Videojuegos5
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Videojuegista
   question: "En ese caso\u2026 dime, \xBFQu\xE9 puedo hacer por t\xED?"
   specialAction: 
   dialogueOptions:
-  - optionLine: 
-    nextDialogue: {fileID: 11400000, guid: 10b5c06dfd4bfff4b85d272cb8d7f323, type: 2}
+  - optionLine: "Llegar\xE9 a ser el mejor, el mejor que habr\xE1 jam\xE1s..."
+    nextDialogue: {fileID: 11400000, guid: 5c595f4c16983fb43805dd78f4ea8a75, type: 2}
+    specialAction: 
+  - optionLine: "\xA1Onda..."
+    nextDialogue: {fileID: 11400000, guid: a999903cfdb5b6746884c0e38b87463a, type: 2}
+    specialAction: 
+  - optionLine: "Estamos ayudando en una investigaci\xF3n policial."
+    nextDialogue: {fileID: 11400000, guid: db3ab8ee96fd6d94bb45989baf241c38, type: 2}
     specialAction: 

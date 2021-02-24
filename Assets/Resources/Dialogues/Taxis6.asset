@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Taxis6
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Taxista
   question: "Mire la ley lo \xFAnico que me obliga es a darle la matr\xEDcula del
     taxi en cuesti\xF3n. A ver, d\xEDgame, en qu\xE9 lugar estaba y a qu\xE9 hora."

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Chipa1
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Chipero
   question: "Buenas tardes. Cu\xE9ntame, \xBFqu\xE9 te puedo servir?"
   specialAction: 

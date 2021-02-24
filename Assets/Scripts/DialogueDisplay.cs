@@ -13,11 +13,24 @@ public class DialogueDisplay : MonoBehaviour
     public Transform[] positionElection;
     DialogueScriptable currentDialogueScriptable;
     List<GameObject> currentElections = new List<GameObject>();
+
+    public bool ConversationFinished;
+    public bool displaying;
     void Start()
     {
-        currentDialogueScriptable = firstDialogue;
-        DisplayConversation();
+        
+        
+    }
 
+    public void DisplayConvMenu()
+    {
+        if (displaying == false && ConversationFinished==false)
+        {
+            MenuController.instance.mapButton.interactable = false;
+            currentDialogueScriptable = firstDialogue;
+            DisplayConversation();
+            displaying = true;
+        }
     }
 
     public void DisplayConversation()
@@ -32,7 +45,7 @@ public class DialogueDisplay : MonoBehaviour
         GameObject dialogue = Instantiate(conversation, parent);
         dialogue.GetComponent<TextAnimSimple>().dialogue= currentDialogueScriptable.question;
         dialogue.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = currentDialogueScriptable.charName;
-
+        ConversationFinished = currentDialogueScriptable.finalDialogue;
         Button botonTemp=dialogue.transform.GetChild(1).GetComponent<Button>();
         SpecialOcasionsDialogue();
         if (currentDialogueScriptable.dialogueOptions.Length == 0)
@@ -43,6 +56,9 @@ public class DialogueDisplay : MonoBehaviour
                    currentDialogueScriptable = firstDialogue;
                    
                    Destroy(dialogue);
+                   displaying = false;
+                   MenuController.instance.mapButton.interactable = true;
+
                });
         }
         else
@@ -89,6 +105,9 @@ public class DialogueDisplay : MonoBehaviour
 
                     }
                     currentElections.Clear();
+                    displaying = false;print("HEY");
+                    MenuController.instance.mapButton.interactable = true;
+
                 }
             });
 

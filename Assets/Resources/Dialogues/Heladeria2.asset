@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Heladeria2
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Heladero
   question: "\xBFUn homicidio?, \xBFc\xF3mo los de las pel\xEDculas?"
   specialAction: 

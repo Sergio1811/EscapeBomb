@@ -7,7 +7,8 @@ public class Bomb : MonoBehaviour
     [HideInInspector]
     public bool[] correctComponets;
     public int howManyComponents;
-
+    public GameObject button;
+    public GameObject otherbutton;
     private void Start()
     {
         correctComponets = new bool[howManyComponents];
@@ -30,9 +31,11 @@ public class Bomb : MonoBehaviour
         correctComponets[ID] = true;
         if (CompruebaTodoBool())
         {
-
+            button.SetActive(false);
+            otherbutton.SetActive(true);
+            this.gameObject.SetActive(false);
             DataHolder.instance.textBomb.SetActive(true);
-            
+            DataHolder.instance.BombsInteraction();
         }
     }
 }

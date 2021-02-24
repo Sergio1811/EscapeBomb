@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Farmacia3
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Farmaceutico
   question: "Mmmm, un chico con una americana vino algo nervioso preguntando por
     algo para la ansiedad. No pude darle nada sin receta, as\xED que se llev\xF3
@@ -19,8 +20,8 @@ MonoBehaviour:
   specialAction: 
   dialogueOptions:
   - optionLine: Perfecto gracias.
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: f96f3aa498e70cd43a76828368e8c93e, type: 2}
     specialAction: 
   - optionLine: "Gracias y adi\xF3s."
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: f96f3aa498e70cd43a76828368e8c93e, type: 2}
     specialAction: 

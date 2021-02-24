@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Fruteria3
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Frutero
   question: "Mmmm, si. Era un hombre peculiar. Creo que llevaba barba. La se\xF1ora
     que est\xE1 en la recepci\xF3n del hotel de enfrente es vidente y tarotista en

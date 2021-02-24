@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Fruteria2
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Frutero
   question: "\xBFY qu\xE9 necesitan de m\xED?"
   specialAction: 

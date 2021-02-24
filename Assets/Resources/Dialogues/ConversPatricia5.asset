@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: ConversPatricia5
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Patricia
   question: Pero si yo no tengo hijos...
   specialAction: 

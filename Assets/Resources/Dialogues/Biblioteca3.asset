@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Biblioteca3
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Bibliotecario
   question: "Pues la verdad es que yo no, pero mi compa\xF1ero me ha dicho que esta
     ma\xF1ana un se\xF1or pas\xF3 por aqu\xED buscando libros de inform\xE1tica muy

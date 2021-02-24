@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Videojuegos3
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Videojuegista
   question: "Mmmm\u2026 la verdad es que ayer entr\xF3 en la tienda un hombre algo
     nervioso. Recuerdo perfectamente que llevaba una mochila. En mi cabeza pens\xE9

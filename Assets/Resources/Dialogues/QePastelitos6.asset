@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: QePastelitos6
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Pastelero
   question: "Aqu\xED tiene. \xBFQuer\xEDa algo m\xE1s?"
+  specialAction: 
   dialogueOptions:
   - optionLine: "Nada, olv\xEDdelo."
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
+    specialAction: 
   - optionLine: Disculpado.
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
+    specialAction: 

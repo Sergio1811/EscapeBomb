@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Recepcion4
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Recepcionista
   question: "Yo no s\xE9 nada. Estoy muy ocupada. Adi\xF3s."
   specialAction: 

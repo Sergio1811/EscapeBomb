@@ -6,6 +6,7 @@ using TMPro;
 public class CorrectCode : MonoBehaviour
 {
     public string codeToMatch;
+    public string codeToMatch2;
     public GameObject loadingRT;
 
   public void codeRight(TextMeshProUGUI l_CodeFilled)
@@ -28,6 +29,22 @@ public class CorrectCode : MonoBehaviour
         {
             loadingRT.SetActive(true);
             print("funiono");
+        }
+    }
+
+    public void CorrectHacker(TextMeshProUGUI l_CodeFilled)
+    {
+        string codeFilled = l_CodeFilled.text;
+        codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
+        if (codeToMatch == codeFilled || codeToMatch2 == codeFilled)
+        {
+            MenuController.instance.InstantiateNotification("Nombre correcto.");
+            MenuController.instance.sospechosos = MenuController.instance.hacker;
+        }
+        else
+        {
+            l_CodeFilled.text = null;
+            l_CodeFilled.ForceMeshUpdate(true);
         }
     }
 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Taxis1
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Taxista
   question: "Soy Mike. A ver, \xBFqu\xE9 es lo que quer\xE9is? Que no tengo aqu\xED
     todo el d\xEDa. Un momento \xBFeh? por favor."

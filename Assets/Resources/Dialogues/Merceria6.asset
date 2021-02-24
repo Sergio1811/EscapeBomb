@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Merceria6
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Costurera
   question: "\u201C...un homicidio? Madre m\xEDa. Lo recuerdo como un hombre muy
     normal.  No puedo decirles mucho, lo siento. \xA1Ah, s\xED! se le cay\xF3 un

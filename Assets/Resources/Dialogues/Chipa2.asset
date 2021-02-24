@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde9fb49308bb044b802ceff1544788, type: 3}
   m_Name: Chipa2
   m_EditorClassIdentifier: 
+  finalDialogue: 0
   charName: Chipero
   question: "Se nos acaban de terminar, lo siento. \xBFAlgo m\xE1s?"
   specialAction: 
