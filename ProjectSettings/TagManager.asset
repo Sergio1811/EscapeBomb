@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Boca
   - Cajon
+  - Docs
+  - Matricula
+  - Servidor
   layers:
   - Default
   - TransparentFX

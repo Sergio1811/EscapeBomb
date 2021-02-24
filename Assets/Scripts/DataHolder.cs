@@ -31,11 +31,26 @@ public class DataHolder : MonoBehaviour
     public GameObject videoFinalComisario;
     public GameObject bombPanel;
     public GameObject textBomb;
+    public GameObject serverConv;
+
+    #region
+    [Header("Taxis")]
     public GameObject taxistaSeVa;
     public Sprite taxistaSeFue;
     public Image taxistaImage;
     public GameObject taxistaButton;
+    public GameObject EscenaTaxiFueraInicial;
+    public GameObject EscenaTaxiInterior;
+    public GameObject EscenaTaxiFueraFinal;
+    public enum SituacionTaxis 
+    {
+        INICIAL, DENTRO, LLAVECORRECTA, FIN
+    };
 
+    public SituacionTaxis currentTaxiSituation = SituacionTaxis.INICIAL;
+    #endregion
+
+    [Header("")]
     public Button buttonLlave1;
     public Button buttonLlave2;
     public Button buttonLlave3;
@@ -44,7 +59,7 @@ public class DataHolder : MonoBehaviour
 
     public enum UsingObject
     {
-        NONE, ENDOSCOPIO, LLAVEMALA, LLAVEBUENA
+        NONE, ENDOSCOPIO, LLAVEMALA, LLAVEBUENA, MATRICULA, DOCTAXI, PC, FOTO
     }
     public UsingObject usingObject = UsingObject.NONE;
     public Sprite endoscopioSprite;
@@ -53,6 +68,10 @@ public class DataHolder : MonoBehaviour
     public Sprite llaveSprite3;
     public Sprite llaveSprite4;
     public Sprite llaveBuenaSprite;
+    public Sprite docTaxi;
+    public Sprite matricula;
+    public Sprite PC;
+    public Sprite foto;
     
     [HideInInspector]
     public bool kitUsed;
@@ -114,6 +133,22 @@ public class DataHolder : MonoBehaviour
                 chosenSprite = llaveSprite4;
                 usingObject = UsingObject.LLAVEMALA;
                 break;
+            case "docTaxi":
+                chosenSprite = docTaxi;
+                usingObject = UsingObject.DOCTAXI;
+                break;
+            case "matricula":
+                chosenSprite = matricula;
+                usingObject = UsingObject.MATRICULA;
+                break;
+            case "pc":
+                chosenSprite = PC;
+                usingObject = UsingObject.PC;
+                break;
+            case "foto":
+                chosenSprite = foto;
+                usingObject = UsingObject.FOTO;
+                break;
             default:
                 chosenSprite = endoscopioSprite;
                 usingObject = UsingObject.NONE;
@@ -136,7 +171,23 @@ public class DataHolder : MonoBehaviour
 
     public void CargarTaxis()
     {
-        
+        switch (currentTaxiSituation)
+        {
+            case SituacionTaxis.INICIAL:
+                EscenaTaxiFueraInicial.SetActive(true);
+                break;
+            case SituacionTaxis.DENTRO:
+                EscenaTaxiFueraInicial.SetActive(true);
+                break;
+            case SituacionTaxis.LLAVECORRECTA:
+                EscenaTaxiFueraFinal.SetActive(true);
+                break;
+            case SituacionTaxis.FIN:
+                EscenaTaxiFueraFinal.SetActive(true);
+                break;
+            default:
+                break;
+        }
     }
 
 }

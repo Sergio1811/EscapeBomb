@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+#if UNITY_EDITOR
+using UnityEditor.Events;
+#endif
 
 public class MenuController : MonoBehaviour
 {
@@ -17,6 +20,9 @@ public class MenuController : MonoBehaviour
     public Button mapButton;
     public GameObject map;
     public GameObject MapAvailable;
+
+    public Mobile mobile;
+    public GameObject mobilePanel;
 
     public InventorySystem inventory;
     public MouseCursor mouseCursor;
@@ -154,7 +160,9 @@ public class MenuController : MonoBehaviour
         {
             case "Llave1":
                 DataHolder.instance.buttonLlave1.interactable = true;
-                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave1.onClick, 0);
+#if UNITY_EDITOR
+                UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave1.onClick, 0);
+#endif
                 DataHolder.instance.buttonLlave1.onClick.RemoveAllListeners();
                 print("listener destroyed");
                 DataHolder.instance.buttonLlave1.onClick.AddListener(
@@ -168,7 +176,9 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave2":
                 DataHolder.instance.buttonLlave2.interactable = true;
-                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave2.onClick, 0);
+#if UNITY_EDITOR
+                UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave2.onClick, 0);
+#endif
                 DataHolder.instance.buttonLlave2.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave2.onClick.AddListener(
                     delegate
@@ -180,7 +190,9 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave3":
                 DataHolder.instance.buttonLlave3.interactable = true;
-                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave3.onClick, 0);
+#if UNITY_EDITOR
+                UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave3.onClick, 0);
+#endif
                 DataHolder.instance.buttonLlave3.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave3.onClick.AddListener(
                     delegate
@@ -192,7 +204,9 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave4":
                 DataHolder.instance.buttonLlave4.interactable = true;
-                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave4.onClick, 0);
+#if UNITY_EDITOR
+                UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave4.onClick, 0);
+#endif
                 DataHolder.instance.buttonLlave4.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave4.onClick.AddListener(
                     delegate
@@ -204,7 +218,9 @@ public class MenuController : MonoBehaviour
                 break;
             case "Llave5":
                 DataHolder.instance.buttonLlave5.interactable = true;
-                UnityEditor.Events.UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave5.onClick, 0);
+#if UNITY_EDITOR
+                UnityEventTools.RemovePersistentListener(DataHolder.instance.buttonLlave5.onClick, 0);
+                #endif
                 DataHolder.instance.buttonLlave5.onClick.RemoveAllListeners();
                 DataHolder.instance.buttonLlave5.onClick.AddListener(
                     delegate
@@ -218,6 +234,11 @@ public class MenuController : MonoBehaviour
                 break;
         }
         
+
+    }
+
+    public void ActivarSatelite()
+    {
 
     }
 }

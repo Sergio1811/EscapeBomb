@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Mobile : MonoBehaviour
 {
+    public static Mobile instance;
+
     public GameObject parentPanel;
     public GameObject callPanel;
     public AudioClip callAudio;

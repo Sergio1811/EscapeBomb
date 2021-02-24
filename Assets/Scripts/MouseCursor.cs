@@ -25,6 +25,7 @@ public class MouseCursor : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Cajon"))
                 {
+
                     if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.ENDOSCOPIO)
                     {
                         MenuController.instance.InstantiateConversation("Vale, me apunto en mi libreta el perfil de la cerradura.");
@@ -36,8 +37,32 @@ public class MouseCursor : MonoBehaviour
                     }
                     else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEBUENA)
                     {
-                        MenuController.instance.InstantiateConversation("Se han conseguido unos documentos.");
+                        MenuController.instance.InstantiateNotification("Objejo desbloqueado: Documentos taxista");
                         MenuController.instance.getInventory().addItemToList("DocTaxi");
+                        DataHolder.instance.currentTaxiSituation = DataHolder.SituacionTaxis.LLAVECORRECTA;
+                    }
+                }
+
+                if (hit.collider.CompareTag("Docs"))
+                {
+                    if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.MATRICULA)
+                    {
+                        MenuController.instance.mobile.ReceiveCall();
+                    }
+                } 
+                
+                else if (hit.collider.CompareTag("Matricula"))
+                {
+                    if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.DOCTAXI)
+                    {
+                        MenuController.instance.mobile.ReceiveCall();
+                    }
+                }
+                if (hit.collider.CompareTag("Servidor"))
+                {
+                    if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.PC)
+                    {
+                        DataHolder.instance.serverConv.SetActive(true);
                     }
                 }
             }

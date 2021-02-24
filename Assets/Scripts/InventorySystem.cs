@@ -34,6 +34,17 @@ public class InventorySystem : MonoBehaviour
                     this.transform.parent.gameObject.SetActive(false);
                 }
                 break;
+            case "docTaxi":
+            case "matricula":
+                if (DataHolder.instance.usingObject != DataHolder.UsingObject.MATRICULA && DataHolder.instance.usingObject != DataHolder.UsingObject.DOCTAXI)
+                {
+                    MenuController.instance.GetMouseCursor().SetCustomCursor(item);
+                }
+                else
+                {
+                    MenuController.instance.GetMouseCursor().SetCustomCursor(null);
+                }
+                break;
             default:
                 MenuController.instance.GetMouseCursor().SetCustomCursor(item);
                 this.transform.parent.gameObject.SetActive(false);

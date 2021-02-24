@@ -122,6 +122,8 @@ public class DialogueDisplay : MonoBehaviour
                 break;
             case "Matricula":
                 MenuController.instance.getInventory().addItemToList("Matricula");
+                MenuController.instance.InstantiateNotification("Nueva objeto desbloqueado: Matrícula");
+                DataHolder.instance.taxistaImage.sprite = DataHolder.instance.taxistaSeFue;
                 break;
             default:
                 break;
