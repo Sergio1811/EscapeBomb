@@ -81,6 +81,9 @@ public class DataHolder : MonoBehaviour
 
     public int bombsDesactivated;
 
+    public bool fotoHacker = false;
+    public GameObject conversationDisplay;
+
     private void Awake()
     {
         if (instance == null)

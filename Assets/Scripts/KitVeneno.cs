@@ -76,6 +76,9 @@ public class KitVeneno : MonoBehaviour, IDragHandler, IEndDragHandler
     public IEnumerator Timer(float l_Timer)
     {
         yield return new WaitForSeconds(l_Timer);
+        MenuController.instance.InstantiateNotification("Nuevo mensaje en el teléfono");
+        MenuController.instance.mobile.ReceiveNotification(1);
+
         print("ale 5 minutos");
     }
 

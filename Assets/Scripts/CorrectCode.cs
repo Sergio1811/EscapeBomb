@@ -28,7 +28,8 @@ public class CorrectCode : MonoBehaviour
         if (codeToMatch==codeFilled)
         {
             loadingRT.SetActive(true);
-            print("funiono");
+            this.transform.parent.gameObject.SetActive(false);
+            print("funciono");
         }
     }
 
@@ -40,6 +41,7 @@ public class CorrectCode : MonoBehaviour
         {
             MenuController.instance.InstantiateNotification("Nombre correcto.");
             MenuController.instance.sospechosos = MenuController.instance.hacker;
+            DataHolder.instance.fotoHacker = true;
         }
         else
         {

@@ -9,6 +9,8 @@ public class LoadingRT : MonoBehaviour
     public Image imageToLoad;
     public float range;
     int currentMoment = 1;
+    public GameObject[] panelToUnactive;
+    public GameObject folder;
     void Start()
     {
         StartCoroutine(sumandoBarra());
@@ -34,5 +36,14 @@ public class LoadingRT : MonoBehaviour
 
         if(imageToLoad.fillAmount<1)
         StartCoroutine(sumandoBarra());
+        else
+        {
+            foreach (var item in panelToUnactive)
+            {
+                item.SetActive(false);
+                
+            }
+            folder.SetActive(true);
+        }
     }
 }

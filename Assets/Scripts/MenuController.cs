@@ -58,6 +58,8 @@ public class MenuController : MonoBehaviour
         conv.GetComponent<TextAnimation>().dialogues[0] = l_TextToDisplay;
     }
 
+
+    
     public void InstantiateNotification(string l_notificationToDisplay)
     {
         GameObject conv = Instantiate(notificationRight, positionNot);
@@ -284,7 +286,10 @@ public class MenuController : MonoBehaviour
 
     public void ActivateSospechosos()
     {
-        sospechosos.SetActive(true);
+        if (!DataHolder.instance.fotoHacker)
+            sospechosos.SetActive(true);
+        else
+            hacker.SetActive(true);
     }
 
     public void HackerMessage()
@@ -292,5 +297,10 @@ public class MenuController : MonoBehaviour
         mobile.ReceiveNotification(2);
      
     }
-    
+
+   
+
+   
 }
+
+

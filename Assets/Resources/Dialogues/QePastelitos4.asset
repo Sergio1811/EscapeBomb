@@ -23,7 +23,7 @@ MonoBehaviour:
     specialAction: 
   - optionLine: "\xA1Aqu\xED est\xE1! es este (ense\xF1ar foto inventario con nombre)"
     nextDialogue: {fileID: 11400000, guid: 4cc74b8920db79641a1e3738e1f68663, type: 2}
-    specialAction: 
+    specialAction: Foto
   - optionLine: Que mala memoria...
     nextDialogue: {fileID: 11400000, guid: 4eddbfb18c423dc4ba36574c3b473dff, type: 2}
     specialAction: 

@@ -80,14 +80,20 @@ public class DialogueDisplay : MonoBehaviour
             
         for (int i = 0; i < currentDialogueScriptable.dialogueOptions.Length; i++)
         {
-            DisplayElection(positionElection[i], currentDialogueScriptable.dialogueOptions[i].optionLine, currentDialogueScriptable.dialogueOptions[i].nextDialogue);
+            DisplayElection(positionElection[i], currentDialogueScriptable.dialogueOptions[i].optionLine, currentDialogueScriptable.dialogueOptions[i].nextDialogue, currentDialogueScriptable.dialogueOptions[i].specialAction);
         }
     }
 
-    public void DisplayElection(Transform l_parent, string textOpt, DialogueScriptable nextDialogue)
+    public void DisplayElection(Transform l_parent, string textOpt, DialogueScriptable nextDialogue, string specialOcasion)
     {
         GameObject election = Instantiate(options, l_parent);
         election.GetComponent<TextAnimSimple>().dialogue = textOpt;
+        if (specialOcasion == "Foto")
+        {
+            if (!DataHolder.instance.fotoHacker)
+                election.GetComponentInChildren<Button>().interactable = false;
+            else election.GetComponentInChildren<Button>().interactable = true;
+        }
         election.GetComponentInChildren<Button>().onClick.AddListener(
             delegate
             {

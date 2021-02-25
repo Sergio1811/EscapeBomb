@@ -14,6 +14,7 @@ public class VideoFinish : MonoBehaviour
     bool firstFrame = false;
     void Start()
     {
+        DataHolder.instance.conversationDisplay.SetActive(false);
         DataHolder.instance.ui.SetActive(false);
         vp.url = Application.streamingAssetsPath + "/" + myFileName;
         vp.Prepare();
@@ -38,6 +39,7 @@ public class VideoFinish : MonoBehaviour
                 foreach (var item in cosasAActivar)
                 {
                     DataHolder.instance.ui.SetActive(true);
+                    DataHolder.instance.conversationDisplay.SetActive(true);
                     item.SetActive(true);
                 }
             }
