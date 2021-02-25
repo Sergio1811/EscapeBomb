@@ -16728,7 +16728,7 @@ PrefabInstance:
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: cosasAActivar.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
@@ -16894,7 +16894,7 @@ PrefabInstance:
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: cosasAActivar.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
@@ -20045,8 +20045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77, y: 77}
-  m_SizeDelta: {x: 56.3, y: 56.285}
+  m_AnchoredPosition: {x: 93, y: 102}
+  m_SizeDelta: {x: 77.7, y: 71.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119151402
 MonoBehaviour:
@@ -20061,12 +20061,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 0d0c7ba417feda04ea4235c15cfae88e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25672,7 +25672,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cosasAActivar.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 58357281}
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: cosasAActivar.Array.data[1]
@@ -26921,6 +26921,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5026885322039540539, guid: 48101f29bcdd4e64ab772548d42117f3,
+        type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026885322039540539, guid: 48101f29bcdd4e64ab772548d42117f3,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48101f29bcdd4e64ab772548d42117f3, type: 3}
 --- !u!1 &1598013745
@@ -27637,7 +27647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1646300390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32910,7 +32920,7 @@ PrefabInstance:
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: myFileName
-      value: "PELUQUER\xEDA_def.mp4"
+      value: "PELUQUER\xCDA_def.mp4"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc13d0a2048d11146aecdc549a48cf4d, type: 3}
@@ -33922,7 +33932,7 @@ PrefabInstance:
     - target: {fileID: 3629528221866037402, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3629528221866037403, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
         type: 3}
@@ -34064,10 +34074,55 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: "Nuevo mensaje en tel\xE9fono."
       objectReference: {fileID: 0}
+    - target: {fileID: 3629528222961387100, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629528222961387100, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5674403512272699991, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106082059177739579, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7106082059177739579, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: m_WaitForFirstFrame
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511213766795044009, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: cosasAActivar.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511213766795044009, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: myFileName
+      value: Video Correo Hacker.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7511213766795044009, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: cosasAActivar.Array.data[0]
+      value: 
+      objectReference: {fileID: 58357281}
+    - target: {fileID: 7511213766795044009, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: cosasAActivar.Array.data[1]
+      value: 
+      objectReference: {fileID: 684488508}
+    - target: {fileID: 8906654105202353428, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3629528223091671165, guid: 52fc8ea6cdb927a41986da8e5dcd0262, type: 3}
