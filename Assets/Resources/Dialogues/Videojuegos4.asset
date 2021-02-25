@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Videojuegos4
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Videojuegista
+  charName: Dependienta
   question: "\xBFSquirtle, bulbasaur o charmander?"
   specialAction: 
   dialogueOptions:

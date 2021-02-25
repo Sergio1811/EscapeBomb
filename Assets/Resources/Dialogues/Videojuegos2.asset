@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Videojuegos2
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Videojuegista
+  charName: Dependienta
   question: "Madre m\xEDa, \xBFpero est\xE1 todo bien?"
   specialAction: 
   dialogueOptions:

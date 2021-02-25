@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Biblioteca2
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Bibliotecario
+  charName: Dependienta
   question: "Lo lamento, aqu\xED no podemos proporcionarle ese art\xEDculo."
   specialAction: 
   dialogueOptions:

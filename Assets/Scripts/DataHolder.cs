@@ -190,9 +190,13 @@ public class DataHolder : MonoBehaviour
                 break;
             case SituacionTaxis.LLAVECORRECTA:
                 EscenaTaxiFueraFinal.SetActive(true);
+                DataHolder.instance.conversationDisplay.SetActive(true);
+
                 break;
             case SituacionTaxis.FIN:
                 EscenaTaxiFueraFinal.SetActive(true);
+                DataHolder.instance.conversationDisplay.SetActive(true);
+
                 break;
             default:
                 break;

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Videojuegos1
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Videojuegista
+  charName: Dependienta
   question: "Hola buenas \xBFte puedo ayudar?"
   specialAction: 
   dialogueOptions:

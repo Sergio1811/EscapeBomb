@@ -8,6 +8,7 @@ public class CorrectCode : MonoBehaviour
     public string codeToMatch;
     public string codeToMatch2;
     public GameObject loadingRT;
+    public GameObject back;
 
   public void codeRight(TextMeshProUGUI l_CodeFilled)
     {
@@ -19,6 +20,10 @@ public class CorrectCode : MonoBehaviour
             MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
             print("funiono");
         }
+        else
+        {
+            MenuController.instance.InstantiateNotification("Parece que no es correcto.");
+        }
     }
     
     public void codeRightRT(TextMeshProUGUI l_CodeFilled)
@@ -29,7 +34,13 @@ public class CorrectCode : MonoBehaviour
         {
             loadingRT.SetActive(true);
             this.transform.parent.gameObject.SetActive(false);
+            back.SetActive(false);
+            DataHolder.instance.ui.SetActive(false);
             print("funciono");
+        }
+        else
+        {
+            MenuController.instance.InstantiateNotification("Parece que no es correcto.");
         }
     }
 

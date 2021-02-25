@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: 
   guiText: {fileID: 1157266056533812156}
-  initialPause: 0.03
+  initialPause: 0
 --- !u!1 &4264863120522861845
 GameObject:
   m_ObjectHideFlags: 0

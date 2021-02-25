@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Videojuegos7
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Videojuegista
+  charName: Dependienta
   question: Larga vida y prosperidad.
   specialAction: 
   dialogueOptions: []

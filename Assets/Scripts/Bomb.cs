@@ -34,8 +34,8 @@ public class Bomb : MonoBehaviour
             button.SetActive(false);
             otherbutton.SetActive(true);
             this.gameObject.SetActive(false);
-            DataHolder.instance.textBomb.SetActive(true);
             DataHolder.instance.BombsInteraction();
+            MenuController.instance.InstantiateNotification("Bomba desactivada.");
         }
     }
 }

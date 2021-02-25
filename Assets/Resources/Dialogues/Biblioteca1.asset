@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Biblioteca1
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Bibliotecario
+  charName: Dependienta
   question: "Hola, buenos d\xEDas."
   specialAction: 
   dialogueOptions:

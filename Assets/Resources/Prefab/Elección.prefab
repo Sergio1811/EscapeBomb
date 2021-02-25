@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.4, y: 4.3}
-  m_SizeDelta: {x: 1370.8, y: 185.4}
+  m_AnchoredPosition: {x: -3.4, y: -1.2}
+  m_SizeDelta: {x: 1370.8, y: 130.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1157266056533812157
 CanvasRenderer:
@@ -291,7 +291,7 @@ MonoBehaviour:
   dialogues:
   - 
   guiText: {fileID: 1157266056533812156}
-  initialPause: 0.03
+  initialPause: 0
   buttonNext: {fileID: 0}
 --- !u!1 &2513209402412615687
 GameObject:

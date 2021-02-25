@@ -11,6 +11,7 @@ public class LoadingRT : MonoBehaviour
     int currentMoment = 1;
     public GameObject[] panelToUnactive;
     public GameObject folder;
+    public GameObject back;
     void Start()
     {
         StartCoroutine(sumandoBarra());
@@ -44,6 +45,8 @@ public class LoadingRT : MonoBehaviour
                 
             }
             folder.SetActive(true);
+            DataHolder.instance.ui.SetActive(true);
+            back.SetActive(true);
         }
     }
 }

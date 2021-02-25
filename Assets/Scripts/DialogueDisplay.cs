@@ -18,8 +18,8 @@ public class DialogueDisplay : MonoBehaviour
     public bool displaying;
     void Start()
     {
-        
-        
+
+        DisplayConvMenu();
     }
 
     public void DisplayConvMenu()

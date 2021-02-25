@@ -249,7 +249,7 @@ MonoBehaviour:
   dialogues:
   - 
   guiText: {fileID: 1157266056533812156}
-  initialPause: 0.03
+  initialPause: 0
   buttonNext: {fileID: 7238086100506984214}
 --- !u!1 &4264863120522861845
 GameObject:
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NOMBRE
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7ffdeb3c77e20a42b09e57b93cc2847, type: 2}
   m_sharedMaterial: {fileID: 8561742209854787146, guid: b7ffdeb3c77e20a42b09e57b93cc2847,
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -529,13 +529,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 4853109984339638264}
-    characterCount: 6
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
