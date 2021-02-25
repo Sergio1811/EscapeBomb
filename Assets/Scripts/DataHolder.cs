@@ -8,7 +8,7 @@ public class DataHolder : MonoBehaviour
     public static DataHolder instance;
     public GameObject ui;
     public int howManyObjectsINeed;
-    public int currentObjectsINeed = 1;
+    public int currentObjectsINeed;
 
     public GameObject guarida;
     public GameObject merceria;
