@@ -35,6 +35,7 @@ public class MenuController : MonoBehaviour
     public GameObject sospechosos;
     public GameObject hacker;
     public GameObject[] buttons;
+
     private void Awake()
     {
         if (instance == null)
@@ -261,6 +262,10 @@ public class MenuController : MonoBehaviour
         DataHolder.instance.guarida.SetActive(true);
         InstantiateNotification("Nueva Ubicación: Guarida del Hacker");
         StartCoroutine(Timer(3));
+        DataHolder.instance.ui.SetActive(false);
+        messages.SetActive(false);
+        mobilePanel.SetActive(false);
+        scenes[0].SetActive(false);
         DataHolder.instance.videoSalida.SetActive(true);
     }
 
@@ -281,4 +286,11 @@ public class MenuController : MonoBehaviour
     {
         sospechosos.SetActive(true);
     }
+
+    public void HackerMessage()
+    {
+        mobile.ReceiveNotification(2);
+     
+    }
+    
 }

@@ -14,6 +14,7 @@ public class Mobile : MonoBehaviour
 
     public RectTransform messagesContentRect;
     public GameObject messagePrefab;
+    public GameObject not;
 
     public void ReceiveCall()
     {
@@ -46,11 +47,14 @@ public class Mobile : MonoBehaviour
         {
             case 1:
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "";
+                not.SetActive(true);
                 break;
             case 2:
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "@#95JF@¬6,F";
                 Button button = newItem.GetComponent<Button>();
                 button.enabled = true;
+                not.SetActive(true);
+
                 button.onClick.AddListener(
                     delegate
                     {
