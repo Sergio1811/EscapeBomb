@@ -25,7 +25,16 @@ public class VideoFinish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            this.gameObject.SetActive(false);
+            foreach (var item in cosasAActivar)
+            {
+                DataHolder.instance.ui.SetActive(true);
+                DataHolder.instance.conversationDisplay.SetActive(true);
+                item.SetActive(true);
+            }
+        }
         if (vp.isPrepared)
         {
             firstFrame = true;
@@ -46,5 +55,7 @@ public class VideoFinish : MonoBehaviour
         }
 
     }
+
+
 
 }
