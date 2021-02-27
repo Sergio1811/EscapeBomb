@@ -15,7 +15,7 @@ public class Mobile : MonoBehaviour
     public RectTransform messagesContentRect;
     public GameObject messagePrefab;
     public GameObject not;
-
+    public Button tempButton;
     public void ReceiveCall()
     {
         parentPanel.SetActive(true);
@@ -54,17 +54,25 @@ public class Mobile : MonoBehaviour
                 Button button = newItem.GetComponent<Button>();
                 button.enabled = true;
                 not.SetActive(true);
-
+                tempButton = button;
                 button.onClick.AddListener(
                     delegate
                     {
-                        MenuController.instance.InstantiateNotification("Elige qué responder...");
-                        MenuController.instance.messages.SetActive(true);
+                       
+                        MenuController.instance.messages.SetActive(true);                        
                     });
+                button.onClick.AddListener(NotToRemove);
+                
                 break;
 
         }
 
         messagesContentRect.sizeDelta += new Vector2(0.0f, newItem.GetComponent<RectTransform>().sizeDelta.y);
+    }
+
+    public void NotToRemove()
+    {
+        MenuController.instance.InstantiateNotification("Elige qué responder...");
+        tempButton.onClick.RemoveListener(NotToRemove);
     }
 }
