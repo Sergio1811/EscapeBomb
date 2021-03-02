@@ -8,7 +8,10 @@ public class HoverButton : MonoBehaviour
     public Image image;
     public void OnMouseOver()
     {
-        image.color = new Color32(255,255, 255, 255);
+        if (GameManager.instance.currentGameState==GameManager.GameState.PLAYING)
+        {
+            image.color = new Color32(255, 255, 255, 255);
+        }    
     }
 
     public void OnMouseExit()

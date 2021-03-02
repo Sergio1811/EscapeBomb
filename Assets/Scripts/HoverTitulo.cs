@@ -15,11 +15,11 @@ public class HoverTitulo : MonoBehaviour
         title = this.transform.GetChild(0).gameObject;
     }
     public void OnMouseOver()
-    {
-        if (title != null)
-            title.SetActive(true);
+    {       
+            if (title != null)
+                title.SetActive(true);
 
-        this.transform.SetAsLastSibling();
+            this.transform.SetAsLastSibling();       
     }
 
 

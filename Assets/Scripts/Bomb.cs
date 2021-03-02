@@ -31,11 +31,16 @@ public class Bomb : MonoBehaviour
         correctComponets[ID] = true;
         if (CompruebaTodoBool())
         {
-            button.SetActive(false);
-            otherbutton.SetActive(true);
-            this.gameObject.SetActive(false);
-            DataHolder.instance.BombsInteraction();
-            MenuController.instance.InstantiateNotification("Bomba desactivada.");
+            BombaFinalizada();
         }
+    }
+
+    public void BombaFinalizada()
+    {
+        button.SetActive(false);
+        otherbutton.SetActive(true);
+        this.gameObject.SetActive(false);
+        DataHolder.instance.BombsInteraction();
+        MenuController.instance.InstantiateNotification("Bomba desactivada.");
     }
 }

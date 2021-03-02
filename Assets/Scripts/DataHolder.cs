@@ -43,9 +43,9 @@ public class DataHolder : MonoBehaviour
     public GameObject EscenaTaxiFueraInicial;
     public GameObject EscenaTaxiInterior;
     public GameObject EscenaTaxiFueraFinal;
-
+    bool firstTime = false;
     public GameObject videoSalida;
-    public enum SituacionTaxis 
+    public enum SituacionTaxis
     {
         INICIAL, DENTRO, LLAVECORRECTA, FIN
     };
@@ -75,7 +75,7 @@ public class DataHolder : MonoBehaviour
     public Sprite matricula;
     public Sprite PC;
     public Sprite foto;
-    
+
     [HideInInspector]
     public bool kitUsed;
 
@@ -107,7 +107,7 @@ public class DataHolder : MonoBehaviour
         else
             videoFinalComisario.SetActive(true);
 
-         bombPanel.SetActive(false);
+        bombPanel.SetActive(false);
         bombServers.SetActive(false);
 
     }
@@ -116,7 +116,7 @@ public class DataHolder : MonoBehaviour
     {
         Sprite chosenSprite;
 
-        switch(sprite)
+        switch (sprite)
         {
             case "endoscopio":
                 chosenSprite = endoscopioSprite;
@@ -184,6 +184,11 @@ public class DataHolder : MonoBehaviour
         {
             case SituacionTaxis.INICIAL:
                 EscenaTaxiFueraInicial.SetActive(true);
+
+
+                EscenaTaxiFueraInicial.transform.GetChild(0).GetComponent<DialogueDisplay>().DisplayConvMenu();
+
+                firstTime = true;
                 break;
             case SituacionTaxis.DENTRO:
                 EscenaTaxiFueraInicial.SetActive(true);

@@ -25,6 +25,7 @@ public class MenuController : MonoBehaviour
     public GameObject mobilePanel;
     public GameObject messages;
 
+    public GameObject inventoryPanel;
     public InventorySystem inventory;
     public MouseCursor mouseCursor;
 
@@ -44,6 +45,10 @@ public class MenuController : MonoBehaviour
             Destroy(this);
     }
 
+    private void Start()
+    {
+        InvokeRepeating("GameStateControl", 1,1);       
+    }
     public void DeactivateAllScenes()
     {
         foreach (var item in scenes)
@@ -91,6 +96,7 @@ public class MenuController : MonoBehaviour
     {
         DataHolder.instance.isPrinting = true;
         InstantiateNotification("Impresión iniciada");
+        mobile.ReceiveNotification(1);
 
         switch (llaveName)
         {
@@ -118,6 +124,8 @@ public class MenuController : MonoBehaviour
         //Video ha iniciado la impresión
         yield return new WaitForSeconds(10);
         InstantiateNotification("Impresión acabada");
+        mobile.ReceiveNotification(3);
+
         switch (llaveName)
         {
             case "Llave1":
@@ -298,8 +306,18 @@ public class MenuController : MonoBehaviour
      
     }
 
-   
+   public void GameStateControl()
+    {
+        if (!map.activeSelf && !inventoryPanel.activeSelf && !mobilePanel.activeSelf)
+        {
+            GameManager.instance.ChangeStatePlaying();
+        }
+    }
 
+    public void FullScreen()
+    {
+        Screen.fullScreen = true;
+    }
    
 }
 

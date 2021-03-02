@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Pastelero
-  question: "Aqu\xED tiene. \xBFQuer\xEDa algo m\xE1s?"
+  question: "\xBFDisculpe?"
   specialAction: 
   dialogueOptions:
   - optionLine: "Nada, olv\xEDdelo."

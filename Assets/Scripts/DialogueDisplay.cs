@@ -16,11 +16,6 @@ public class DialogueDisplay : MonoBehaviour
 
     public bool ConversationFinished;
     public bool displaying;
-    void Start()
-    {
-
-        DisplayConvMenu();
-    }
 
     public void DisplayConvMenu()
     {
@@ -111,7 +106,7 @@ public class DialogueDisplay : MonoBehaviour
 
                     }
                     currentElections.Clear();
-                    displaying = false;print("HEY");
+                    displaying = false;
                     MenuController.instance.mapButton.interactable = true;
 
                 }
@@ -141,6 +136,9 @@ public class DialogueDisplay : MonoBehaviour
                 DataHolder.instance.albaran.SetActive(true);
                 break;
             case "TaxistaLibre":
+                //esperar un poco
+                MenuController.instance.Timer(1);
+                DataHolder.instance.currentTaxiSituation = DataHolder.SituacionTaxis.DENTRO;
                 DataHolder.instance.taxistaSeVa.SetActive(true);
                 DataHolder.instance.taxistaImage.sprite = DataHolder.instance.taxistaSeFue;
                 DataHolder.instance.taxistaButton.SetActive(true);

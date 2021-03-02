@@ -16,6 +16,9 @@ public class Mobile : MonoBehaviour
     public GameObject messagePrefab;
     public GameObject not;
     public Button tempButton;
+
+    public GameObject videoInicioImpresion;
+    public GameObject videoFinalImpresion;
     public void ReceiveCall()
     {
         parentPanel.SetActive(true);
@@ -46,7 +49,14 @@ public class Mobile : MonoBehaviour
         switch (id)
         {
             case 1:
-                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "";
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Impresión Iniciada";
+                Button button1 = newItem.GetComponent<Button>();
+                button1.enabled = true;
+                button1.onClick.AddListener(
+                   delegate
+                   {
+                       videoInicioImpresion.SetActive(true);
+                   });
                 not.SetActive(true);
                 break;
             case 2:
@@ -64,6 +74,18 @@ public class Mobile : MonoBehaviour
                 button.onClick.AddListener(NotToRemove);
                 
                 break;
+            case 3:
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Impresión Finalizada";
+                Button button2 = newItem.GetComponent<Button>();
+                button2.enabled = true;
+                button2.onClick.AddListener(
+                   delegate
+                   {
+                    videoFinalImpresion.SetActive(true);
+                   });
+                not.SetActive(true);
+                break;
+
 
         }
 
