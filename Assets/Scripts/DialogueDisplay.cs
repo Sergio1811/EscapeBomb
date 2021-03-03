@@ -129,7 +129,7 @@ public class DialogueDisplay : MonoBehaviour
                 DataHolder.instance.videojuegos.SetActive(true);
                 break;
             case "UnlockPeluqueria":
-                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Tienda de videojuegos");
+                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Peluquería");
                 DataHolder.instance.peluqueria.SetActive(true);
                 break;
             case "ActivaPapel":

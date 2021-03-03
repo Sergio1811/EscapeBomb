@@ -6,7 +6,8 @@ using UnityEngine;
 public class MouseCursor : MonoBehaviour
 {
     private Image currentRend;
-
+    bool endoUsed = false;
+    bool llaveUsed = false;
     void Start()
     {
         currentRend = GetComponent<Image>();
@@ -26,20 +27,22 @@ public class MouseCursor : MonoBehaviour
                 if (hit.collider.CompareTag("Cajon"))
                 {
 
-                    if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.ENDOSCOPIO)
+                    if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.ENDOSCOPIO && !endoUsed)
                     {
                         MenuController.instance.InstantiateConversation("Vale, me apunto en mi libreta el perfil de la cerradura.");
                         MenuController.instance.getInventory().addItemToList("LlaveLibreta");
+                        endoUsed = true;
                     }
                     else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEMALA)
                     {
                         MenuController.instance.InstantiateConversation("Vaya parece que no es la correcta.");
                     }
-                    else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEBUENA)
+                    else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEBUENA && !llaveUsed)
                     {
                         MenuController.instance.InstantiateNotification("Objejo desbloqueado: Documentos taxista");
                         MenuController.instance.getInventory().addItemToList("DocTaxi");
                         DataHolder.instance.currentTaxiSituation = DataHolder.SituacionTaxis.LLAVECORRECTA;
+                        llaveUsed = true;
                     }
                 }
 

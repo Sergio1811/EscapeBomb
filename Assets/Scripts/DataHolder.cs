@@ -184,8 +184,6 @@ public class DataHolder : MonoBehaviour
         {
             case SituacionTaxis.INICIAL:
                 EscenaTaxiFueraInicial.SetActive(true);
-
-
                 EscenaTaxiFueraInicial.transform.GetChild(0).GetComponent<DialogueDisplay>().DisplayConvMenu();
 
                 firstTime = true;
@@ -196,6 +194,7 @@ public class DataHolder : MonoBehaviour
             case SituacionTaxis.LLAVECORRECTA:
                 EscenaTaxiFueraFinal.SetActive(true);
                 DataHolder.instance.conversationDisplay.SetActive(true);
+                EscenaTaxiFueraFinal.transform.GetChild(0).GetComponent<DialogueDisplay>().DisplayConvMenu();
 
                 break;
             case SituacionTaxis.FIN:
