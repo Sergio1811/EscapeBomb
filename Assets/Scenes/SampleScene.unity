@@ -4005,7 +4005,7 @@ PrefabInstance:
     - target: {fileID: 7436139037224297272, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7436139037224297273, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
@@ -45002,6 +45002,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 684488508}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &2517913098598430181
 GameObject:
