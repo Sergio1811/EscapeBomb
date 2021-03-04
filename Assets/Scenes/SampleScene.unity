@@ -20605,7 +20605,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 32.05
+  m_fontSize: 32.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -24112,6 +24112,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 174960863}
     m_Modifications:
+    - target: {fileID: 7436139035936767486, guid: fc13d0a2048d11146aecdc549a48cf4d,
+        type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7436139037224297272, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: m_Name
@@ -28025,6 +28030,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1047063074}
     m_Modifications:
+    - target: {fileID: 7436139035936767486, guid: fc13d0a2048d11146aecdc549a48cf4d,
+        type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7436139037224297272, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: m_Name
@@ -33514,6 +33524,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 524563870}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1804214949
 MonoBehaviour:
