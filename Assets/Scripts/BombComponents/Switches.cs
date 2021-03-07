@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Switches : MonoBehaviour
 {
+    public Vector3 onePos;
+    public Vector3 twoPos;
+
     public int correctPos;
     public int currentPos;
     public int howManyPos;
@@ -65,11 +68,11 @@ public class Switches : MonoBehaviour
     {
         if (currentPos==1)
         {
-            this.transform.localEulerAngles = new Vector3(0, 0, -20);
+            this.transform.localEulerAngles = onePos;
         }
         else if (currentPos == 2)
         {
-            this.transform.localEulerAngles = new Vector3(0, 0, 20);
+            this.transform.localEulerAngles = twoPos;
         }
     }
 }

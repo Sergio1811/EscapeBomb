@@ -215,7 +215,7 @@ public class DataHolder : MonoBehaviour
     public void BombsInteraction()
     {
         bombsDesactivated++;
-        if (bombsDesactivated >= 2)
+        if (bombsDesactivated >= 3)
         {
             chargeFinal();
         }

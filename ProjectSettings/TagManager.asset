@@ -13,6 +13,9 @@ TagManager:
   - 1
   - 2
   - 3
+  - Rojo
+  - Azul
+  - Marron
   layers:
   - Default
   - TransparentFX

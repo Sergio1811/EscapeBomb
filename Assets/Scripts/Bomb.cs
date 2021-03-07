@@ -7,8 +7,9 @@ public class Bomb : MonoBehaviour
     [HideInInspector]
     public bool[] correctComponets;
     public int howManyComponents;
-    public GameObject button;
-    public GameObject otherbutton;
+    public GameObject[] buttonsToDeactivate;
+    public GameObject[] buttonsToActivate;
+    public GameObject[] buttonsToDestroy;
     private void Start()
     {
         correctComponets = new bool[howManyComponents];
@@ -37,8 +38,21 @@ public class Bomb : MonoBehaviour
 
     public void BombaFinalizada()
     {
-        button.SetActive(false);
-        otherbutton.SetActive(true);
+        foreach (var item in buttonsToDeactivate)
+        {
+            if (item != null)
+                item.SetActive(false);
+        }
+        foreach (var item in buttonsToDestroy)
+        {
+            if (item != null)
+                Destroy(item);
+        }
+        foreach (var item in buttonsToActivate)
+        {
+            if(item!=null)
+            item.SetActive(true);
+        }
         this.gameObject.SetActive(false);
         DataHolder.instance.BombsInteraction();
         MenuController.instance.InstantiateNotification("Bomba desactivada.");
