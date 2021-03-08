@@ -19,12 +19,18 @@ public class Mobile : MonoBehaviour
 
     public GameObject videoInicioImpresion;
     public GameObject videoFinalImpresion;
+    bool justOnetime;
     public void ReceiveCall()
     {
-        parentPanel.SetActive(true);
-        DataHolder.instance.ui.SetActive(false);
-        callPanel.SetActive(true);
-        StartCoroutine(PhoneCall());
+        if (!justOnetime)
+        {
+            justOnetime = true;
+            parentPanel.SetActive(true);
+            DataHolder.instance.ui.SetActive(false);
+            callPanel.SetActive(true);
+            StartCoroutine(PhoneCall());
+            
+        }
     }
 
     private IEnumerator PhoneCall()
@@ -68,11 +74,11 @@ public class Mobile : MonoBehaviour
                 button.onClick.AddListener(
                     delegate
                     {
-                       
-                        MenuController.instance.messages.SetActive(true);                        
+
+                        MenuController.instance.messages.SetActive(true);
                     });
                 button.onClick.AddListener(NotToRemove);
-                
+
                 break;
             case 3:
                 newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Impresión Finalizada";
@@ -81,7 +87,7 @@ public class Mobile : MonoBehaviour
                 button2.onClick.AddListener(
                    delegate
                    {
-                    videoFinalImpresion.SetActive(true);
+                       videoFinalImpresion.SetActive(true);
                    });
                 not.SetActive(true);
                 break;

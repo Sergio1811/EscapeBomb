@@ -26,8 +26,6 @@ public class MovePiece : MonoBehaviour
     void Update()
     {
 
-
-
         if (!m_PieceLocked && !m_PieceClicked)
         {
 

@@ -20,34 +20,37 @@ public class CorrectCode : MonoBehaviour
     public GameObject back;
     public Button buttonConfioHacker;
     public Button buttonConfioComisario;
-
-  public void codeRight(TextMeshProUGUI l_CodeFilled)
+    bool firstTimeCandado;
+    public void codeRight(TextMeshProUGUI l_CodeFilled)
     {
-        string codeFilled = l_CodeFilled.text;
-        codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
-        if (codeToMatch==codeFilled)
+        if (!firstTimeCandado)
         {
-            MenuController.instance.getInventory().addItemToList("DocPoli");
-            MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
-            print("funiono");
-        }
-        else
-        {
-            MenuController.instance.InstantiateNotification("Parece que no es correcto.");
+
+            string codeFilled = l_CodeFilled.text;
+            codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
+            if (codeToMatch == codeFilled)
+            {
+                MenuController.instance.getInventory().addItemToList("DocPoli");
+                MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
+                firstTimeCandado = true;
+            }
+            else
+            {
+                MenuController.instance.InstantiateNotification("Parece que no es correcto.");
+            }
         }
     }
-    
+
     public void codeRightRT(TextMeshProUGUI l_CodeFilled)
     {
         string codeFilled = l_CodeFilled.text;
         codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
-        if (codeToMatch==codeFilled)
+        if (codeToMatch == codeFilled)
         {
             loadingRT.SetActive(true);
             this.transform.parent.gameObject.SetActive(false);
             back.SetActive(false);
             DataHolder.instance.ui.SetActive(false);
-            print("funciono");
         }
         else
         {
@@ -75,17 +78,17 @@ public class CorrectCode : MonoBehaviour
     public void HackerOption(string code)
     {
         string codeFilled = this.GetComponent<TMP_InputField>().text;
-       
+
         if (code == codeFilled)
         {
             buttonConfioHacker.interactable = true;
         }
-    } 
-    
+    }
+
     public void ComisarioOption(string code)
     {
         string codeFilled = this.GetComponent<TMP_InputField>().text;
-        
+
         if (code == codeFilled)
         {
             buttonConfioComisario.interactable = true;
@@ -102,8 +105,8 @@ public class CorrectCode : MonoBehaviour
             buttonZuloA.SetActive(false);
 
         }
-    } 
-    
+    }
+
     public void DesactivacionBombasZ3(string code)
     {
         string codeFilled = this.GetComponent<TMP_InputField>().text;
@@ -113,8 +116,8 @@ public class CorrectCode : MonoBehaviour
             this.transform.parent.gameObject.SetActive(false);
             buttonZulo3.SetActive(false);
         }
-    } 
-    
+    }
+
     public void DesactivacionBombasSA(string code)
     {
         string codeFilled = this.GetComponent<TMP_InputField>().text;
@@ -124,8 +127,8 @@ public class CorrectCode : MonoBehaviour
             this.transform.parent.gameObject.SetActive(false);
             buttonServerA.SetActive(false);
         }
-    } 
-    
+    }
+
     public void DesactivacionBombasS3(string code)
     {
         string codeFilled = this.GetComponent<TMP_InputField>().text;
@@ -137,5 +140,5 @@ public class CorrectCode : MonoBehaviour
 
         }
     }
-    }
+}
 

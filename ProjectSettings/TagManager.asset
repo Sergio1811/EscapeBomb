@@ -16,6 +16,10 @@ TagManager:
   - Rojo
   - Azul
   - Marron
+  - Resistencia
+  - 4
+  - 5
+  - 6
   layers:
   - Default
   - TransparentFX

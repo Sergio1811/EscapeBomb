@@ -28,6 +28,30 @@ public class TextAnimation : MonoBehaviour
 
     IEnumerator TypeLetters()
     {
+        if (currentDialogue+1 >= dialogues.Length)
+        {
+            buttonNext.onClick.AddListener(
+                delegate
+                {
+                    this.gameObject.SetActive(false);
+                });
+        }
+        else
+        {
+            buttonNext.onClick.AddListener(
+               delegate
+               {
+                   message = dialogues[currentDialogue];
+                   guiText.text = "";
+                   JumpAnimText();
+                   StartCoroutine(TypeLetters());
+               });
+        }
+        buttonNext.onClick.AddListener(
+                delegate
+                {
+                    this.gameObject.SetActive(false);
+                });
         // Iterate over each letter
         foreach (char letter in message.ToCharArray())
         {

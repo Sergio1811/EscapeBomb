@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    [HideInInspector]
+    //[HideInInspector]
     public bool[] correctComponets;
     public int howManyComponents;
     public GameObject[] buttonsToDeactivate;

@@ -39,7 +39,6 @@ public class Switches : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    print(hit.collider.gameObject);
                     if (hit.collider.gameObject == this.gameObject)
                     {
                         

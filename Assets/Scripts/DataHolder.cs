@@ -84,6 +84,7 @@ public class DataHolder : MonoBehaviour
     public bool fotoHacker = false;
     public GameObject conversationDisplay;
 
+    public bool[] resistancesArray = new bool[7];
     private void Awake()
     {
         if (instance == null)

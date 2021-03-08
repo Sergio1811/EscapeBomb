@@ -36,6 +36,7 @@ public class Buttons : MonoBehaviour
                         currentOrder[currentLength] = 1;
 
                         CorrectButton();
+                        hit.collider.gameObject.GetComponent<Animation>().Play();
                     }
 
                     if (hit.collider.CompareTag("Azul"))
@@ -43,6 +44,8 @@ public class Buttons : MonoBehaviour
                         currentOrder[currentLength] = 2;
 
                         CorrectButton();
+                        hit.collider.gameObject.GetComponent<Animation>().Play();
+
                     }
 
                     if (hit.collider.CompareTag("Marron"))
@@ -50,9 +53,11 @@ public class Buttons : MonoBehaviour
                         currentOrder[currentLength] = 3;
 
                         CorrectButton();
+                        hit.collider.gameObject.GetComponent<Animation>().Play();
+
                     }
 
-                   
+
                 }
             }
         }
