@@ -33,28 +33,36 @@ public class Buttons : MonoBehaviour
                 {
                     if (hit.collider.CompareTag("Rojo"))
                     {
-                        currentOrder[currentLength] = 1;
+                        if (!hit.collider.gameObject.GetComponent<Animation>().isPlaying)
+                        {
+                            currentOrder[currentLength] = 1;
 
-                        CorrectButton();
-                        hit.collider.gameObject.GetComponent<Animation>().Play();
+                            CorrectButton();
+                            hit.collider.gameObject.GetComponent<Animation>().Play();
+                        }
+
                     }
 
                     if (hit.collider.CompareTag("Azul"))
                     {
-                        currentOrder[currentLength] = 2;
+                        if (!hit.collider.gameObject.GetComponent<Animation>().isPlaying)
+                        {
+                            currentOrder[currentLength] = 2;
 
-                        CorrectButton();
-                        hit.collider.gameObject.GetComponent<Animation>().Play();
-
+                            CorrectButton();
+                            hit.collider.gameObject.GetComponent<Animation>().Play();
+                        }
                     }
 
                     if (hit.collider.CompareTag("Marron"))
                     {
-                        currentOrder[currentLength] = 3;
+                        if (!hit.collider.gameObject.GetComponent<Animation>().isPlaying)
+                        {
+                            currentOrder[currentLength] = 3;
 
-                        CorrectButton();
-                        hit.collider.gameObject.GetComponent<Animation>().Play();
-
+                            CorrectButton();
+                            hit.collider.gameObject.GetComponent<Animation>().Play();
+                        }
                     }
 
 
