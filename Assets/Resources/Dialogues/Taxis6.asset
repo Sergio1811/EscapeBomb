@@ -28,6 +28,6 @@ MonoBehaviour:
     nextDialogue: {fileID: 11400000, guid: 46afbb511b9b1be4c9d8c06e33e917e5, type: 2}
     specialAction: 
   - optionLine: "Muchas gracias, seg\xFAn tengo entendido el taxi sali\xF3 de Que
-      Pastelitos sobre las 13.14"
+      Pastelitos sobre las   :   "
     nextDialogue: {fileID: 11400000, guid: c2fde0bf95e7013499c09ee96a3074f7, type: 2}
-    specialAction: 
+    specialAction: HoraTaxis

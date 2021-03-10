@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class CorrectCode : MonoBehaviour
 {
+    public Bomb bombZuloC;
+    public Bomb bombServerC;    
     public Bomb bombZuloA;
     public GameObject buttonZuloA;
     public Bomb bombZulo3;
@@ -138,6 +140,51 @@ public class CorrectCode : MonoBehaviour
             this.transform.parent.gameObject.SetActive(false);
             buttonServer3.SetActive(false);
 
+        }
+    }
+
+    public void DesactivacionBombasSC(string code)
+    {
+        string codeFilled = this.GetComponent<TMP_InputField>().text;
+        if (code == codeFilled)
+        {
+            bombServerC.BombaFinalizada();
+            this.transform.parent.gameObject.SetActive(false);
+           
+
+        }
+    }
+
+    public void DesactivacionBombasZC(string code)
+    {
+        string codeFilled = this.GetComponent<TMP_InputField>().text;
+        if (code == codeFilled)
+        {
+            bombZuloC.BombaFinalizada();
+            this.transform.parent.gameObject.SetActive(false);
+
+        }
+    }
+
+    public void horaCorrect(string code)
+    {
+        string codeFilled = this.GetComponent<TMP_InputField>().text;
+        print(codeFilled);
+        print(code);
+        if (code == codeFilled)
+        {
+            DataHolder.instance.correctHour = true;
+
+        }
+    }
+    
+    public void minuteCorrect(string code)
+    {
+        string codeFilled = this.GetComponent<TMP_InputField>().text;
+        if (code == codeFilled)
+        {
+            DataHolder.instance.correctMinute = true;
+            
         }
     }
 }

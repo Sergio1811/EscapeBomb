@@ -34,6 +34,8 @@ public class MenuController : MonoBehaviour
     public GameObject hacker;
     public GameObject[] buttons;
 
+    bool mobileAnswered;
+    bool firstTime;
     private void Awake()
     {
         if (instance == null)
@@ -78,15 +80,21 @@ public class MenuController : MonoBehaviour
     {
         if (DataHolder.instance.currentObjectsINeed>=DataHolder.instance.howManyObjectsINeed)
         {
-            if (scenes[0].activeSelf == true)
+            if (scenes[0].activeSelf == true && !firstTime)
+            {
                 MapAvailable.SetActive(true);
+                firstTime = true;
+            }
 
             mapButton.onClick.RemoveAllListeners();
-
-            mapButton.onClick.AddListener(
-                delegate {
-                    map.SetActive(true);                  
-            });
+            if (mobileAnswered)
+            {      
+                mapButton.onClick.AddListener(
+                    delegate
+                    {
+                        map.SetActive(true);
+                    });
+            }
         }
         else
         {
@@ -321,6 +329,10 @@ public class MenuController : MonoBehaviour
         Screen.fullScreen = true;
     }
    
+    public void MobileAnswered()
+    {
+        mobileAnswered = true;
+    }
 }
 
 

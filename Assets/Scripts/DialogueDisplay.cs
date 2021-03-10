@@ -9,6 +9,7 @@ public class DialogueDisplay : MonoBehaviour
     public DialogueScriptable firstDialogue;
     public GameObject conversation;
     public GameObject options;
+    public GameObject specialTaxi;
     public Transform parent;
     public Transform[] positionElection;
     DialogueScriptable currentDialogueScriptable;
@@ -16,7 +17,6 @@ public class DialogueDisplay : MonoBehaviour
 
     public bool ConversationFinished;
     public bool displaying;
-
     public void DisplayConvMenu()
     {
         if (displaying == false && ConversationFinished==false)
@@ -81,38 +81,72 @@ public class DialogueDisplay : MonoBehaviour
 
     public void DisplayElection(Transform l_parent, string textOpt, DialogueScriptable nextDialogue, string specialOcasion)
     {
-        GameObject election = Instantiate(options, l_parent);
-        election.GetComponent<TextAnimSimple>().dialogue = textOpt;
-        if (specialOcasion == "Foto")
+        if (specialOcasion == "HoraTaxis")
         {
-            if (!DataHolder.instance.fotoHacker)
-                election.GetComponentInChildren<Button>().interactable = false;
-            else election.GetComponentInChildren<Button>().interactable = true;
-        }
-        election.GetComponentInChildren<Button>().onClick.AddListener(
-            delegate
-            {
-                if (nextDialogue != null)
+            GameObject election = Instantiate(specialTaxi, l_parent);
+            
+            election.GetComponentInChildren<Button>().interactable = false;
+               
+            election.GetComponentInChildren<Button>().onClick.AddListener(
+                delegate
                 {
-                    currentDialogueScriptable = nextDialogue;
-
-                    DisplayConversation();
-                }
-                else
-                {
-                    foreach (var item in currentElections)
+                    if (nextDialogue != null)
                     {
-                        Destroy(item);
+                        currentDialogueScriptable = nextDialogue;
+
+                        DisplayConversation();
+                    }
+                    else
+                    {
+                        foreach (var item in currentElections)
+                        {
+                            Destroy(item);
+
+                        }
+                        currentElections.Clear();
+                        displaying = false;
+                        MenuController.instance.mapButton.interactable = true;
 
                     }
-                    currentElections.Clear();
-                    displaying = false;
-                    MenuController.instance.mapButton.interactable = true;
+                });
 
-                }
-            });
+            currentElections.Add(election);
+        }
+        else
+        {
+            GameObject election = Instantiate(options, l_parent);
+            election.GetComponent<TextAnimSimple>().dialogue = textOpt;
+            if (specialOcasion == "Foto")
+            {
+                if (!DataHolder.instance.fotoHacker)
+                    election.GetComponentInChildren<Button>().interactable = false;
+                else election.GetComponentInChildren<Button>().interactable = true;
+            }
+            election.GetComponentInChildren<Button>().onClick.AddListener(
+                delegate
+                {
+                    if (nextDialogue != null)
+                    {
+                        currentDialogueScriptable = nextDialogue;
 
-        currentElections.Add(election);
+                        DisplayConversation();
+                    }
+                    else
+                    {
+                        foreach (var item in currentElections)
+                        {
+                            Destroy(item);
+
+                        }
+                        currentElections.Clear();
+                        displaying = false;
+                        MenuController.instance.mapButton.interactable = true;
+
+                    }
+                });
+
+            currentElections.Add(election);
+        }
     }
 
     public void SpecialOcasionsDialogue()
@@ -121,15 +155,18 @@ public class DialogueDisplay : MonoBehaviour
         switch (currentDialogueScriptable.specialAction)
         {
             case "UnlockRecepcion":
+                if(!DataHolder.instance.recepcion.activeSelf)
                 MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Recepción");
                 DataHolder.instance.recepcion.SetActive(true);
                 break;
             case "UnlockVideojuegos":
-                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Tienda de videojuegos");
+                if (!DataHolder.instance.videojuegos.activeSelf)
+                    MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Tienda de videojuegos");
                 DataHolder.instance.videojuegos.SetActive(true);
                 break;
             case "UnlockPeluqueria":
-                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Peluquería");
+                if (!DataHolder.instance.peluqueria.activeSelf)
+                    MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Peluquería");
                 DataHolder.instance.peluqueria.SetActive(true);
                 break;
             case "ActivaPapel":
@@ -144,10 +181,16 @@ public class DialogueDisplay : MonoBehaviour
                 DataHolder.instance.taxistaButton.SetActive(true);
                 break;
             case "Matricula":
-                MenuController.instance.getInventory().addItemToList("Matricula");
-                MenuController.instance.InstantiateNotification("Nueva objeto desbloqueado: Matrícula");
-                DataHolder.instance.taxistaImage.sprite = DataHolder.instance.taxistaSeFue;
+                if (!DataHolder.instance.matriculaObtenida)
+                {
+                    MenuController.instance.getInventory().addItemToList("Matricula");
+                    MenuController.instance.InstantiateNotification("Nueva objeto desbloqueado: Matrícula");
+                    DataHolder.instance.taxistaImage.sprite = DataHolder.instance.taxistaSeFue;
+                    DataHolder.instance.matriculaObtenida = true;
+                }
                 break;
+           
+               
             default:
                 break;
         }

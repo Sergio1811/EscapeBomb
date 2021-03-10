@@ -665,7 +665,9 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 2ae295ffa6ba58d4dac9e57e52dbd310, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223,
+    type: 3}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -1401,6 +1403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 0}
   buttonZuloA: {fileID: 0}
   bombZulo3: {fileID: 0}
@@ -2516,7 +2520,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 3f9905e9b5579ff40afc0a67103f92cb, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -3822,6 +3827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 8296172669117319819}
   buttonZuloA: {fileID: 303252356}
   bombZulo3: {fileID: 8296172668932421968}
@@ -6858,7 +6865,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 5d3b958402b3e3045ab01af80fd5697b, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -7996,7 +8004,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 10b5c06dfd4bfff4b85d272cb8d7f323, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -8546,6 +8555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 8296172669117319819}
   buttonZuloA: {fileID: 303252356}
   bombZulo3: {fileID: 8296172668932421968}
@@ -9179,7 +9190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12512,7 +12523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15093,6 +15104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 0}
   buttonZuloA: {fileID: 0}
   bombZulo3: {fileID: 0}
@@ -15723,7 +15736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17338,7 +17351,9 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 3e118a6a10ec4834394602e66007e17e, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223,
+    type: 3}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -17873,7 +17888,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19498,7 +19513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20650,6 +20665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 0}
   buttonZuloA: {fileID: 0}
   bombZulo3: {fileID: 0}
@@ -21946,7 +21963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: IP Server
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -22518,6 +22535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 0}
   buttonZuloA: {fileID: 0}
   bombZulo3: {fileID: 0}
@@ -26532,6 +26551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 0}
   buttonZuloA: {fileID: 0}
   bombZulo3: {fileID: 0}
@@ -26907,6 +26928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 562528378}
+  bombServerC: {fileID: 257488296}
   bombZuloA: {fileID: 8296172669117319819}
   buttonZuloA: {fileID: 303252356}
   bombZulo3: {fileID: 8296172668932421968}
@@ -26982,7 +27005,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1307981042}
-        m_MethodName: DesactivacionBombasZ3
+        m_MethodName: DesactivacionBombasZC
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27113,6 +27136,79 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 466751766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1330828378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330828379}
+  - component: {fileID: 1330828381}
+  - component: {fileID: 1330828380}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1330828379
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330828378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1428300536}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1330828380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330828378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0.7882353}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1330828381
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330828378}
+  m_CullTransparentMesh: 0
 --- !u!1 &1332914366
 GameObject:
   m_ObjectHideFlags: 0
@@ -28829,6 +28925,7 @@ RectTransform:
   - {fileID: 1188805592}
   - {fileID: 742746102}
   - {fileID: 1561702779}
+  - {fileID: 1330828379}
   m_Father: {fileID: 174960863}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28962,7 +29059,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: a7b63c6d16958014a946462cdf58226c, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -29215,7 +29313,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: ef011b45785fadc4591fd64727d5c415, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -29434,6 +29533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 257488296}
   bombZuloA: {fileID: 8296172669117319819}
   buttonZuloA: {fileID: 303252356}
   bombZulo3: {fileID: 8296172668932421968}
@@ -29509,7 +29610,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1469915290}
-        m_MethodName: DesactivacionBombasSA
+        m_MethodName: DesactivacionBombasSC
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29646,7 +29747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30110,7 +30211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -31217,7 +31318,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 257488294}
-        m_MethodName: 
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31943,6 +32044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 8296172669117319819}
   buttonZuloA: {fileID: 303252356}
   bombZulo3: {fileID: 8296172668932421968}
@@ -32677,7 +32780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32705,7 +32808,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 18
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -32746,13 +32849,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1624028976}
-    characterCount: 13
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -35696,7 +35799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -36166,7 +36269,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 4b056b4abb1317c4893dfe38c3335dab, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -36398,6 +36502,9 @@ MonoBehaviour:
   fotoHacker: 0
   conversationDisplay: {fileID: 2008504402}
   resistancesArray: 000000000000
+  matriculaObtenida: 0
+  correctHour: 0
+  correctMinute: 0
 --- !u!4 &1821372381
 Transform:
   m_ObjectHideFlags: 0
@@ -38350,6 +38457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95aaf246cb86847489b6dde5fc2e9763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombZuloC: {fileID: 0}
+  bombServerC: {fileID: 0}
   bombZuloA: {fileID: 8296172669117319819}
   buttonZuloA: {fileID: 303252356}
   bombZulo3: {fileID: 8296172668932421968}
@@ -38646,7 +38755,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 9ddb024edf6747249947921ec69612ca, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -40285,7 +40395,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 484cb427d7a70754483dc9e544795267, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -41560,7 +41671,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: 422a1d7db36c29e4e8be695c7520ca2d, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -41657,7 +41769,8 @@ MonoBehaviour:
   firstDialogue: {fileID: 11400000, guid: b352d197ce3548b46b5c92eab2eb9c58, type: 2}
   conversation: {fileID: 1157266056813832342, guid: 58788b8b19b9fd541b4fdd4dd0ba6b12,
     type: 3}
-  options: {fileID: 1157266056813832342, guid: bd7c403551c09904e8da94695bc48223, type: 3}
+  options: {fileID: 1157266056813832342, guid: 886e00b2a175ed04ab485fbbc66b8388, type: 3}
+  specialTaxi: {fileID: 0}
   parent: {fileID: 2008504403}
   positionElection:
   - {fileID: 1292408825}
@@ -43089,7 +43202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &161129118814671571
 GameObject:
   m_ObjectHideFlags: 0
@@ -43925,8 +44038,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 194.99998}
-  m_SizeDelta: {x: 1120.2, y: 199.1}
+  m_AnchoredPosition: {x: 0, y: 263}
+  m_SizeDelta: {x: 531.7, y: 94.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2517913096900048513
 MonoBehaviour:
@@ -45022,12 +45135,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 49.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 49.76
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -45526,12 +45639,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 49.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 49.76
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -45972,8 +46085,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 9}
-  m_SizeDelta: {x: 1120.2, y: 199.1}
+  m_AnchoredPosition: {x: 0, y: 174.70003}
+  m_SizeDelta: {x: 531.7, y: 94.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2517913097558655143
 MonoBehaviour:
@@ -46112,8 +46225,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 378}
-  m_SizeDelta: {x: 1120.2, y: 199.1}
+  m_AnchoredPosition: {x: 0, y: 349.80002}
+  m_SizeDelta: {x: 531.7, y: 94.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2517913097571281687
 MonoBehaviour:
@@ -46183,6 +46296,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2517913097093438153}
         m_MethodName: set_interactable
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1821372382}
+        m_MethodName: MobileAnswered
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -46489,8 +46613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 350}
+  m_AnchoredPosition: {x: 514, y: 112.5}
+  m_SizeDelta: {x: 220.3, y: 124.1}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &2517913097881871940
 CanvasRenderer:
@@ -46617,8 +46741,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 350}
+  m_AnchoredPosition: {x: 475, y: 53}
+  m_SizeDelta: {x: 278.3, y: 106.1}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &2517913098106584161
 GameObject:
@@ -46692,8 +46816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -170}
-  m_SizeDelta: {x: 1120.2, y: 199.1}
+  m_AnchoredPosition: {x: 0, y: 89.70003}
+  m_SizeDelta: {x: 531.7, y: 94.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2517913098106584175
 MonoBehaviour:
@@ -46980,12 +47104,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 49.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 49.76
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -47332,12 +47456,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 72
+  m_fontSize: 49.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 49.76
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -49026,7 +49150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -50609,7 +50733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -50814,7 +50938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -51453,7 +51577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -52043,7 +52167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -52787,7 +52911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -53187,7 +53311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -53513,7 +53637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

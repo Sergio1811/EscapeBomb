@@ -85,6 +85,11 @@ public class DataHolder : MonoBehaviour
     public GameObject conversationDisplay;
 
     public bool[] resistancesArray = new bool[7];
+
+    [HideInInspector]
+    public bool matriculaObtenida;
+    public bool correctHour;
+    public bool correctMinute;
     private void Awake()
     {
         if (instance == null)

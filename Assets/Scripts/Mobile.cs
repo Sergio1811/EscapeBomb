@@ -44,7 +44,8 @@ public class Mobile : MonoBehaviour
         MenuController.instance.InstantiateNotification("Nueva ubicación: Zulo");
         DataHolder.instance.zulo.SetActive(true);
         DataHolder.instance.ui.SetActive(true);
-        callPanel.SetActive(false);
+        Destroy(callPanel);
+        Destroy(audio);
         parentPanel.SetActive(false);
     }
 
