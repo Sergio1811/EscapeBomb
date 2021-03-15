@@ -53,6 +53,14 @@ public class MenuController : MonoBehaviour
         DataHolder.instance.buttonLlave5.onClick.AddListener(delegate { printerButton("Llave5"); });
         InvokeRepeating("GameStateControl", 1,1);       
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            FullScreen();
+        }
+    }
     public void DeactivateAllScenes()
     {
         foreach (var item in scenes)
