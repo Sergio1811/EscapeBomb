@@ -36,6 +36,12 @@ public class MenuController : MonoBehaviour
 
     bool mobileAnswered;
     bool firstTime;
+
+    public GameObject acertijosLibreria; 
+    public GameObject acertijo2; 
+    public GameObject acertijo3;
+
+    public GameObject ejPokemon;
     private void Awake()
     {
         if (instance == null)

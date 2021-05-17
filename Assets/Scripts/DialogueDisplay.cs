@@ -19,7 +19,7 @@ public class DialogueDisplay : MonoBehaviour
     public bool displaying;
     public void DisplayConvMenu()
     {
-        if (displaying == false && ConversationFinished==false)
+        if (displaying == false && ConversationFinished == false)
         {
             MenuController.instance.mapButton.interactable = false;
             currentDialogueScriptable = firstDialogue;
@@ -33,15 +33,15 @@ public class DialogueDisplay : MonoBehaviour
         foreach (var item in currentElections)
         {
             Destroy(item);
-            
+
         }
         currentElections.Clear();
 
         GameObject dialogue = Instantiate(conversation, parent);
-        dialogue.GetComponent<TextAnimSimple>().dialogue= currentDialogueScriptable.question;
+        dialogue.GetComponent<TextAnimSimple>().dialogue = currentDialogueScriptable.question;
         dialogue.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = currentDialogueScriptable.charName;
         ConversationFinished = currentDialogueScriptable.finalDialogue;
-        Button botonTemp=dialogue.transform.GetChild(1).GetComponent<Button>();
+        Button botonTemp = dialogue.transform.GetChild(1).GetComponent<Button>();
         SpecialOcasionsDialogue();
         if (currentDialogueScriptable.dialogueOptions.Length == 0)
         {
@@ -49,7 +49,7 @@ public class DialogueDisplay : MonoBehaviour
                delegate
                {
                    currentDialogueScriptable = firstDialogue;
-                   
+
                    Destroy(dialogue);
                    displaying = false;
                    MenuController.instance.mapButton.interactable = true;
@@ -67,12 +67,12 @@ public class DialogueDisplay : MonoBehaviour
             });
         }
 
-     
+
     }
 
     public void DisplayElections()
     {
-            
+
         for (int i = 0; i < currentDialogueScriptable.dialogueOptions.Length; i++)
         {
             DisplayElection(positionElection[i], currentDialogueScriptable.dialogueOptions[i].optionLine, currentDialogueScriptable.dialogueOptions[i].nextDialogue, currentDialogueScriptable.dialogueOptions[i].specialAction);
@@ -84,9 +84,9 @@ public class DialogueDisplay : MonoBehaviour
         if (specialOcasion == "HoraTaxis")
         {
             GameObject election = Instantiate(specialTaxi, l_parent);
-            
+
             election.GetComponentInChildren<Button>().interactable = false;
-               
+
             election.GetComponentInChildren<Button>().onClick.AddListener(
                 delegate
                 {
@@ -112,6 +112,55 @@ public class DialogueDisplay : MonoBehaviour
 
             currentElections.Add(election);
         }
+
+        else if (specialOcasion == "Acertijos")
+        {
+
+            GameObject election = Instantiate(options, l_parent);
+
+            election.GetComponent<TextAnimSimple>().dialogue = textOpt;
+            election.GetComponentInChildren<Button>().onClick.AddListener(
+                delegate
+                {
+                    MenuController.instance.acertijosLibreria.SetActive(true);
+
+                    foreach (var item in currentElections)
+                    {
+                        Destroy(item);
+                        displaying = false;
+
+                    }
+                    currentElections.Clear();
+
+                });
+
+            currentElections.Add(election);
+        }
+
+        else if (specialOcasion == "pokemon")
+        {
+
+            GameObject election = Instantiate(options, l_parent);
+
+            election.GetComponent<TextAnimSimple>().dialogue = textOpt;
+            election.GetComponentInChildren<Button>().onClick.AddListener(
+                delegate
+                {
+                    MenuController.instance.ejPokemon.SetActive(true);
+
+                    foreach (var item in currentElections)
+                    {
+                        Destroy(item);
+                        displaying = false;
+
+                    }
+                    currentElections.Clear();
+
+                });
+
+            currentElections.Add(election);
+        }
+
         else
         {
             GameObject election = Instantiate(options, l_parent);
@@ -155,8 +204,8 @@ public class DialogueDisplay : MonoBehaviour
         switch (currentDialogueScriptable.specialAction)
         {
             case "UnlockRecepcion":
-                if(!DataHolder.instance.recepcion.activeSelf)
-                MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Recepción");
+                if (!DataHolder.instance.recepcion.activeSelf)
+                    MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Recepción");
                 DataHolder.instance.recepcion.SetActive(true);
                 break;
             case "UnlockVideojuegos":
@@ -189,8 +238,8 @@ public class DialogueDisplay : MonoBehaviour
                     DataHolder.instance.matriculaObtenida = true;
                 }
                 break;
-           
-               
+
+
             default:
                 break;
         }
