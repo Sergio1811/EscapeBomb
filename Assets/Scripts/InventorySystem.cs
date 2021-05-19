@@ -11,6 +11,7 @@ public class InventorySystem : MonoBehaviour
     public GameObject kitVenenoPrefab, bocaPanel;
     public Sprite kitVenenoUsedSprite;
     public Image kitVenenoPanel;
+    public Sprite servilletaDetras;
 
     public GameObject[] items;
     public Transform[] itemListPositions;
@@ -81,6 +82,18 @@ public class InventorySystem : MonoBehaviour
             {
                 zoomParent.SetActive(true);
                 zoomParent.GetComponent<Image>().sprite = item.GetComponent<Image>().sprite;
+                if (itemName=="Servilleta")
+                {
+                    zoomParent.GetComponent<Button>().onClick.AddListener(delegate {
+                        zoomParent.GetComponent<Image>().sprite = servilletaDetras;
+                        if (!DataHolder.instance.qeUnclocked)
+                        {
+                            MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Qe Pastelitos!");
+                            DataHolder.instance.qePastelitos.SetActive(true);
+                        }
+
+                    });
+                }
                 return;
             }
         }

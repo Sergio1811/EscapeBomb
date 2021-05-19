@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Farmacia2
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Farmaceutico
+  charName: "Farmac\xE9utica"
   question: "\xA1En seguida! 2,46 \u20AC. \xBFAlgo m\xE1s?"
   specialAction: 
   dialogueOptions:

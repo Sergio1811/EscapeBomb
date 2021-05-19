@@ -22,6 +22,7 @@ public class DataHolder : MonoBehaviour
     public GameObject recepcion;
     public GameObject videojuegos;
     public GameObject peluqueria;
+    public GameObject qePastelitos;
 
     public GameObject albaran;
 
@@ -78,6 +79,7 @@ public class DataHolder : MonoBehaviour
 
     [HideInInspector]
     public bool kitUsed;
+    public bool qeUnclocked;
 
     public int bombsDesactivated;
 

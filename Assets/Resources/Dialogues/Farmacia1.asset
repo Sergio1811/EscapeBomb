@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Farmacia1
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Farmaceutico
+  charName: "Farmac\xE9utica"
   question: "Hola buenas tardes \xBFqu\xE9 deseas?"
   specialAction: 
   dialogueOptions:

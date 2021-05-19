@@ -37,6 +37,12 @@ public class CorrectCode : MonoBehaviour
     public TextMeshProUGUI textCR;
     public Button nextCR;
     public DialogueDisplay videojuegosDialogues;
+
+    public GameObject panelEmail;
+    public Sprite spriteEmail;
+    public Image imageEmail;
+    public GameObject buttonEmail;
+    public GameObject buttonScreen;
     public void codeRight(TextMeshProUGUI l_CodeFilled)
     {
         if (!firstTimeCandado)
@@ -308,7 +314,7 @@ public class CorrectCode : MonoBehaviour
             textCR.text = "¡Si! Perfecto.";
             nextCR.gameObject.SetActive(true);
 
-            nextCR.onClick.RemoveAllListeners();
+            nextCR.gameObject.SetActive(true);
             nextCR.onClick.AddListener(delegate
             {
                 videojuegosDialogues.DisplayConvMenu();
@@ -332,6 +338,23 @@ public class CorrectCode : MonoBehaviour
             l_CodeFilled.text = null;
             l_CodeFilled.ForceMeshUpdate(true);
         }
+    }
+
+    public void HufflePuffContra(TextMeshProUGUI l_CodeFilled)
+    {
+        string codeFilled = l_CodeFilled.text;
+        codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
+        codeFilled = codeFilled.ToLower();
+
+        if ("hufflepuff" == codeFilled)
+        {
+            imageEmail.sprite = spriteEmail;
+            buttonEmail.SetActive(true);
+            buttonScreen.SetActive(false);
+            panelEmail.SetActive(false);
+        }
+
+       
     }
 }
 

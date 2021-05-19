@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Farmacia3
   m_EditorClassIdentifier: 
   finalDialogue: 0
-  charName: Farmaceutico
+  charName: "Farmac\xE9utica"
   question: "Mmmm, un chico con una americana vino algo nervioso preguntando por
     algo para la ansiedad. No pude darle nada sin receta, as\xED que se llev\xF3
     paracetamol."
