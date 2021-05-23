@@ -12,6 +12,7 @@ public class InventorySystem : MonoBehaviour
     public Sprite kitVenenoUsedSprite;
     public Image kitVenenoPanel;
     public Sprite servilletaDetras;
+    public GameObject kitHuellasPrefab;
 
     public GameObject[] items;
     public Transform[] itemListPositions;
@@ -45,6 +46,10 @@ public class InventorySystem : MonoBehaviour
                 {
                     MenuController.instance.GetMouseCursor().SetCustomCursor(null);
                 }
+                break;
+            case "kitHuellas":
+                Instantiate(kitHuellasPrefab, parent);
+                this.transform.parent.gameObject.SetActive(false);
                 break;
             default:
                 MenuController.instance.GetMouseCursor().SetCustomCursor(item);

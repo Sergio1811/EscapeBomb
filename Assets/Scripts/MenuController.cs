@@ -8,6 +8,8 @@ public class MenuController : MonoBehaviour
 {
     public static MenuController instance;
 
+    public TextMeshProUGUI inputRedeemCodeIntroduced;
+
     public GameObject[] scenes;
     public GameObject conversation;
     public GameObject notificationRight;
@@ -324,10 +326,9 @@ public class MenuController : MonoBehaviour
             hacker.SetActive(true);
     }
 
-    public void HackerMessage()
+    public void HackerMessage(int id)
     {
-        mobile.ReceiveNotification(2);
-     
+        mobile.ReceiveNotification(id);
     }
 
    public void GameStateControl()
@@ -346,6 +347,25 @@ public class MenuController : MonoBehaviour
     public void MobileAnswered()
     {
         mobileAnswered = true;
+    }
+
+    public void CatchRedeemCode()
+    {
+        switch (inputRedeemCodeIntroduced.text)
+        {
+            case "":
+                InstantiateNotification("");
+                break;
+            case "1":
+                InstantiateNotification("");
+                break;
+            case "2":
+                InstantiateNotification("");
+                break;
+            default:
+                InstantiateNotification("Código no reconocido por el sistema");
+                break;
+        }
     }
 }
 

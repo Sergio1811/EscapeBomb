@@ -92,6 +92,32 @@ public class Mobile : MonoBehaviour
                    });
                 not.SetActive(true);
                 break;
+            case 4:
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Muy buenas investigador. Soy el hombre al que buscas, no me encontrarás porque no formo parte de eso. Recuerda, ni los buenos son tan buenos, ni los malos tan malos";
+                not.SetActive(true);
+                break;
+            case 5:
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Parece que no has tenido en cuenta mis palabras y sigues investigando. Te enviare una cosa para que se te aclaren las ideas";
+                Button button4 = newItem.GetComponent<Button>();
+                button4.enabled = true;
+                button4.onClick.AddListener(
+                   delegate
+                   {
+                       //Añadir audio comisario
+                   });
+                not.SetActive(true);
+                break;
+            case 6:
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Muy bien… Sigues empeñado en atraparme, perfecto te lo pondré fácil, pero antes mira estos mensajes de tu amigo el comisario alias el Corrupto";
+                Button button5 = newItem.GetComponent<Button>();
+                button5.enabled = true;
+                button5.onClick.AddListener(
+                   delegate
+                   {
+                       //Añadir fotos comisario corrupto
+                   });
+                not.SetActive(true);
+                break;
 
 
         }
