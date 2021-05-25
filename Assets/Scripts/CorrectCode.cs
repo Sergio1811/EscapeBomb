@@ -43,6 +43,9 @@ public class CorrectCode : MonoBehaviour
     public Image imageEmail;
     public GameObject buttonEmail;
     public GameObject buttonScreen;
+
+    public GameObject cajaOpen;
+    public GameObject cajaClosed;
     public void codeRight(TextMeshProUGUI l_CodeFilled)
     {
         if (!firstTimeCandado)
@@ -55,6 +58,7 @@ public class CorrectCode : MonoBehaviour
                 MenuController.instance.getInventory().addItemToList("DocPoli");
                 MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
                 firstTimeCandado = true;
+                cajaClosed.SetActive(true);
             }
             else
             {
@@ -356,5 +360,27 @@ public class CorrectCode : MonoBehaviour
 
        
     }
+
+    public void CajaFuerteContrasenya(TextMeshProUGUI l_CodeFilled)
+    {
+        string codeFilled = l_CodeFilled.text;
+        codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
+        codeFilled = codeFilled.ToLower();
+
+        if ("742392a" == codeFilled)
+        {
+            cajaClosed.SetActive(false);
+            cajaOpen.SetActive(true);
+            MenuController.instance.InstantiateNotification("Contraseña correcta.");
+        }
+        else
+        {
+            MenuController.instance.InstantiateNotification("Parece que no es correcto.");
+
+        }
+
+
+    }
+
 }
 

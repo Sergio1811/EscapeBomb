@@ -21,6 +21,7 @@ TagManager:
   - 5
   - 6
   - Diff
+  - Tachon
   layers:
   - Default
   - TransparentFX
