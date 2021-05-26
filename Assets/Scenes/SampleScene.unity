@@ -2202,7 +2202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 469, y: -25}
+  m_AnchoredPosition: {x: 470, y: -24}
   m_SizeDelta: {x: 950, y: 1150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75420908
@@ -19847,7 +19847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &684488509
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22335,7 +22335,7 @@ PrefabInstance:
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: cosasAActivar.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
@@ -22347,6 +22347,11 @@ PrefabInstance:
       propertyPath: myFileName
       value: Farmacia__cola.mp4
       objectReference: {fileID: 0}
+    - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
+        type: 3}
+      propertyPath: cosasAActivar.Array.data[1]
+      value: 
+      objectReference: {fileID: 512349377}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc13d0a2048d11146aecdc549a48cf4d, type: 3}
 --- !u!1 &762105892
@@ -27091,17 +27096,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 166826864}
-        m_MethodName: DisplayConvMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &884104861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30696,7 +30690,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027789463}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -45782,7 +45776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1588188043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45884,8 +45878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -475.8, y: -25}
-  m_SizeDelta: {x: 950, y: 1150}
+  m_AnchoredPosition: {x: -474.1, y: -25.2}
+  m_SizeDelta: {x: 951.9, y: 709.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596355301
 MonoBehaviour:
@@ -57480,7 +57474,7 @@ PrefabInstance:
     - target: {fileID: 3629528221866037402, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3629528221866037403, guid: 52fc8ea6cdb927a41986da8e5dcd0262,
         type: 3}

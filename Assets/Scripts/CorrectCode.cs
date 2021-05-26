@@ -280,7 +280,7 @@ public class CorrectCode : MonoBehaviour
         codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
         codeFilled = codeFilled.ToLower();
 
-        if ("la 3" == codeFilled || "la tercera" == codeFilled || "la treh" == codeFilled || "tercera" == codeFilled || "3" == codeFilled || "tres" == codeFilled || "la tres" == codeFilled)
+        if ("la 3" == codeFilled || "la tercera" == codeFilled || "la treh" == codeFilled || "tercera" == codeFilled || "3" == codeFilled || "tres" == codeFilled || "la tres" == codeFilled || "la del leon" == codeFilled)
         {
             libreriaDialogues.firstDialogue = dialogue3Libreria;
             libreriaDialogues.DisplayConvMenu();
