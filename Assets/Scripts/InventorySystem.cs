@@ -9,6 +9,7 @@ public class InventorySystem : MonoBehaviour
     public GameObject zoomParent;
 
     public GameObject kitVenenoPrefab, bocaPanel;
+    
     public Sprite kitVenenoUsedSprite;
     public Image kitVenenoPanel;
     public Sprite servilletaDetras;

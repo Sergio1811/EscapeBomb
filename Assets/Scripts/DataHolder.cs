@@ -92,6 +92,8 @@ public class DataHolder : MonoBehaviour
     public bool matriculaObtenida;
     public bool correctHour;
     public bool correctMinute;
+
+    public int huellas =0;
     private void Awake()
     {
         if (instance == null)

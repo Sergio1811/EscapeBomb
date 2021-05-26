@@ -22,6 +22,8 @@ TagManager:
   - 6
   - Diff
   - Tachon
+  - Huella
+  - Saliva
   layers:
   - Default
   - TransparentFX

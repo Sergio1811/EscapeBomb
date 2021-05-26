@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 3781636837886178490}
   - component: {fileID: 3781636837886178495}
   - component: {fileID: 3781636837886178488}
-  - component: {fileID: 8704092798445521543}
+  - component: {fileID: 6981848544430816427}
   m_Layer: 5
   m_Name: KitHuellas
   m_TagString: Untagged
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a5263951152b40448dfd7a10eafc342, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dbc10f597b10b240b970d2b9d868029, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8704092798445521543
+--- !u!114 &6981848544430816427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2a39086dad1584da7b27d624aeb384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToMeasure: 4
+  timeToMeasure: 3
   sliderTemp: {fileID: 3781636839312956097}
 --- !u!1 &3781636838081338357
 GameObject:

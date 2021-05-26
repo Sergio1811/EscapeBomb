@@ -37,7 +37,7 @@ public class KitHuellas : MonoBehaviour, IDragHandler, IEndDragHandler
             if (Physics.Raycast(ray, out hit))
             {
                 //Gestionar colisiones con diferentes objetos
-                if (hit.collider.CompareTag("Boca"))
+                if (hit.collider.CompareTag("Huella"))
                 {
                     if (!sliderTemp.gameObject.activeSelf)
                         sliderTemp.gameObject.SetActive(true);
@@ -46,13 +46,16 @@ public class KitHuellas : MonoBehaviour, IDragHandler, IEndDragHandler
                     {
                         currentTimeMeasuring += Time.deltaTime;
                         sliderTemp.value = currentTimeMeasuring / timeToMeasure;
+                        hit.collider.GetComponent<Image>().color -= new Color(0, 0, 0, Time.deltaTime/timeToMeasure);
 
                         if (currentTimeMeasuring >= timeToMeasure)//If finalized call function
                         {
                             Destroy(this.gameObject);
-                            MenuController.instance.InstantiateNotification("Enviando datos a analizar...");
-                            //cambiar item en inventario
-                            StartCoroutine(Timer(300));
+                            DataHolder.instance.huellas++;
+                            MenuController.instance.InstantiateNotification($"Huella nº{DataHolder.instance.huellas} obtenida.");
+                            MenuController.instance.getInventory().addItemToList(hit.transform.GetComponent<Huella>().huella);
+
+
                         }
                     }
                 }
@@ -68,17 +71,10 @@ public class KitHuellas : MonoBehaviour, IDragHandler, IEndDragHandler
             transform.localPosition = startPos;
             currentTimeMeasuring = 0;
             sliderTemp.value = 0;
-
+            Destroy(this.gameObject);
         }
     }
 
-    public IEnumerator Timer(float l_Timer)
-    {
-        yield return new WaitForSeconds(l_Timer);
-        MenuController.instance.InstantiateNotification("Nuevo mensaje en el teléfono");
-        MenuController.instance.mobile.ReceiveNotification(1);
-
-        print("ale 5 minutos");
-    }
+   
 
 }
