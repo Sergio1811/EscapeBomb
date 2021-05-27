@@ -14,6 +14,7 @@ public class InventorySystem : MonoBehaviour
     public Image kitVenenoPanel;
     public Sprite servilletaDetras;
     public GameObject kitHuellasPrefab;
+    public GameObject linternaPrefab;
 
     public GameObject[] items;
     public Transform[] itemListPositions;
@@ -50,6 +51,10 @@ public class InventorySystem : MonoBehaviour
                 break;
             case "kitHuellas":
                 Instantiate(kitHuellasPrefab, parent);
+                this.transform.parent.gameObject.SetActive(false);
+                break;
+            case "linterna":
+                Instantiate(linternaPrefab, parent);
                 this.transform.parent.gameObject.SetActive(false);
                 break;
             default:

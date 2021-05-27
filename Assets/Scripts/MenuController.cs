@@ -28,6 +28,8 @@ public class MenuController : MonoBehaviour
     public InventorySystem inventory;
     public MouseCursor mouseCursor;
 
+    public GameObject audioPanel;
+
     public GameObject Correcto1;
     public GameObject Correcto2;
     public GameObject No;
@@ -329,6 +331,11 @@ public class MenuController : MonoBehaviour
     public void HackerMessage(int id)
     {
         mobile.ReceiveNotification(id);
+    }
+
+    public void ActivateAudioPanel()
+    {
+        audioPanel.SetActive(true);
     }
 
    public void GameStateControl()

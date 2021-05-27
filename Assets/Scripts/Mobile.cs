@@ -103,7 +103,7 @@ public class Mobile : MonoBehaviour
                 button4.onClick.AddListener(
                    delegate
                    {
-                       //Añadir audio comisario
+                       MenuController.instance.ActivateAudioPanel();
                    });
                 not.SetActive(true);
                 break;
