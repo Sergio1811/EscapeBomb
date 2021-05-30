@@ -358,16 +358,24 @@ public class MenuController : MonoBehaviour
 
     public void CatchRedeemCode()
     {
-        switch (inputRedeemCodeIntroduced.text)
+        string code = inputRedeemCodeIntroduced.text;
+        switch (code)
         {
-            case "":
-                InstantiateNotification("");
+            case "LKAJIQPO":
+                InstantiateNotification("Kit de huellas dactilares obtenido");
+                inventory.addItemToList("KitHuellas");
                 break;
-            case "1":
-                InstantiateNotification("");
+            case "NATYEIKF":
+                InstantiateNotification("Kit de toma de muestras obtenido");
+                inventory.addItemToList("KitVeneno");
                 break;
-            case "2":
-                InstantiateNotification("");
+            case "IEUQMEWA":
+                InstantiateNotification("Endoscopio obtenido");
+                inventory.addItemToList("Endoscopio");
+                break;
+            case "VJWYQEOA":
+                InstantiateNotification("Linterna obtenido");
+                inventory.addItemToList("Linterna");
                 break;
             default:
                 InstantiateNotification("Código no reconocido por el sistema");
