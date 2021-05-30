@@ -53897,7 +53897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 684488508}
   howManyObjectsINeed: 2
-  currentObjectsINeed: 2
+  currentObjectsINeed: 0
   guarida: {fileID: 1158551023}
   merceria: {fileID: 1149697020}
   zulo: {fileID: 1955928163}
