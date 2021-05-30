@@ -358,7 +358,7 @@ public class MenuController : MonoBehaviour
 
     public void CatchRedeemCode()
     {
-        string code = inputRedeemCodeIntroduced.text;
+        string code = inputRedeemCodeIntroduced.text.Remove(inputRedeemCodeIntroduced.text.Length - 1);
         switch (code)
         {
             case "LKAJIQPO":
