@@ -66,7 +66,7 @@ public class MenuController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             FullScreen();
         }
@@ -91,7 +91,7 @@ public class MenuController : MonoBehaviour
     {
         GameObject conv = Instantiate(notificationRight, positionNot);
         conv.GetComponentInChildren<TextMeshProUGUI>().text = l_notificationToDisplay;
-        Destroy(conv,5);
+        Destroy(conv,7);
     }
 
     public void CanMapOpen()

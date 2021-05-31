@@ -88,6 +88,7 @@ public class CorrectCode : MonoBehaviour
     {
         string codeFilled = l_CodeFilled.text;
         codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
+        codeFilled.ToLower();
         if (codeToMatch == codeFilled || codeToMatch2 == codeFilled)
         {
             MenuController.instance.InstantiateNotification("Nombre correcto.");

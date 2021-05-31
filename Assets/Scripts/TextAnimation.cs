@@ -52,12 +52,15 @@ public class TextAnimation : MonoBehaviour
                 {
                     this.gameObject.SetActive(false);
                 });
+
+        guiText.text += message;
         // Iterate over each letter
-        foreach (char letter in message.ToCharArray())
+        /*foreach (char letter in message.ToCharArray())
         {
-            guiText.text += letter; // Add a single character to the GUI text
+            guiText.text += message; // Add a single character to the GUI text
             yield return new WaitForSeconds(pause);
-        }
+        }*/
+
 
         if(currentDialogue!=0)
             buttonNext.onClick.RemoveAllListeners();
@@ -84,5 +87,6 @@ public class TextAnimation : MonoBehaviour
                    StartCoroutine(TypeLetters());
                });
         }
+        yield return null;
     }
 }

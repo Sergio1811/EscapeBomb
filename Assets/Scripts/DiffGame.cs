@@ -32,7 +32,7 @@ public class DiffGame : MonoBehaviour
                         currentNum = 0;
                         temp = null;
                         currentSolved++;
-                        if (currentSolved>=6)
+                        if (currentSolved>6)
                         {
                             dialogue.SetActive(true);
                         }
