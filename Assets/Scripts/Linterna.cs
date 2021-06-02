@@ -22,6 +22,7 @@ public class Linterna : MonoBehaviour, IDragHandler
 
     public void DestroyThisObject()
     {
+        MenuController.instance.inventory.inUsageLantern = false;
         Destroy(this.gameObject);
     }
 }

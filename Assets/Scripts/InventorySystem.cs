@@ -9,7 +9,7 @@ public class InventorySystem : MonoBehaviour
     public GameObject zoomParent;
 
     public GameObject kitVenenoPrefab, bocaPanel;
-    
+
     public Sprite kitVenenoUsedSprite;
     public Image kitVenenoPanel;
     public Sprite servilletaDetras;
@@ -19,6 +19,8 @@ public class InventorySystem : MonoBehaviour
     public GameObject[] items;
     public Transform[] itemListPositions;
     public bool[] itemListAvailable;
+
+    public bool inUsageLantern;
 
     public void checkUsedItems()
     {
@@ -33,7 +35,8 @@ public class InventorySystem : MonoBehaviour
         switch (item)
         {
             case "kitVeneno":
-                if (bocaPanel.activeSelf && !DataHolder.instance.kitUsed) {
+                if (bocaPanel.activeSelf && !DataHolder.instance.kitUsed)
+                {
                     Instantiate(kitVenenoPrefab, parent);
                     this.transform.parent.gameObject.SetActive(false);
                 }
@@ -54,8 +57,12 @@ public class InventorySystem : MonoBehaviour
                 this.transform.parent.gameObject.SetActive(false);
                 break;
             case "linterna":
-                Instantiate(linternaPrefab, parent);
-                this.transform.parent.gameObject.SetActive(false);
+                if (!inUsageLantern)
+                {
+                    Instantiate(linternaPrefab, parent);
+                    this.transform.parent.gameObject.SetActive(false);
+                    inUsageLantern = true;
+                }
                 break;
             default:
                 MenuController.instance.GetMouseCursor().SetCustomCursor(item);
@@ -93,14 +100,16 @@ public class InventorySystem : MonoBehaviour
             {
                 zoomParent.SetActive(true);
                 zoomParent.GetComponent<Image>().sprite = item.GetComponent<Image>().sprite;
-                if (itemName=="Servilleta")
+                if (itemName == "Servilleta")
                 {
-                    zoomParent.GetComponent<Button>().onClick.AddListener(delegate {
+                    zoomParent.GetComponent<Button>().onClick.AddListener(delegate
+                    {
                         zoomParent.GetComponent<Image>().sprite = servilletaDetras;
                         if (!DataHolder.instance.qeUnclocked)
                         {
                             MenuController.instance.InstantiateNotification("Nueva ubicación desbloqueada: Qe Pastelitos!");
                             DataHolder.instance.qePastelitos.SetActive(true);
+                            DataHolder.instance.qeUnclocked = true;
                         }
 
                     });

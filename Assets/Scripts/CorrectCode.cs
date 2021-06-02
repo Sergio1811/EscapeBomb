@@ -358,8 +358,12 @@ public class CorrectCode : MonoBehaviour
             buttonScreen.SetActive(false);
             panelEmail.SetActive(false);
         }
+        else
+        {
+            MenuController.instance.InstantiateNotification("Parece que no es correcto.");
 
-       
+        }
+
     }
 
     public void CajaFuerteContrasenya(TextMeshProUGUI l_CodeFilled)
