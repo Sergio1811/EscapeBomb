@@ -10,6 +10,7 @@ public class Bomb : MonoBehaviour
     public GameObject[] buttonsToDeactivate;
     public GameObject[] buttonsToActivate;
     public GameObject[] buttonsToDestroy;
+    public string code;
     private void Start()
     {
         correctComponets = new bool[howManyComponents];
@@ -55,6 +56,6 @@ public class Bomb : MonoBehaviour
         }
         this.gameObject.SetActive(false);
         DataHolder.instance.BombsInteraction();
-        MenuController.instance.InstantiateNotification("Bomba desactivada.");
+        MenuController.instance.InstantiateNotification("Bomba desactivada. Código: "+code);
     }
 }

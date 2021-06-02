@@ -7151,6 +7151,7 @@ MonoBehaviour:
   - {fileID: 1715737400}
   buttonsToDestroy:
   - {fileID: 2115949341}
+  code: 0005
 --- !u!82 &257488297
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16335,6 +16336,7 @@ MonoBehaviour:
   - {fileID: 257950802}
   buttonsToDestroy:
   - {fileID: 597296865}
+  code: 
 --- !u!82 &562528379
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17272,7 +17274,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 257950802}
+      - m_Target: {fileID: 1250708890}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -25248,6 +25250,11 @@ PrefabInstance:
       propertyPath: buttonsToActivate.Array.data[1]
       value: 
       objectReference: {fileID: 1715737400}
+    - target: {fileID: 7494157890278252514, guid: 5e9f777225e2dc446b94d4f9be07f689,
+        type: 3}
+      propertyPath: code
+      value: 0004
+      objectReference: {fileID: 0}
     - target: {fileID: 7494157890568560442, guid: 5e9f777225e2dc446b94d4f9be07f689,
         type: 3}
       propertyPath: twoPos.z
@@ -38963,6 +38970,11 @@ PrefabInstance:
       propertyPath: buttonsToDeactivate.Array.data[0]
       value: 
       objectReference: {fileID: 742746101}
+    - target: {fileID: 771046456658547720, guid: 3c9b946c61975514db8ce7d6f28c0d25,
+        type: 3}
+      propertyPath: code
+      value: 0003
+      objectReference: {fileID: 0}
     - target: {fileID: 771046456973126534, guid: 3c9b946c61975514db8ce7d6f28c0d25,
         type: 3}
       propertyPath: correctPos
@@ -43451,7 +43463,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 0003
+          m_StringArgument: 0005
           m_BoolArgument: 0
         m_CallState: 2
   m_OnSubmit:
