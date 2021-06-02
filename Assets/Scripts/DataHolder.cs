@@ -94,6 +94,8 @@ public class DataHolder : MonoBehaviour
     public bool correctMinute;
 
     public int huellas =0;
+
+    public Button buttonCajon;
     private void Awake()
     {
         if (instance == null)
@@ -155,6 +157,7 @@ public class DataHolder : MonoBehaviour
             case "docTaxi":
                 chosenSprite = docTaxi;
                 usingObject = UsingObject.DOCTAXI;
+                MenuController.instance.InstantiateConversation("Si tuviera la matrícula podría llamar, pero sin esa info no podré encontrar a la persona adecuada.");
                 break;
             case "matricula":
                 chosenSprite = matricula;

@@ -57,7 +57,6 @@ public class CorrectCode : MonoBehaviour
             {
                 MenuController.instance.getInventory().addItemToList("DocPoli");
                 MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
-                firstTimeCandado = true;
                 cajaClosed.SetActive(true);
             }
             else

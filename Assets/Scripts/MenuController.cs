@@ -150,7 +150,7 @@ public class MenuController : MonoBehaviour
                 break;
         }
         //Video ha iniciado la impresión
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(15);
         InstantiateNotification("Impresión acabada");
         mobile.ReceiveNotification(3);
 

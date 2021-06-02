@@ -31,6 +31,7 @@ public class MouseCursor : MonoBehaviour
                     {
                         MenuController.instance.InstantiateConversation("Vale, me apunto en mi libreta el perfil de la cerradura.");
                         MenuController.instance.getInventory().addItemToList("LlaveLibreta");
+                        Destroy(DataHolder.instance.buttonCajon);
                         endoUsed = true;
                     }
                     else if (DataHolder.instance.GetUsingObject() == DataHolder.UsingObject.LLAVEMALA)
