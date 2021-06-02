@@ -19,11 +19,13 @@ public class TextAnimSimple : MonoBehaviour
     IEnumerator TypeLetters()
     {
         // Iterate over each letter
-        foreach (char letter in dialogue.ToCharArray())
+        guiText.text = dialogue;
+        /*foreach (char letter in dialogue.ToCharArray())
         {
             guiText.text += letter; // Add a single character to the GUI text
             yield return new WaitForSeconds(initialPause);
-        }
+        }*/
+        yield return null;
     }
     public void JumpAnimText()
     {
