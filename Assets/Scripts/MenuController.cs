@@ -40,6 +40,7 @@ public class MenuController : MonoBehaviour
 
     bool mobileAnswered;
     bool firstTime;
+    bool kitHuellasObtained, kitMuestrasObtained, endoscopioObtained, linternaObtained;
 
     public GameObject acertijosLibreria; 
     public GameObject acertijo2; 
@@ -362,20 +363,36 @@ public class MenuController : MonoBehaviour
         switch (code)
         {
             case "LKAJIQPO":
-                InstantiateNotification("Kit de huellas dactilares obtenido");
-                inventory.addItemToList("KitHuellas");
+                if (!kitHuellasObtained)
+                {
+                    InstantiateNotification("Kit de huellas dactilares obtenido");
+                    inventory.addItemToList("KitHuellas");
+                    kitHuellasObtained = true;
+                }
                 break;
             case "NATYEIKF":
-                InstantiateNotification("Kit de toma de muestras obtenido");
-                inventory.addItemToList("KitVeneno");
+                if (!kitMuestrasObtained)
+                {
+                    InstantiateNotification("Kit de toma de muestras obtenido");
+                    inventory.addItemToList("KitVeneno");
+                    kitMuestrasObtained = true;
+                }
                 break;
             case "IEUQMEWA":
-                InstantiateNotification("Endoscopio obtenido");
-                inventory.addItemToList("Endoscopio");
+                if (!endoscopioObtained)
+                {
+                    InstantiateNotification("Endoscopio obtenido");
+                    inventory.addItemToList("Endoscopio");
+                    endoscopioObtained = true;
+                }
                 break;
             case "VJWYQEOA":
-                InstantiateNotification("Linterna obtenido");
-                inventory.addItemToList("Linterna");
+                if (!linternaObtained)
+                {
+                    InstantiateNotification("Linterna obtenido");
+                    inventory.addItemToList("Linterna");
+                    linternaObtained = true;
+                }
                 break;
             default:
                 InstantiateNotification("Código no reconocido por el sistema");
