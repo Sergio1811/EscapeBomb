@@ -93,9 +93,17 @@ public class DataHolder : MonoBehaviour
     public bool correctHour;
     public bool correctMinute;
 
-    public int huellas =0;
+    public int huellas = 0;
 
     public Button buttonCajon;
+
+    public bool cajaOpen = false;
+    public bool candadoOpen= false;
+
+    public GameObject candadoPanel;
+    public GameObject cajaOpenPanel;
+    public GameObject cajaClosedPanel;
+
     private void Awake()
     {
         if (instance == null)
@@ -232,6 +240,27 @@ public class DataHolder : MonoBehaviour
         {
             chargeFinal();
         }
+    }
+
+    public void OpenArchivador()
+    {
+        if (!cajaOpen && !candadoOpen)
+        {
+            candadoPanel.SetActive(true);
+        }
+        else if (candadoOpen && !cajaOpen)
+        {
+            cajaClosedPanel.SetActive(true);
+        }
+        else
+        {
+            cajaOpenPanel.SetActive(true);
+        }
+    }
+
+    public void OpenCandado()
+    {
+        candadoOpen = true;
     }
 
 }

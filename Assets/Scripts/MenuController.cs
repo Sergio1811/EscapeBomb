@@ -362,7 +362,7 @@ public class MenuController : MonoBehaviour
         string code = inputRedeemCodeIntroduced.text.Remove(inputRedeemCodeIntroduced.text.Length - 1);
         switch (code)
         {
-            case "LKAJIQPO":
+            case "OCA":
                 if (!kitHuellasObtained)
                 {
                     InstantiateNotification("Kit de huellas dactilares obtenido");
@@ -370,7 +370,7 @@ public class MenuController : MonoBehaviour
                     kitHuellasObtained = true;
                 }
                 break;
-            case "NATYEIKF":
+            case "SOL":
                 if (!kitMuestrasObtained)
                 {
                     InstantiateNotification("Kit de toma de muestras obtenido");
@@ -378,7 +378,7 @@ public class MenuController : MonoBehaviour
                     kitMuestrasObtained = true;
                 }
                 break;
-            case "IEUQMEWA":
+            case "OJO":
                 if (!endoscopioObtained)
                 {
                     InstantiateNotification("Endoscopio obtenido");
@@ -386,7 +386,7 @@ public class MenuController : MonoBehaviour
                     endoscopioObtained = true;
                 }
                 break;
-            case "VJWYQEOA":
+            case "LUZ":
                 if (!linternaObtained)
                 {
                     InstantiateNotification("Linterna obtenido");

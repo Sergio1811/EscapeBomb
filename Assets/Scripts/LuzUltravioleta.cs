@@ -9,14 +9,14 @@ public class LuzUltravioleta : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Tachon"))
         {
-            collision.gameObject.GetComponent<Image>().color -= new Color(0, 0, 0, 0.8f);
+            collision.gameObject.GetComponent<Image>().color = new Color(0, 0, 0, 0);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Tachon"))
         {
-            collision.gameObject.GetComponent<Image>().color += new Color(0, 0, 0, 1);
+            collision.gameObject.GetComponent<Image>().color = new Color(0, 0, 0, 1);
         }
     }
    

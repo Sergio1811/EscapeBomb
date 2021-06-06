@@ -88,7 +88,7 @@ public class CorrectCode : MonoBehaviour
         string codeFilled = l_CodeFilled.text;
         codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
         codeFilled.ToLower();
-        if (codeToMatch == codeFilled || codeToMatch2 == codeFilled)
+        if (codeToMatch == codeFilled || "kevin" == codeFilled)
         {
             MenuController.instance.InstantiateNotification("Nombre correcto.");
             MenuController.instance.sospechosos = MenuController.instance.hacker;
@@ -376,6 +376,7 @@ public class CorrectCode : MonoBehaviour
             cajaClosed.SetActive(false);
             cajaOpen.SetActive(true);
             MenuController.instance.InstantiateNotification("Contraseña correcta.");
+            DataHolder.instance.cajaOpen = true;
         }
         else
         {
