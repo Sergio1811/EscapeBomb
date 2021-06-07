@@ -6533,7 +6533,7 @@ PrefabInstance:
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
       propertyPath: cosasAActivar.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
         type: 3}
@@ -6545,6 +6545,11 @@ PrefabInstance:
       propertyPath: myFileName
       value: Entrada Zulo.mp4
       objectReference: {fileID: 0}
+    - target: {fileID: 7895540129264721004, guid: fc13d0a2048d11146aecdc549a48cf4d,
+        type: 3}
+      propertyPath: cosasAActivar.Array.data[1]
+      value: 
+      objectReference: {fileID: 2077056027}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc13d0a2048d11146aecdc549a48cf4d, type: 3}
 --- !u!1 &240108632
@@ -23448,17 +23453,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 74126411}
           m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1821372380}
-        m_MethodName: OpenCandado
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
