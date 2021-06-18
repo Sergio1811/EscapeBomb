@@ -46,6 +46,7 @@ public class CorrectCode : MonoBehaviour
 
     public GameObject cajaOpen;
     public GameObject cajaClosed;
+    public GameObject candado;
     public void codeRight(TextMeshProUGUI l_CodeFilled)
     {
         if (!firstTimeCandado)
@@ -59,6 +60,7 @@ public class CorrectCode : MonoBehaviour
                 MenuController.instance.InstantiateNotification("Nuevo Objeto: Hoja de sospechosos");
                 cajaClosed.SetActive(true);
                 DataHolder.instance.OpenCandado();
+                candado.SetActive(false);
             }
             else
             {

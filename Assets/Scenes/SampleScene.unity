@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.57164055, g: 0.47953737, b: 0.47517556, a: 1}
+  m_IndirectSpecularColor: {r: 0.5716409, g: 0.47953755, b: 0.47517556, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1907,6 +1907,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &68705857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6237,6 +6238,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &230464147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7789,6 +7791,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 1072650287}
+  candado: {fileID: 0}
 --- !u!114 &281327083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8862,6 +8865,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 533253693}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &317907693
 MonoBehaviour:
@@ -13021,6 +13035,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &462538653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14249,6 +14264,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &504568520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15226,6 +15242,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532194203}
   m_CullTransparentMesh: 0
+--- !u!1 &533253693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533253696}
+  - component: {fileID: 533253695}
+  - component: {fileID: 533253694}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &533253694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533253693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &533253695
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533253693}
+  m_CullTransparentMesh: 0
+--- !u!224 &533253696
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533253693}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -0.022830917}
+  m_LocalScale: {x: 0.00043077202, y: 0.00043077202, z: 0.00043077202}
+  m_Children: []
+  m_Father: {fileID: 5006512735594449756}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920.0001, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &534168826
 GameObject:
   m_ObjectHideFlags: 0
@@ -16085,6 +16174,7 @@ MonoBehaviour:
   - {fileID: 257950802}
   buttonsToDestroy:
   - {fileID: 597296865}
+  - {fileID: 533253693}
   code: 0005
 --- !u!82 &562528379
 AudioSource:
@@ -17023,17 +17113,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1250708890}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 317907690}
         m_MethodName: SetActive
         m_Mode: 6
@@ -17055,6 +17134,28 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1250708890}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 533253693}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &597296869
 MonoBehaviour:
@@ -17579,6 +17680,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &620373291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21192,6 +21294,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 305600845}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &694535813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21910,6 +22013,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &719376576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23576,6 +23680,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 1072650287}
+  candado: {fileID: 161129118525507487}
 --- !u!1 &764210454
 GameObject:
   m_ObjectHideFlags: 0
@@ -26365,7 +26470,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2062057484}
-        m_MethodName: instantiateItem
+        m_MethodName: zoomItem
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -31306,6 +31411,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!1 &996255285
 GameObject:
   m_ObjectHideFlags: 0
@@ -33783,6 +33889,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &1106415161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37778,7 +37885,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 257950802}
+      - m_Target: {fileID: 1250708890}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -38916,6 +39023,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &1292923598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39616,6 +39724,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &1307981043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43379,7 +43488,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2062057484}
-        m_MethodName: instantiateItem
+        m_MethodName: zoomItem
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -43762,6 +43871,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &1469915291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46890,7 +47000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1568036946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46907,8 +47017,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -356, y: -1025}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -570, y: -932.8}
+  m_SizeDelta: {x: 94.18, y: 94.2}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1568036947
 MonoBehaviour:
@@ -47598,6 +47708,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &1583852737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52216,7 +52327,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2062057484}
-        m_MethodName: instantiateItem
+        m_MethodName: zoomItem
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -57804,6 +57915,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &1892200150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62688,6 +62800,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 0}
   cajaClosed: {fileID: 0}
+  candado: {fileID: 0}
 --- !u!114 &2071205774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63091,6 +63204,7 @@ MonoBehaviour:
   buttonScreen: {fileID: 0}
   cajaOpen: {fileID: 105021032}
   cajaClosed: {fileID: 1072650287}
+  candado: {fileID: 0}
 --- !u!114 &2086220437
 MonoBehaviour:
   m_ObjectHideFlags: 0

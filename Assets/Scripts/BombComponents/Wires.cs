@@ -33,14 +33,17 @@ public class Wires : MonoBehaviour
                         {
                             if (hit.collider.CompareTag(currentWire.tag))
                             {
-                                wires[int.Parse(currentWire.tag)].SetActive(true);
-                                CheckAllWires();
-                                currentWire = null;
+                                if (hit.collider.gameObject != currentWire)
+                                {
+                                    wires[int.Parse(currentWire.tag)].SetActive(true);
+                                    CheckAllWires();
+                                    currentWire = null;
+                                }
                             }
                             else { currentWire = null; }
                         }
                         else
-                        currentWire = hit.collider.gameObject;
+                            currentWire = hit.collider.gameObject;
                     }
                 }
             }
