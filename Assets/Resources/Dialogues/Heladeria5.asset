@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Heladero
-  question: "Uhm... \xA1S\xED! Pues mire, lo \xFAnico que le puedo decir es que ten\xEDa
-    unas gafas de sol"
+  question: "Uhm.. \xA1S\xED! Pues miren, lo \xFAnico que les puedo decir es que
+    ten\xEDa unas gafas de sol "
   specialAction: 
   dialogueOptions:
-  - optionLine: Bien. gracias.
+  - optionLine: "No es mucho, pero nos servir\xE1, gracias."
     nextDialogue: {fileID: 11400000, guid: b7a0462ab0d483041bbe5c4e5cf39bc6, type: 2}
     specialAction: 
   - optionLine: "\xA1Buen trabajo!. Hasta otra."

@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "\xA1En seguida! 2,46 \u20AC. \xBFAlgo m\xE1s?"
   specialAction: 
   dialogueOptions:
-  - optionLine: No, gracias.
+  - optionLine: "\xA1No gracias, con eso aguanto! "
     nextDialogue: {fileID: 11400000, guid: f96f3aa498e70cd43a76828368e8c93e, type: 2}
     specialAction: 
   - optionLine: "S\xED, investigamos un homicidio. \xBFVio ayer actuar a alguien

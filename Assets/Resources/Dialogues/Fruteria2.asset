@@ -17,10 +17,10 @@ MonoBehaviour:
   question: "\xBFY qu\xE9 necesitan de m\xED?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Ayer, nuestro sospechoso vino a comprar una pi\xF1a. \xBFRecuerda
-      al individuo?"
+  - optionLine: "Tenemos constancia que el sospechoso compr\xF3 en este establecimiento
+      ayer un kilo de maracuy\xE1. \xBFRecuerda al individuo?"
     nextDialogue: {fileID: 11400000, guid: 00774d1f262d3e34c9242c89e008b327, type: 2}
     specialAction: 
-  - optionLine: Nada, gracias.
+  - optionLine: "\xA1Su tiempo y sus recuerdos para encontrar al sospechoso! "
     nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 

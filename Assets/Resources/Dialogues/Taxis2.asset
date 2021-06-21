@@ -18,7 +18,7 @@ MonoBehaviour:
   specialAction: 
   dialogueOptions:
   - optionLine: "\xA1Ups! no la llevo encima, lo siento. \xA1\xA1Pero oiga!! \xBFQu\xE9
-      veo all\xED? \xBFNo es un pirata haciendo un servicio sin licencia?"
+      veo all\xED? \xBFNo es un taxi pirata haciendo un servicio sin licencia? "
     nextDialogue: {fileID: 11400000, guid: d75f21965ad43504c8837f3df61babb0, type: 2}
     specialAction: 
   - optionLine: "\xA1Vaya! lo lamento, la he olvidado. Voy a casa y se la traigo.

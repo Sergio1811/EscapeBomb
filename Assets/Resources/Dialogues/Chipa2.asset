@@ -17,9 +17,9 @@ MonoBehaviour:
   question: "Se nos acaban de terminar, lo siento. \xBFAlgo m\xE1s?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Muerto, asesinato, investigando\u2026 \xBFsospechoso?"
+  - optionLine: "Fuera bromas, \xBFha visto a alguien sospechoso \xFAltimamente? "
     nextDialogue: {fileID: 11400000, guid: f7f45e4ed9089c1439276afebcd080b9, type: 2}
     specialAction: 
-  - optionLine: No.
+  - optionLine: No, gracias.
     nextDialogue: {fileID: 11400000, guid: 77b9156edce8b874db28d9ed961e0f07, type: 2}
     specialAction: 

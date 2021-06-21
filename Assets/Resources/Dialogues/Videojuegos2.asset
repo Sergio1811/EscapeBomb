@@ -14,12 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Dependienta
-  question: "Madre m\xEDa, \xBFpero est\xE1 todo bien?"
+  question: "Los videojuegos son una fuente de inspiraci\xF3n para un grupo de investigadores... "
   specialAction: 
   dialogueOptions:
-  - optionLine: "Preg\xFAnteselo a la muerta\u2026 \xBFHa visto algo extra\xF1o?"
+  - optionLine: "S\xED podr\xEDan ser de gran utilidad\u2026\xBFtiene algo que nos
+      pueda ser de utilidad en la tienda?"
     nextDialogue: {fileID: 11400000, guid: 8c9fe8898a30abc4cac8c67c409cdc8a, type: 2}
     specialAction: 
-  - optionLine: "Tenemos un homicidio entre manos. \xBFVio ayer a alguien sospechoso?"
+  - optionLine: "Si, podr\xEDa ser, pero preferimos centrarnos en nuestra investigaci\xF3n
+      \xBFvi\xF3 ayer a alguien sospechoso? "
+    nextDialogue: {fileID: 11400000, guid: 8c9fe8898a30abc4cac8c67c409cdc8a, type: 2}
+    specialAction: 
+  - optionLine: "Vayamos al grano\u2026\xBFOcurri\xF3 algo sospechoso durante el
+      d\xEDa de ayer? "
     nextDialogue: {fileID: 11400000, guid: 8c9fe8898a30abc4cac8c67c409cdc8a, type: 2}
     specialAction: 

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Taxista
-  question: "Mire la ley lo \xFAnico que me obliga es a darle la matr\xEDcula del
-    taxi en cuesti\xF3n. A ver, d\xEDgame, en qu\xE9 lugar estaba y a qu\xE9 hora."
+  question: "Mire la ley lo \xFAnico que me obliga es a darles la matr\xEDcula del
+    taxi en cuesti\xF3n. A ver, d\xEDganme, en qu\xE9 lugar estaba y a qu\xE9 hora."
   specialAction: 
   dialogueOptions:
   - optionLine: "\xBFComo dice? Mire, la ley constitucional de 1890 me permite realizar
@@ -27,7 +27,7 @@ MonoBehaviour:
       hora... es que no tengo reloj
     nextDialogue: {fileID: 11400000, guid: 46afbb511b9b1be4c9d8c06e33e917e5, type: 2}
     specialAction: 
-  - optionLine: "Muchas gracias, seg\xFAn tengo entendido el taxi sali\xF3 de Que
-      Pastelitos sobre las   :   "
+  - optionLine: "\xBFVe como no ha sido tan dif\xEDcil?... seg\xFAn tenemos entendido
+      el taxi sali\xF3 de Que Pastelitos sobre las :   "
     nextDialogue: {fileID: 11400000, guid: c2fde0bf95e7013499c09ee96a3074f7, type: 2}
     specialAction: HoraTaxis

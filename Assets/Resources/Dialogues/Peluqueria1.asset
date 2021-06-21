@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Peluquero
-  question: "Hola buenas tardes \xBFqu\xE9 se va a hacer?"
+  question: "Hola buenas tardes \xBFqu\xE9 se van a hacer? "
   specialAction: 
   dialogueOptions:
   - optionLine: "Cortar y peinar, pero antes necesito informaci\xF3n sobre un cliente"
@@ -24,6 +24,6 @@ MonoBehaviour:
       han estado hablando de un individuo al que vieron ayer."
     nextDialogue: {fileID: 11400000, guid: f6d531a502c850043ac312c4d550843d, type: 2}
     specialAction: 
-  - optionLine: Nada.
+  - optionLine: Nada, no quiero que me tomen el pelo.
     nextDialogue: {fileID: 11400000, guid: 5802b82cc8ae22c4d8613cf056ddfd3b, type: 2}
     specialAction: 

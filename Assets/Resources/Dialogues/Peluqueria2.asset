@@ -21,6 +21,3 @@ MonoBehaviour:
   - optionLine: "Est\xE1 bien, gracias."
     nextDialogue: {fileID: 11400000, guid: 5802b82cc8ae22c4d8613cf056ddfd3b, type: 2}
     specialAction: 
-  - optionLine: Ok.
-    nextDialogue: {fileID: 11400000, guid: 5802b82cc8ae22c4d8613cf056ddfd3b, type: 2}
-    specialAction: 

@@ -19,7 +19,7 @@ MonoBehaviour:
     que tendr\xEDa ah\xED dentro algo poco legal por su forma de actuar."
   specialAction: 
   dialogueOptions:
-  - optionLine: Perfecto, gracias.
+  - optionLine: "-Gracias y que la fuerza te acompa\xF1e. "
     nextDialogue: {fileID: 11400000, guid: a2c22cdfac3213f40b3f5b99c68f2a97, type: 2}
     specialAction: 
   - optionLine: "Ok, adi\xF3s."

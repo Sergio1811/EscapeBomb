@@ -23,6 +23,6 @@ MonoBehaviour:
   - optionLine: "Perfecto, seguiremos investigando por ah\xED."
     nextDialogue: {fileID: 11400000, guid: 77b9156edce8b874db28d9ed961e0f07, type: 2}
     specialAction: 
-  - optionLine: Vale, gracias.
+  - optionLine: "\xA1Nos ha ayudado mucho, de verdad! "
     nextDialogue: {fileID: 11400000, guid: 77b9156edce8b874db28d9ed961e0f07, type: 2}
     specialAction: 

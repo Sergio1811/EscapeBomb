@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Recepcionista
-  question: "Bienvenido \xBFen qu\xE9 le puedo atender?"
+  question: "Bienvenidos \xBFen qu\xE9 les puedo atender? "
   specialAction: 
   dialogueOptions:
   - optionLine: "Nos han dicho que tiene usted muy buen ojo\u2026 investigamos un

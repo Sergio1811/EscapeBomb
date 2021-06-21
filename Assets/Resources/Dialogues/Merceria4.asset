@@ -18,9 +18,10 @@ MonoBehaviour:
   specialAction: 
   dialogueOptions:
   - optionLine: "Tenemos un ticket que ubica a nuestro sospechoso aqu\xED a las 12:20.
-      Sabemos que compr\xF3 una bufanda. \xBFLo recuerda?"
-    nextDialogue: {fileID: 11400000, guid: e4c7e7f37a27cea429ab2cac20ec0f65, type: 2}
+      \xBFLo recuerda? "
+    nextDialogue: {fileID: 11400000, guid: 9b93b8d646d954a4bb5b7fc800b2ddf0, type: 2}
     specialAction: 
-  - optionLine: Nada.
-    nextDialogue: {fileID: 11400000, guid: 2c574f3cdc6946d44aa865e89d6b13ec, type: 2}
+  - optionLine: "Parece usted una mujer agradable, voy a dejar que me cuente qu\xE9
+      es lo que necesita un homicida de su mercer\xEDa...  "
+    nextDialogue: {fileID: 11400000, guid: 9b93b8d646d954a4bb5b7fc800b2ddf0, type: 2}
     specialAction: 

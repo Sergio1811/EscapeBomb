@@ -17,7 +17,7 @@ MonoBehaviour:
   question: "\xBFUn homicidio?, \xBFc\xF3mo los de las pel\xEDculas?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Eso es, somos una versi\xF3n mejorada de Sherlock Holmes."
+  - optionLine: Eso es, somos una mezcla entre Sherlock Holmes y el Inspector Gadget.
     nextDialogue: {fileID: 11400000, guid: 44d59cd6fd3a16e499418af77ba248a7, type: 2}
     specialAction: 
   - optionLine: "Qu\xE9 pel\xEDculas ni qu\xE9 pel\xEDculas\u2026Esto es serio se\xF1ora,

@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Pastelero
-  question: "\xBFDisculpe?"
+  question: "\xBFDisculpad?"
   specialAction: 
   dialogueOptions:
   - optionLine: "Nada, olv\xEDdelo."
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
     specialAction: 
-  - optionLine: Disculpado.
+  - optionLine: "Est\xE1 bien, volveremos cuando tengamos la foto del sospechoso
+      y su nombre."
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
     specialAction: 

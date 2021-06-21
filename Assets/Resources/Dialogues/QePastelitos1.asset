@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Pastelero
-  question: "Hola, bienvenido a qu\xE9 pastelitos, \xBFpuedo servirle?"
+  question: "Hola, bienvenidos a qu\xE9 pastelitos, \xBFpuedo servirles?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Buenas, quer\xEDa unos pastelitos."
+  - optionLine: "Buenas, quer\xEDamos unos pastelitos."
     nextDialogue: {fileID: 11400000, guid: b96834ef860470e46ad6a1b7ca936dab, type: 2}
     specialAction: 
-  - optionLine: "No, adi\xF3s."
+  - optionLine: "No gracias, solo hemos entrado atra\xEDdos por el dulce aroma."
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
     specialAction: 
   - optionLine: "Estamos ayudando a la polic\xEDa en un caso."

@@ -17,9 +17,9 @@ MonoBehaviour:
   question: "\xBFQui\xE9nes sois vosotros?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Es usted vidente, deber\xEDa saberlo..."
+  - optionLine: "Siendo vidente, usted deber\xEDa saberlo..."
     nextDialogue: {fileID: 11400000, guid: dee570852578db54795bd5af0a7d354c, type: 2}
     specialAction: 
-  - optionLine: Nadie.
+  - optionLine: 'Quienes somos no es relevante...pero saber quien es... '
     nextDialogue: {fileID: 11400000, guid: e5a8f74aa8fc3174cbf5983ebaa1ae34, type: 2}
     specialAction: 

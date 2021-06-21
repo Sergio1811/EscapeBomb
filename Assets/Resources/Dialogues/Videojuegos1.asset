@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Dependienta
-  question: "Hola buenas \xBFte puedo ayudar?"
+  question: "Hola buenas \xBFos puedo ayudar?  "
   specialAction: 
   dialogueOptions:
-  - optionLine: "Llegar\xE9 a ser el mejor, el mejor que habr\xE1 jam\xE1s..."
+  - optionLine: "\xBFTienes videojuegos de asesinos y hackers?"
     nextDialogue: {fileID: 11400000, guid: 5c595f4c16983fb43805dd78f4ea8a75, type: 2}
     specialAction: 
   - optionLine: "\xA1Onda..."
     nextDialogue: {fileID: 11400000, guid: a999903cfdb5b6746884c0e38b87463a, type: 2}
     specialAction: 
-  - optionLine: "Estamos ayudando en una investigaci\xF3n policial."
+  - optionLine: 'Somos investigadores e investigamos un caso de homicidio... '
     nextDialogue: {fileID: 11400000, guid: db3ab8ee96fd6d94bb45989baf241c38, type: 2}
     specialAction: 

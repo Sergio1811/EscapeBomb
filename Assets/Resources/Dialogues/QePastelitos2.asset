@@ -17,12 +17,13 @@ MonoBehaviour:
   question: "\xBFA la polic\xEDa? \xBFQu\xE9 ha ocurrido?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "Lo siento, esa informaci\xF3n es secreto de sumario."
+  - optionLine: "Pues se trata de la investigaci\xF3n de un homicidio muy sospechoso... "
     nextDialogue: {fileID: 11400000, guid: e89e75b03e7f5a941b38843ce34a7b0d, type: 2}
     specialAction: 
-  - optionLine: Nada.
+  - optionLine: 'Nada, ya tenemos lo que necesitamos. '
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
     specialAction: 
-  - optionLine: Un homicidio.
+  - optionLine: "Que sus pastelitos est\xE1n de muerte...o al menos eso demuestra
+      la v\xEDctima. "
     nextDialogue: {fileID: 11400000, guid: e89e75b03e7f5a941b38843ce34a7b0d, type: 2}
     specialAction: 

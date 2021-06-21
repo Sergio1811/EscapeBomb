@@ -20,6 +20,7 @@ MonoBehaviour:
   - optionLine: "Buenos d\xEDas. Investigamos un crimen. \xBFPodr\xEDa ayudarnos?"
     nextDialogue: {fileID: 11400000, guid: f1c0542fbfa4f9c4b9a724828ecbe835, type: 2}
     specialAction: 
-  - optionLine: Toc toc...
-    nextDialogue: {fileID: 11400000, guid: 3c528f19f0359f74eb376347c7c40105, type: 2}
+  - optionLine: "Va tener que darnos ciertas explicaciones\u2026. \xA1Nuestra investigaci\xF3n
+      nos ha tra\xEDdo hasta aqu\xED! "
+    nextDialogue: {fileID: 11400000, guid: f1c0542fbfa4f9c4b9a724828ecbe835, type: 2}
     specialAction: 

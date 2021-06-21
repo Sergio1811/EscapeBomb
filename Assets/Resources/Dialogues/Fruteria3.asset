@@ -26,6 +26,6 @@ MonoBehaviour:
   - optionLine: "\xBFRecuerda algo m\xE1s?"
     nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 
-  - optionLine: "\xA1Genial! gracias."
+  - optionLine: "Si eso es todo lo que recuerda\u2026 \xA1Muchas gracias! "
     nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 

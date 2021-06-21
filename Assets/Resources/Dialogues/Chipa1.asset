@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Chipero
-  question: "Buenas tardes. Cu\xE9ntame, \xBFqu\xE9 te puedo servir?"
+  question: "Buenas tardes. Decidme, \xBFqu\xE9 os puedo servir?"
   specialAction: 
   dialogueOptions:
   - optionLine: "\xA1Una de muerto al punto para llevar!"

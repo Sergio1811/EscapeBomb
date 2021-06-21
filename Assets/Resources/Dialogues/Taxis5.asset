@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Taxista
-  question: "\xA1Hombre! Tenemos aqu\xED al periodista graciosete. \xBFVas a hacer
-    algo m\xE1s que perder mi tiempo?"
+  question: "\xA1Hombre! Tenemos aqu\xED a los periodistas graciosetes.\xBFVais a
+    hacer algo m\xE1s que perder mi tiempo?"
   specialAction: 
   dialogueOptions:
   - optionLine: "Lamento el malentendido, ayer cog\xED uno de sus taxis y me gustar\xEDa

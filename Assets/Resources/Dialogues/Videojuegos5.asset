@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Dependienta
-  question: "En ese caso\u2026 dime, \xBFQu\xE9 puedo hacer por t\xED?"
+  question: "Si ya os hab\xE9is decidido\u2026 \xBFPuedo hacer algo m\xE1s por vosotros? "
   specialAction: 
   dialogueOptions:
   - optionLine: "Llegar\xE9 a ser el mejor, el mejor que habr\xE1 jam\xE1s..."

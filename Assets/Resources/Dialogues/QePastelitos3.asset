@@ -17,13 +17,13 @@ MonoBehaviour:
   question: "Mmmm\u2026 Est\xE1 bien\u2026 \xBFqu\xE9 puedo hacer por vosotros?"
   specialAction: 
   dialogueOptions:
-  - optionLine: "\xBFRecuerda a alguien sospechoso?"
+  - optionLine: "Entonces\u2026 \xBFVi\xF3 usted a nuestro sospechoso?"
     nextDialogue: {fileID: 11400000, guid: 3519496d9a53ee14899037c92bebb2fa, type: 2}
     specialAction: 
-  - optionLine: "\xBF\xDAltimamente ha visto a alguien con malas intenciones?"
+  - optionLine: "\xBFRecuerda a alg\xFAn cliente actuando de forma extra\xF1a?"
     nextDialogue: {fileID: 11400000, guid: 3519496d9a53ee14899037c92bebb2fa, type: 2}
     specialAction: 
-  - optionLine: "Encontramos una caja de sus donuts en la escena del crimen. \xBFSabe
-      qui\xE9n los compr\xF3?"
+  - optionLine: "Encontramos una caja de sus donuts en la escena del crimen. \xBFAlg\xFAn
+      encargo peculiar? "
     nextDialogue: {fileID: 11400000, guid: 3519496d9a53ee14899037c92bebb2fa, type: 2}
     specialAction: 

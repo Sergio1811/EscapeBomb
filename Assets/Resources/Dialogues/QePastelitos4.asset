@@ -14,16 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Pastelero
-  question: "Por aqu\xED pasa mucha gente cada d\xEDa. Quiz\xE1 si me ense\xF1a una
-    foto del sospechoso y un posible nombre recuerde algo m\xE1s."
+  question: "Por aqu\xED pasa mucha gente cada d\xEDa. Quiz\xE1 si me ense\xF1an
+    una foto del sospechoso y un posible nombre recuerde algo m\xE1s.   "
   specialAction: 
   dialogueOptions:
-  - optionLine: "Est\xE1 bien, se la traer\xE9."
+  - optionLine: "Est\xE1 bien, en cuanto tengamos la foto del sospechoso con su nombre,
+      se la traeremos. "
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
     specialAction: 
-  - optionLine: "\xA1Aqu\xED est\xE1! es este (ense\xF1ar foto inventario con nombre)"
+  - optionLine: "\xA1Aqu\xED est\xE1! este es el  sospechoso (ense\xF1ar foto inventario
+      con nombre) "
     nextDialogue: {fileID: 11400000, guid: 4cc74b8920db79641a1e3738e1f68663, type: 2}
     specialAction: Foto
-  - optionLine: Que mala memoria...
+  - optionLine: "Ver\xE1...andamos rezagados con la investigaci\xF3n\u2026 \xBFno
+      podr\xEDa hacer una excepci\xF3n? "
     nextDialogue: {fileID: 11400000, guid: 4eddbfb18c423dc4ba36574c3b473dff, type: 2}
     specialAction: 

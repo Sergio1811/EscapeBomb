@@ -19,6 +19,6 @@ MonoBehaviour:
     muy espec\xEDficos, y que luego pregunt\xF3 por una tienda de videojuegos."
   specialAction: UnlockVideojuegos
   dialogueOptions:
-  - optionLine: "Perfecto, muchas gracias. Voy para all\xE1."
+  - optionLine: "Perfecto, muchas gracias. Vamos para all\xE1. "
     nextDialogue: {fileID: 0}
     specialAction: 

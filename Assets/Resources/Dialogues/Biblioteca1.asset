@@ -20,7 +20,7 @@ MonoBehaviour:
   - optionLine: "\xBFTienen el libro del Quijote?"
     nextDialogue: {fileID: 11400000, guid: 0d6419d1be4698c41b6ed47d7ee739aa, type: 2}
     specialAction: 
-  - optionLine: "Me gustar\xEDa comprar la primera edici\xF3n de Superman."
+  - optionLine: "Me gustar\xEDa comprar sudokus en ingl\xE9s, \xBFle queda alguno?"
     nextDialogue: {fileID: 11400000, guid: 0d6419d1be4698c41b6ed47d7ee739aa, type: 2}
     specialAction: 
   - optionLine: "Estamos realizando el seguimiento de un sospechoso, \xBFvio ayer

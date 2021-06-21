@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Dependienta
-  question: "\xBFSquirtle, bulbasaur o charmander?"
+  question: "Miren, en esta secci\xF3n tengo una selecci\xF3n de los mejores videojuegos... "
   specialAction: 
   dialogueOptions:
-  - optionLine: Squirtle
+  - optionLine: "Cyberpunk 2077\u2026 cibern\xE9tica, mega corporaciones, asesinatos,
+      hackers\u2026. "
     nextDialogue: {fileID: 11400000, guid: c1d3ae4a295daa44b9ccee8c1e9915d9, type: 2}
     specialAction: 
-  - optionLine: Bulbasaur
+  - optionLine: "Watch Dogs Legion\u2026 hackers, r\xE9gimen autoritario, sistemas
+      de vigilancia..."
     nextDialogue: {fileID: 11400000, guid: c1d3ae4a295daa44b9ccee8c1e9915d9, type: 2}
     specialAction: 
-  - optionLine: Charmander
+  - optionLine: "Horizon Zero Dawn\u2026 inteligencia artificial, m\xE1quinas, asesinatos,
+      mundo post-apocal\xEDptico..."
     nextDialogue: {fileID: 11400000, guid: c1d3ae4a295daa44b9ccee8c1e9915d9, type: 2}
     specialAction: 

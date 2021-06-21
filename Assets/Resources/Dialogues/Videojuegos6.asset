@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Dependienta
-  question: 
+  question: 'VITAAAAAAL!!! '
   specialAction: 
   dialogueOptions:
-  - optionLine: VITAAAAAAL!
+  - optionLine: "No han hecho videojuegos a la altura de Bola de Drag\xF3n... "
     nextDialogue: {fileID: 11400000, guid: 5c595f4c16983fb43805dd78f4ea8a75, type: 2}
     specialAction: 
-  - optionLine: "Qu\xE9 onda ni qu\xE9 onda, estamos investigando un crimen se\xF1ora."
+  - optionLine: 'Ya que nos entendemos...Sabe algo sobre un asesinato reciente? '
     nextDialogue: {fileID: 11400000, guid: db3ab8ee96fd6d94bb45989baf241c38, type: 2}
     specialAction: 

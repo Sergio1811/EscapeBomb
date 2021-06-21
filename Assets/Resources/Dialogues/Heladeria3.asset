@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Heladero
-  question: "Muy bien, aqu\xED tiene. \xBFDesea algo m\xE1s?"
+  question: "Muy bien, aqu\xED tienen. \xBFDesean algo m\xE1s? "
   specialAction: 
   dialogueOptions:
-  - optionLine: "Si, estamos haciendo un reportaje para el peri\xF3dico, \xBFvio
-      ayer a alguien extra\xF1o?"
+  - optionLine: "Si, investigamos para el periodico Enigma News, \xBFvio ayer a alguien
+      extra\xF1o?"
     nextDialogue: {fileID: 11400000, guid: 44d59cd6fd3a16e499418af77ba248a7, type: 2}
     specialAction: 
-  - optionLine: "Estoy buscando a mi primo, se ha perdido y tiene una pinta particular,
-      \xBFvio ayer a alguien extra\xF1o?"
+  - optionLine: "Pues ya que nos pregunta\u2026 \xBFSe ha fijado la de gente rara
+      que hay por aqu\xED \xFAltimamente? "
     nextDialogue: {fileID: 11400000, guid: 44d59cd6fd3a16e499418af77ba248a7, type: 2}
     specialAction: 
-  - optionLine: "Nada m\xE1s majo. Muchas gracias"
+  - optionLine: "\xA1Nada m\xE1s y gracias por los toppings!"
     nextDialogue: {fileID: 11400000, guid: b7a0462ab0d483041bbe5c4e5cf39bc6, type: 2}
     specialAction: 

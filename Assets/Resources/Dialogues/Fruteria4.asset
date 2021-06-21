@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Frutero
-  question: "\xBFAcaso est\xE1 insinuando algo?"
+  question: "\xBFAcaso est\xE1n insinuando algo?"
   specialAction: 
   dialogueOptions:
-  - optionLine: No, no
+  - optionLine: "No nos pongamos tensos porque acabamos todos en comisar\xEDa... "
     nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 
-  - optionLine: "No se ponga as\xED hombre. Solo le he preguntado si estaba seguro..."
+  - optionLine: "No se ponga as\xED hombre. Es un caso importante y s\xF3lo quer\xEDamos
+      asegurar..."
     nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 

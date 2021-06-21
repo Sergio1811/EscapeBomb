@@ -17,11 +17,10 @@ MonoBehaviour:
   question: "Lo lamento, aqu\xED no podemos proporcionarle ese art\xEDculo."
   specialAction: 
   dialogueOptions:
-  - optionLine: "Bueno, en realidad lo que quer\xEDa era preguntarle por un sospechoso,
-      \xBFvio ayer a alguien fuera de lo normal?"
+  - optionLine: "Bueno, la verdad es que estamos investigando un caso, \xBFha visto
+      a alguien sospechoso?"
     nextDialogue: {fileID: 11400000, guid: 43dd6bf08ba60b34b93fd62d00bfe113, type: 2}
     specialAction: 
-  - optionLine: "Vaya\u2026 Bueno \xBFy de un tipo sospechoso que me dice? \xBFVio
-      a alguien as\xED?"
+  - optionLine: "Vaya\u2026\xBFrecuerda si le han hecho peticiones extra\xF1as recientemente? "
     nextDialogue: {fileID: 11400000, guid: 43dd6bf08ba60b34b93fd62d00bfe113, type: 2}
     specialAction: 

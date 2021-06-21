@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Dependienta
-  question: Larga vida y prosperidad.
+  question: "Si algo he aprendido de los videojuegos, es que, si encuentras obst\xE1culos
+    en el camino, es porque vas en la direcci\xF3n correcta.... "
   specialAction: 
   dialogueOptions: []

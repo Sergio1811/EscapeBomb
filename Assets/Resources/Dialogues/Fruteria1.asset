@@ -20,9 +20,9 @@ MonoBehaviour:
   - optionLine: "Buenas tardes, estamos ayudando a la polic\xEDa en un caso."
     nextDialogue: {fileID: 11400000, guid: b92cfac2d210973429b803e681ffda55, type: 2}
     specialAction: 
-  - optionLine: "Hola, ponme un kilo de pl\xE1tanos."
+  - optionLine: "\xA1Hola mozo, ponganos un kilo de pl\xE1tanos!  "
     nextDialogue: {fileID: 11400000, guid: 4c09220359f5f5948858cc6576a0b457, type: 2}
     specialAction: 
-  - optionLine: "Hola y adi\xF3s."
+  - optionLine: "\xBFRecuerda una tarde tan calurosa como la de hoy?"
     nextDialogue: {fileID: 11400000, guid: b8dd5b3a7a1284041ad362ec75666808, type: 2}
     specialAction: 

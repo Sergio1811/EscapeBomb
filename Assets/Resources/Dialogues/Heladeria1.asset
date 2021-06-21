@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Heladero
-  question: "Buenas tardes \xBFqu\xE9 te pongo?"
+  question: "Buenas tardes \xBFqu\xE9 les pongo? "
   specialAction: 
   dialogueOptions:
   - optionLine: Estamos investigando un homicidio.
     nextDialogue: {fileID: 11400000, guid: 2f733b146353f3a489fbfecb6e20e8d3, type: 2}
     specialAction: 
-  - optionLine: "\xA1Un helado de menta!"
+  - optionLine: "\xA1Un helado doble de menta y chocolate! "
     nextDialogue: {fileID: 11400000, guid: 1804ea0f4544aa14a940e2588a86c25f, type: 2}
     specialAction: 
-  - optionLine: Nada gracias. Estoy inspeccionando.
+  - optionLine: Nada gracias, somos intolerantes a la lactosa.
     nextDialogue: {fileID: 11400000, guid: b7a0462ab0d483041bbe5c4e5cf39bc6, type: 2}
     specialAction: 

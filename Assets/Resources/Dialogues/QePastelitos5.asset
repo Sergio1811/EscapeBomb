@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Pastelero
-  question: "Aqu\xED tiene. \xBFQuer\xEDa algo m\xE1s?"
+  question: "Aqu\xED tienen. \xBFQuieren algo m\xE1s? "
   specialAction: 
   dialogueOptions:
-  - optionLine: No.
+  - optionLine: "Con esto y un bizcocho, hasta ma\xF1ana a las ocho!!! "
     nextDialogue: {fileID: 11400000, guid: 808cac4601d90414099c6c4bc865d73a, type: 2}
     specialAction: 
   - optionLine: "S\xED, estamos ayudando a la polic\xEDa en una investigaci\xF3n."

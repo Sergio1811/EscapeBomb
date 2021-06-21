@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: Pastelero
-  question: Ah, si! Ha venido varias veces. Ayer me hizo pedirle un taxi a las 13:14
-    (lo recuerdo porque fue muy preciso con la hora de llegada).
+  question: "Ah, si! Ha venido varias veces. Ayer me hizo pedirle un taxi a las 13:14
+    (lo recuerdo porque fue muy preciso con la hora de llegada).Pero tambi\xE9n recuerdo
+    que \xE9l no compr\xF3 nada, solo andaba tras un chico calvo que compr\xF3 una
+    caja de donuts glaseados!"
   specialAction: 
   dialogueOptions: []

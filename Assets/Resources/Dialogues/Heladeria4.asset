@@ -20,6 +20,7 @@ MonoBehaviour:
   - optionLine: "\xBFRecuerda algo en particular?"
     nextDialogue: {fileID: 11400000, guid: 5383af88d3d6cc74a90e3b5922565f63, type: 2}
     specialAction: 
-  - optionLine: "\xBFTiene c\xE1maras de seguridad? Necesitamos una descripci\xF3n."
+  - optionLine: "\xBFTiene c\xE1maras de seguridad? Necesitamos que revise la cinta
+      y nos de una descripci\xF3n."
     nextDialogue: {fileID: 11400000, guid: 5383af88d3d6cc74a90e3b5922565f63, type: 2}
     specialAction: 

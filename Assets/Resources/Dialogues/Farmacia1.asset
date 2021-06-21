@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalDialogue: 0
   charName: "Farmac\xE9utica"
-  question: "Hola buenas tardes \xBFqu\xE9 deseas?"
+  question: "Hola buenas tardes \xBFqu\xE9 desean?"
   specialAction: 
   dialogueOptions:
   - optionLine: "Unas tiritas. Tanto investigar cr\xEDmenes me ha dejado marca."
     nextDialogue: {fileID: 11400000, guid: 16a64cf267bdee24cb27bedee7e4f1be, type: 2}
     specialAction: 
-  - optionLine: "Informaci\xF3n acerca de un cliente que vino ayer a su tienda y
-      que compr\xF3 una caja de paracetamol."
+  - optionLine: "Informaci\xF3n sobre alg\xFAn cliente que le resultara sospechoso?"
     nextDialogue: {fileID: 11400000, guid: d0663808656352e499fcb1147187e05a, type: 2}
     specialAction: 
