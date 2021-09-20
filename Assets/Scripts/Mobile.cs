@@ -118,6 +118,17 @@ public class Mobile : MonoBehaviour
                    });
                 not.SetActive(true);
                 break;
+            case 7:
+                newItem.GetComponentInChildren<TextMeshProUGUI>().text = "Informe muestra de veneno: Detectado rastro de oxicodona.";
+                Button button6 = newItem.GetComponent<Button>();
+                button6.enabled = true;
+                button6.onClick.AddListener(
+                   delegate
+                   {
+                       //Añadir fotos comisario corrupto
+                   });
+                not.SetActive(true);
+                break;
 
 
         }
