@@ -283,7 +283,7 @@ public class CorrectCode : MonoBehaviour
         codeFilled = codeFilled.Substring(0, codeFilled.Length - 1);
         codeFilled = codeFilled.ToLower();
 
-        if ("la 3" == codeFilled || "la tercera" == codeFilled || "la treh" == codeFilled || "tercera" == codeFilled || "3" == codeFilled || "tres" == codeFilled || "la tres" == codeFilled || "la del leon" == codeFilled)
+        if ("la 3" == codeFilled || "la tercera" == codeFilled || "la treh" == codeFilled || "tercera" == codeFilled || "3" == codeFilled || "tres" == codeFilled || "la tres" == codeFilled || "la del leon" == codeFilled || "derecha" == codeFilled || "la derecha" == codeFilled)
         {
             libreriaDialogues.firstDialogue = dialogue3Libreria;
             libreriaDialogues.DisplayConvMenu();
@@ -359,6 +359,8 @@ public class CorrectCode : MonoBehaviour
             buttonEmail.SetActive(true);
             buttonScreen.SetActive(false);
             panelEmail.SetActive(false);
+            DataHolder.instance.currentObjectsINeed++;
+
         }
         else
         {
